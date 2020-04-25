@@ -12,6 +12,7 @@ tags = [
 images = [
     "placeholder-text.jpg",
 ]
+draft= true
 +++
 
 Lorem est tota propiore conpellat pectoribus de

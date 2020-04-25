@@ -8,6 +8,7 @@ markup: mmark
 math: true
 images:
     - math-typesetting.jpg
+draft: true
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.

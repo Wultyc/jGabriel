@@ -12,6 +12,7 @@ tags = [
 images = [
     "image-gallery.jpg",
 ]
+draft= true
 +++
 
 Showcase the image gallery feature using the `Figure` shortcode. Images using the `Figure` shortcode will be rendered through [`ekko-lightbox`](https://ashleydw.github.io/lightbox/).
