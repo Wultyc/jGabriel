@@ -5,6 +5,7 @@ authors = [
 title = "Image Gallery"
 date = "2020-01-02"
 description = "Showcase the image gallery feature."
+categories = ["Blog Post"]
 tags = [
     "gallery",
     "lightbox",
