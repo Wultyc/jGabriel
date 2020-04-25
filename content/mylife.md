@@ -1,12 +1,12 @@
 ---
 title: ""
-description: "O meu precurso pessoal e profissional"
+description: "O meu percurso pessoal e profissional"
 date: "2020-04-25"
-aliases: ["about-me","my-life","precurso profissional e academico"]
+aliases: ["about-me","my-life","Percurso profissional e academico"]
 author: "Jorge Gabriel Azevedo"
 ---
 
-### Precurso Profissional
+### Percurso Profissional
 * [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade  
 Desenvolvimento de manutenção de sistema de integração usando Mulesoft.  
 Também já participei em outros projetos envolvendo Salesforce.
@@ -14,7 +14,7 @@ Também já participei em outros projetos envolvendo Salesforce.
 * [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019  
 Construção de uma aplicação em PHP usando o framework Laravel para o registo das informações de recolha de matéria prima e produção da empresa.
 
-### Precurso Académico
+### Percurso Académico
 * Licenciatura em Engenharia de sistemas, no ISEP, entre os anos 2016 e 2020.
 * Membro do Núcleo de Engenharia de Sistemas ([NES-ISEP](http://nes-isep.pt))
     * Vice Presidente: 2018/2019
