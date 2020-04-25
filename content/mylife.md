@@ -7,11 +7,11 @@ author: "Jorge Gabriel Azevedo"
 ---
 
 ### Precurso Profissional
-* [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade
-Desenvolvimento de manutenção de sistema de integração usando Mulesoft.
+* [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade  
+Desenvolvimento de manutenção de sistema de integração usando Mulesoft.  
 Também já participei em outros projetos envolvendo Salesforce.
 
-* [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019
+* [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019  
 Construção de uma aplicação em PHP usando o framework Laravel para o registo das informações de recolha de matéria prima e produção da empresa.
 
 ### Precurso Académico
