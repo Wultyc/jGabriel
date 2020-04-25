@@ -5,6 +5,7 @@ authors = [
 title = "Placeholder Text"
 date = "2019-03-09"
 description = "Lorem Ipsum Dolor Si Amet"
+categories = ["Notebook Post"]
 tags = [
     "markdown",
     "text",
@@ -12,7 +13,7 @@ tags = [
 images = [
     "placeholder-text.jpg",
 ]
-draft= true
+draft= false
 +++
 
 Lorem est tota propiore conpellat pectoribus de

@@ -5,7 +5,7 @@ authors = [
 title = "Image Gallery"
 date = "2020-01-02"
 description = "Showcase the image gallery feature."
-categories = ["Blog Post"]
+categories = ["Notebook Post"]
 tags = [
     "gallery",
     "lightbox",
@@ -13,7 +13,7 @@ tags = [
 images = [
     "image-gallery.jpg",
 ]
-draft= true
+draft= false
 +++
 
 Showcase the image gallery feature using the `Figure` shortcode. Images using the `Figure` shortcode will be rendered through [`ekko-lightbox`](https://ashleydw.github.io/lightbox/).
