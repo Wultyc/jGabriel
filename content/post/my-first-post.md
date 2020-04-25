@@ -2,10 +2,10 @@
 title: "My First Post"
 date: 2020-04-25T14:26:19Z
 images: ["cat.jpg"]
-categories: ["Blog Post"]
+categories: ["Notebook Post"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]
-draft: true
+draft: false
 ---
 
 ## My first Post
