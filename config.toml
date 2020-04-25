@@ -24,6 +24,11 @@ theme = "hugo-theme-chunky-poster"
   [[menu.main]]
     identifier = "myprojects"
     name = "My Projects"
+    url = "/project/"
+    weight = 0
+  [[menu.main]]
+    identifier = "notebook"
+    name = "Notebook"
     url = "/post/"
     weight = 0
 #  [[menu.main]]
