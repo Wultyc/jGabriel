@@ -1,9 +1,9 @@
 baseURL = "https://wultyc.tk"
-title = "jGabriel"
+title = "Jorge Gabriel Azevedo"
 copyright = "Copyright © 2020, Jorge Gabriel Azevedo; all rights reserved."
 paginate = 2
-languageCode = "pt"
-DefaultContentLanguage = "pt"
+languageCode = "pt-pt"
+DefaultContentLanguage = "pt-pt"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = ""
@@ -24,8 +24,13 @@ theme = "hugo-theme-chunky-poster"
   [[menu.main]]
     identifier = "myprojects"
     name = "My Projects"
-    url = "/myprojects/"
+    url = "/post/"
     weight = 0
+#  [[menu.main]]
+#    identifier = "mytoolset"
+#    name = "My Tool Set"
+#    url = "/mytoolset/"
+#    weight = 0
 
 [taxonomies]
 category = "categories"
@@ -34,15 +39,18 @@ series = "series"
 author = "authors"
 
 [params]
-  author = "Hugo Authors"
-  description = "Lorem ipsum dolor sit amet."
+  author = "Jorge Gabriel Azevedo"
+  description = "Engenhario de Sistemas <br> Consultor na Deloitte Portugal <br> Web developer"
   homepageImage = "/images/homepage-image.jpg"
   share = true
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = []
-  customJS = []
+  customCSS = ["font-awesome.css", "timeline.css"]
+  customJS = ["font-awesome.js"]
+
+  customExternalCSS = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"]
+  customExternalJS = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"]
 
   [params.social]
     rss = false
@@ -66,7 +74,7 @@ author = "authors"
     theme = ""
 
   [params.commento]
-    enable = true
+    enable = false
     url = "https://commento.io"
 
 [markup]
@@ -79,3 +87,6 @@ author = "authors"
 
   [services.twitter]
     disableInlineCSS = true
+
+[markup.goldmark.renderer]
+  unsafe= true

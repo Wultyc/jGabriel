@@ -1,28 +1,26 @@
-+++
-title = "my Life"
-description = "Hugo, the world’s fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us","about-hugo","contact"]
-author = "Hugo Authors"
-+++
+---
+title: ""
+description: "O meu precurso pessoal e profissional"
+date: "2020-04-25"
+aliases: ["about-me","my-life","precurso profissional e academico"]
+author: "Jorge Gabriel Azevedo"
+---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+### Precurso Profissional
+* [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade
+Desenvolvimento de manutenção de sistema de integração usando Mulesoft.
+Também já participei em outros projetos envolvendo Salesforce.
 
-Hugo makes use of a variety of open source projects including:
+* [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019
+Construção de uma aplicação em PHP usando o framework Laravel para o registo das informações de recolha de matéria prima e produção da empresa.
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
-
-
+### Precurso Académico
+* Licenciatura em Engenharia de sistemas, no ISEP, entre os anos 2016 e 2020.
+* Membro do Núcleo de Engenharia de Sistemas ([NES-ISEP](http://nes-isep.pt))
+    * Vice Presidente: 2018/2019
+    * Comunicação e Imagem: 2017/2018  
+    Enquanto membro do nucleo participei:
+        * Organização da 3ª, 4ª e 5ª Jornadas de Enegnharia de Sistema
+        * Organização da 1ª e 2ª Edição do Mass Training de Suporte Básico de Vida
+        * Organização da 1ª Edição do Workshop de LaTeX
+        * Fundação do núcleo
