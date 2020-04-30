@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 images: []
-categories: []
+categories: ["How to"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
