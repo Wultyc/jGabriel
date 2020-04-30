@@ -4,6 +4,7 @@ date: {{ .Date }}
 images: []
 categories: []
 tags: []
-authors: []
+authors: ["Jorge Gabriel Azevedo"]
+sources: []
 draft: true
 ---
