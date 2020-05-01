@@ -110,7 +110,7 @@ Ficamos com a homepage muito mais limpa. Voltando à lista de post, observamos q
 $ cp -r themes/hugo-theme-chunky-poster/layouts/post ./layouts/
 $ cp themes/hugo-theme-chunky-poster/layouts/_default/list.html ./layouts/_default
 ```
-No ficheiro ````list.html```, onde temos ```{{ range .Pages }}``` vamos adicionar ```{{ .Paginator}}``` imediatamente antes ```.Page``` e após esta ```div``` adicionamos ```{{ template "_internal/pagination.html" . }}```.
+No ficheiro ```list.html```, onde temos ```{{ range .Pages }}``` vamos adicionar ```{{ .Paginator}}``` imediatamente antes ```.Page``` e após esta ```div``` adicionamos ```{{ template "_internal/pagination.html" . }}```.
 Na primeira alteração indicamos que deve ser apenas apresentado o número de elementos que definimos no parâmetro ```paginate``` no ficheiro ```config.toml```. A segunda alteração servirá para apresentar o seletor da página.
 ```html
 {{ define "main" }}
