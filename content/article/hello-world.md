@@ -21,5 +21,5 @@ O meu setup é mesmo muito simples. Basicamente é o meu ultrabook Asus Zenbook 
 Nele tenho o Windows 10 Pro na ultima versão e várias máquinas virtuais com sistemas Linux como o Ubuntu 20.04 (Desktop e Server), CentOS 7 e 8, RedHat Enterprise Linux e Fedora. O meu editor de código preferido é o Visual Studio Code e para fazer o versionamento dos meus projetos uso o GIT auxiliado com o Git Bash para Windows. Para conheceres um pouco mais dos meus projetos passa no meu [perfil do Github](https://github.com/wultyc) ou na página [Projetos](/project) deste site.
 {{< figure src="/images/setup-2019-05.jpg" caption="O meu setup atual" >}} 
 Os meus hobbies atualmente são estudar sobre diversas tecnologias, principalmente open-source, e implementar essas mesmas tecnologias projetos pessoais além da impressão 3D.  
-<!--imagem da impressora 3d-->
+{{< figure src="/images/impressora-3d.jpg" caption="A minha impressora 3D" >}}
 Vemo-nos em breve. Um abraço. 
