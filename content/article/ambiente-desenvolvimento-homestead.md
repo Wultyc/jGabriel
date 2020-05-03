@@ -6,7 +6,7 @@ categories: ["How to", "Artigo Pessoal"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
-draft: true
+draft: false
 ---
 Não é segredo nenhum que eu tenho uma preferência clara pelo desenvolvimento web, em especial com PHP e Laravel.
 <!--more-->
