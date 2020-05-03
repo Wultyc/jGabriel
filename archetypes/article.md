@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-images: []
+images: [] # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to", "Artigo Pessoal"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]

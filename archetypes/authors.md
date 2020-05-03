@@ -1,5 +1,5 @@
 ---
 name: "{{ replace .Name "-" " " | title }}"
-images: []
+images: [] # The image should be in a square formart at least 300x300
 twitter: ""
 ---
