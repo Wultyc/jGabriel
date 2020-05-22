@@ -51,8 +51,8 @@ author = "authors"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["font-awesome.css", "timeline.css"]
-  customJS = ["font-awesome.js"]
+  customCSS = ["external-css.css", "timeline.css"]
+  customJS = ["external-js.js"]
 
   customExternalCSS = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"]
   customExternalJS = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"]
