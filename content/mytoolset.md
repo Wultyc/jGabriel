@@ -20,9 +20,9 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 <--->
 {{<figure src="/images/logos/postman.png" title="Postman" width="100px">}}  
 &nbsp;
-{{% /row %}}
+{{% /centered_row %}}
 
-{{% row %}}
+{{% centered_row %}}
 {{<figure src="/images/logos/php.png" title="PHP" width="100px">}}  
 &nbsp;
 <--->
@@ -34,9 +34,9 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 <--->
 {{<figure src="/images/logos/mariadb.png" title="MariaDB" width="100px">}}  
 &nbsp;
-{{% /row %}}
+{{% /centered_row %}}
 
-{{% row %}}
+{{% centered_row %}}
 {{<figure src="/images/logos/github.png" title="Github" width="100px">}}  
 &nbsp;
 <--->
