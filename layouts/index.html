@@ -23,17 +23,5 @@
             </div>
         </div>
     </div>
-
-    <!-- Articles -->
-    <div class="article row">
-        <h3>As minhas últimas publicações</h3>
-        <div class="articles row row-cols-1 row-cols-lg-3">
-            {{ range first 3 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-            <div class="col mb-3">
-                {{ .Render "card" }}
-            </div>
-            {{ end }}
-        </div>
-    </div>
 </main>
 {{ end }}
