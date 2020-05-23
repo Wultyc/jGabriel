@@ -45,7 +45,7 @@ author = "authors"
 
 [params]
   author = "Jorge Gabriel Azevedo"
-  description = "Engenheiro de Sistemas <br> Consultor na Deloitte Portugal <br> Web developer"
+  description = "An artisan's apprentice"
   homepageImage = "/images/homepage-image.jpg"
   share = true
   showLanguageSwitcher = false
