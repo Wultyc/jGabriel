@@ -20,9 +20,15 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 <--->
 {{<figure src="/images/logos/postman.png" title="Postman" width="100px">}}  
 &nbsp;
+<--->
+{{<figure src="/images/logos/vs_code.png" title="VS Code" width="100px">}}  
+&nbsp;
 {{% /centered_row %}}
 
 {{% centered_row %}}
+{{<figure src="/images/logos/github.png" title="Github" width="100px">}}  
+&nbsp;
+<--->
 {{<figure src="/images/logos/php.png" title="PHP" width="100px">}}  
 &nbsp;
 <--->
@@ -37,16 +43,10 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 {{% /centered_row %}}
 
 {{% centered_row %}}
-{{<figure src="/images/logos/github.png" title="Github" width="100px">}}  
-&nbsp;
-<--->
-{{<figure src="/images/logos/vs_code.png" title="VS Code" width="100px">}}  
-&nbsp;
-<--->
 {{<figure src="/images/logos/centos.png" title="CentOS" width="100px">}}  
 &nbsp;
 <--->
-{{<figure src="/images/logos/ubuntu.png" title="Uubuntu" width="100px">}}  
+{{<figure src="/images/logos/ubuntu.png" title="Ubuntu" width="100px">}}  
 &nbsp;
 {{% /centered_row %}}
 
