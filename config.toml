@@ -36,11 +36,6 @@ theme = "hugo-theme-chunky-poster"
     name = "Notebook"
     url = "/article/"
     weight = 5
-#  [[menu.main]]
-#    identifier = "mytoolset"
-#    name = "My Tool Set"
-#    url = "/mytoolset/"
-#    weight = 0
 
 [taxonomies]
 category = "categories"
