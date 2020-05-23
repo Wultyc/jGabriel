@@ -1,6 +1,6 @@
 <div class="row">
     {{- range split .Inner "<--->" -}}
-    <div class="col-md">
+    <div class="col-md" style="text-align: center;">
         {{- . | markdownify }}
     </div>
     {{- end -}}
