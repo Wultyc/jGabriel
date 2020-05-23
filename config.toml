@@ -80,7 +80,7 @@ author = "authors"
     #keybase = "https://keybase.io/"
 
   [params.prismJS]
-    enable = true
+    enable = false
     theme = ""
 
   [params.commento]
