@@ -43,6 +43,9 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 {{% /centered_row %}}
 
 {{% centered_row %}}
+{{<figure src="/images/logos/docker.png" title="Docker" width="100px">}}  
+&nbsp;
+<--->
 {{<figure src="/images/logos/centos.png" title="CentOS" width="100px">}}  
 &nbsp;
 <--->
