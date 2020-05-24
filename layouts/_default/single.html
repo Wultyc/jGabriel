@@ -37,35 +37,8 @@
                         <div class="content" align="justify">
                             {{ $page.Content }}
                         </div>
-
-                        {{- with $page.Params.tags -}}
-                            <div class="tags my-3">
-                            {{- range . -}}
-                                <a class="badge badge-pill badge-light border mr-2" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
-                                    <i class="fas fa-tag mr-2"></i>{{ . }}
-                                </a>
-                            {{- end -}}
-                            </div>
-                        {{- end -}}
-
-                        {{ partial "sharer.html" . }}
                     </div>
                 </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        {{ template "_internal/disqus.html" . }}
-                    </div>
-                </div>
-
-                {{- if .Site.Params.commento.enable -}}
-                <div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <div id="commento"></div>
-                        <script src="{{ .Site.Params.commento.url }}"></script>
-                    </div>
-                </div>
-                {{- end -}}
             </article>
         </div>
     </div>
