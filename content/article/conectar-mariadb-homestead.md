@@ -3,7 +3,7 @@ title: "Conectar Servidor MariaDB instalado no Homestead a partir do Host"
 date: 2020-05-23T20:10:13Z
 images: ["mariadb.png"] # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
-tags: []
+tags: ["MariaDB","Homestead","conexão remota","DBeaver",]
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
 draft: false
