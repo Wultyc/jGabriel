@@ -1,7 +1,7 @@
 ---
 title: "Mock Api"
 date: 2020-05-17T00:20:53Z
-images: ["Mock-API.png"] # The image resolution should be 900x500 or a proportional resolution
+images: ["projects/Mock-API.png"] # The image resolution should be 900x500 or a proportional resolution
 categories: ["Laravel"]
 tags: ["Laravel", "APIs"]
 authors: ["Jorge Gabriel Azevedo"]
