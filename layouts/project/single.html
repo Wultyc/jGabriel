@@ -7,7 +7,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="meta text-muted mb-3">
-                            <p class="created text-muted text-uppercase font-weight-bold mb-1">{{ $page.Date.Format "02-01-2006" }}</p>
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">
+                                {{ $page.Date.Format "02-01-2006" }}</p>
                             <!--<span class="mr-2"><i class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>-->
                             <!--<span><i class="fas fa-clock mr-2"></i>{{ T "readingTime" $page.ReadingTime }}</span>-->
                         </div>
@@ -19,33 +20,48 @@
                 </div>
 
                 {{- with $page.Params.images -}}
-                    {{- $images := . -}}
-                    {{- with $page.Site.GetPage "section" "images" -}}
-                        {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
-                            {{- $image := .Fit "900x500" -}}
-                            <div class="row justify-content-center mb-3">
-                                <div class="col-lg-9">
-                                    <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block" alt="{{ $page.Title }}">
-                                </div>
-                            </div>
-                        {{- end -}}
-                    {{- end -}}
+                {{- $images := . -}}
+                {{- with $page.Site.GetPage "section" "images" -}}
+                {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
+                {{- $image := .Fit "900x500" -}}
+                <div class="row justify-content-center mb-3">
+                    <div class="col-lg-9">
+                        <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block"
+                            alt="{{ $page.Title }}">
+                    </div>
+                </div>
+                {{- end -}}
+                {{- end -}}
                 {{- end -}}
 
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
+
+                        <div class="my-3">
+                            {{ if $page.Params.repo }}
+                            <a class="badge badge-pill badge-light border mr-2" href="{{$page.Params.repo}}"
+                                target="_blank"><i class="fab fa-github"></i> Github</a>
+                            {{ end }}
+
+                            {{ if $page.Params.docs }}
+                            <a class="badge badge-pill badge-light border mr-2" href="{{$page.Params.docs}}"
+                                target="_blank"><i class="fas fa-book"></i> Documentação</a>
+                            {{ end }}
+                        </div>
+                        
                         <div class="content" align="justify">
                             {{ $page.Content }}
                         </div>
 
                         {{- with $page.Params.tags -}}
-                            <div class="tags my-3">
+                        <div class="tags my-3">
                             {{- range . -}}
-                                <a class="badge badge-pill badge-light border mr-2" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
-                                    <i class="fas fa-tag mr-2"></i>{{ . }}
-                                </a>
+                            <a class="badge badge-pill badge-light border mr-2"
+                                href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+                                <i class="fas fa-tag mr-2"></i>{{ . }}
+                            </a>
                             {{- end -}}
-                            </div>
+                        </div>
                         {{- end -}}
 
                         {{ partial "sharer.html" . }}
