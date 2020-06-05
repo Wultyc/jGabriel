@@ -59,7 +59,7 @@ features:
 ```
 Aqui é possível configurar todos os parâmetros do ambiente. Eu recomendo que consulte a [documentação oficial] para ficar a par de todas as possibilidades.
 Além de modificar este ficheiro, eu ainda customizo o ficheiro ```after.sh```. Neste ficheiro faço configurações não suportadas por padrão pelo Homestead, mas porque por baixo dos panos é uma máquina virtual com Ubuntu, podemos expandir as suas funcionalidades.  
-Atualmente a única modificação que eu faço é a instalação do HUGO para manter os meus sites estáticos. Confirme este artigo para saber mais sobre o HUGO [neste artigo]({{< relref "/article/configurar-hugo" >}}) aqui neste site.
+Atualmente a única modificação que eu faço é a instalação do HUGO para manter os meus sites estáticos. Confirme este artigo para saber mais sobre o HUGO [neste artigo]({{< relref "/article/criar-site-hugo" >}}) aqui neste site.
 
 ### Algumas considerações sobre o Homestead
 O Homestead é um ambiente de desenvolvimento e devemos ter isso em atenção no momento de o utilizar. Ele deve poder ser descartado sem que a sua aplicação seja afetada por isso. Inclusivamente, a atualização da VM depende da destruição da antiga e criação de uma nova com a imagem da versão e as configurações. Sim é possível utilizar esta VM para servir as aplicações, mas por não ter sido configurada para o efeito, poderá comprometer a segurança da aplicação.  
