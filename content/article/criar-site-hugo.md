@@ -186,6 +186,9 @@ $ hugo new post/my-new-post.md
 ```
 E será criado um ficheiro ```my-new-post.md``` dentro de ```content/post```. Para criar um projeto, basta mudar “post” por “project”.
 
+### Publicando o site
+Para ver o procedimento para publicar o site basta seguir os passos que apresento [neste artigo]({{< relref "/article/deploy-website-netlify" >}}).
+
 ### Conclusão
 O HUGO é uma plataforma excecional para construir um site estático, abstraindo muito daquilo que é a parte do HTML/CSS/JS deixando apenas ao utilizador a necessidade de trabalhar com ficheiros markdown.
 Este artigo serviu apenas para demostrar um pouco daquilo que o HUGO é capaz, mas em https://gohugo.io/documentation/ têm acesso a todas as funcionalidade que a plataforma oferece.
