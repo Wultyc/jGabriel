@@ -3,7 +3,7 @@ title: "Criar um site com o Hugo"
 date: 2020-04-30T22:30:30Z
 images: ["configurar-hugo/00.jpg"]
 categories: ["How to"]
-tags: ["HUGO","Go Hugo","gohugo.io","criação de sites","site estático"]
+tags: ["JAMStack", "HUGO","Go Hugo","gohugo.io","criação de sites","site estático"]
 authors: ["Jorge Gabriel Azevedo"]
 sources: ["https://gohugo.io/","https://github.com/puresyntax71/hugo-theme-chunky-poster"]
 draft: false
