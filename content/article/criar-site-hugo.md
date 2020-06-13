@@ -1,7 +1,7 @@
 ---
 title: "Criar um site com o Hugo"
 date: 2020-04-30T22:30:30Z
-images: ["configurar-hugo/00.jpg"]
+images: ["articles/configurar-hugo/00.jpg"]
 categories: ["How to"]
 tags: ["JAMStack", "HUGO","Go Hugo","gohugo.io","criação de sites","site estático"]
 authors: ["Jorge Gabriel Azevedo"]
@@ -27,13 +27,13 @@ Para criar um projeto com o HUGO basta abrir o terminal e executar o seguinte co
 $ hugo new site
 ```
 A mensagem no terminal deverá ser semelhante à seguinte.
-{{< figure src="/images/configurar-hugo/01.jpg" >}}
+{{< figure src="/images/articles/configurar-hugo/01.jpg" >}}
 Para ver o site, podemos utilizar o servidor embutido que o HUGO carrega consigo. Para isso basta executar o seguinte comando na pasta raiz do projeto.
 ```bash
 $ hugo server --bind "0.0.0.0"
 ```
 No meu caso, como estou a executar o HUGO dentro de uma VM, necessito utilizar o argumento *–bind* com o valor *“0.0.0.0”* para poder aceder ao site pela minha máquina física. O resultado deverá ser algo similar ao da seguinte imagem.
-{{< figure src="/images/configurar-hugo/02.jpg" >}}
+{{< figure src="/images/articles/configurar-hugo/02.jpg" >}}
 Tratando-se ainda de um projeto vazio, não é de espantar que o resultado seja uma página em branco.
 
 ### Instalação do tema
@@ -60,7 +60,7 @@ $ cp -r themes/hugo-theme-chunky-poster/exampleSite/content/* ./content/
 $ cp -r themes/hugo-theme-chunky-poster/exampleSite/static/* ./static/
 ```
 Finalizado este processo, re-inciando o servidor e acedendo ao site o resultado será o seguinte.
-{{< figure src="/images/configurar-hugo/03.jpg" >}}
+{{< figure src="/images/articles/configurar-hugo/03.jpg" >}}
 
 ### Personalizando o site
 Chegada a esta fase o céu é o limite. Tudo pode ser modificado e vamos ver a seguir alguns exemplos.

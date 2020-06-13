@@ -1,7 +1,7 @@
 ---
 title: "Deploy website para netlify"
 date: 2020-06-05T23:10:07Z
-images: [netlify.jpg"] # The image resolution should be 900x500 or a proportional resolution
+images: ["articles/netlify.jpg"] # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
 tags: ["Netlify", "JAMStack", "HUGO"]
 authors: ["Jorge Gabriel Azevedo"]
@@ -20,7 +20,7 @@ Sim, é possível fazer um procedimento manual, fazendo o upload de um zip com o
 O site que vamos fazer deploy é o seguinte.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/0.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/0.png">}}
 </div>
 
 Como podem ver, o endereço é o da minha máquina virtual de desenvolvimento.
@@ -29,25 +29,25 @@ Como podem ver, o endereço é o da minha máquina virtual de desenvolvimento.
 Primeiro acedemos ao site do Netlify, [www.netlify.com](https://www.netlify.com) e criamos uma conta. Para este caso a conta gratuita serve, mas para sites com um volume de tráfego maior, pode ser necessário um plano pago. Criada a conta e a equipa, vamos começar a criação do site. Primeiro carregamos no botão “New site from git”.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/1.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/1.png">}}
 </div>
 
 Neste momento é apresentada uma breve explicação do motivo pelo qual é sugerido o git e são dadas a três opções de serviços suportados: Github, GitLab e Bitbucket. Eu vou escolher Github, mas a decisão é de quem vai publicar o site onde pretende alojar o código.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/1-1.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/1-1.png">}}
 </div>
 
 De seguida aparece uma nova janela para fazer login no Github.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/2.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/2.png">}}
 </div>
 
 Depois de fazer login, vão aparecer alguns passos de configuração de privacidade. No meu caso eu optei por apenas mostrar o repositório do qual pretendo fazer deploy
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/3.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/3.png">}}
 </div>
 
 Depois de selecionado o repositório, vai aparecer uma página com a equipa, a branch do repositório que pretendemos associar, e algumas definições de build. As opções de build eu deixo em branco porque na raiz do meu repositório eu criei um ficheiro ```netlify.toml``` com todas estas informações.
@@ -85,26 +85,26 @@ HUGO_ENABLEGITINFO = "true"
 ```
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/4.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/4.png">}}
 </div>
 
 Depois disto o deploy do site vai começar de imediato. Podemos ver na secção “Production deploys” que o deploy já começou.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/4-1.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/4-1.png">}}
 </div>
 
 Não deverá demorar muito até aparecer uma mensagem a verde “Published” no lugar do “Enqueued”. Neste momento podemos ver que nos foi atribuído um URL aleatório, mas mais à frente vamos mudar-lo.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/5.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/5.png">}}
 </div>
 
 Carregando em “Production deploys” temos uma lista dos deploys que já foram feitos. Se carregarmos em algum em específico é possível ver os logs desse deploy. Isto é principalmente útil quando ocorre algum erro para se poder fazer debug.  
 Voltando à página onde estávamos, vamos seguir o guia que no é apresentado. Se carregarmos no “2” vamos ser levado para uma página para definir um domínio próprio. Neste caso eu não tenho nenhum e quero manter o domínio da netlify, mas simplesmente alterar “sleepy-galileo-b616f9” para “deploy-netlify-example”. Para isso carregamos no botão “Domain Settings”. Na nova página que se abre carregamos no notão “Options” do nosso subdomínio netlify e em seguida “Edit site name”
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/6.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/6.png">}}
 </div>
 
 Inserimos o URL que queremos e gravamos
@@ -113,13 +113,13 @@ Inserimos o URL que queremos e gravamos
 Voltando para a homepage já podemos ver o nosso subdomínio definido. 
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/7.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/7.png">}}
 </div>
 
 Carregando nele somos levados para o nosso site publicado. Como podem ver o URL na barra de endereço é aquele que definimos nos passos anteriores.
 
 <div align="center">
-    {{<figure src="/images/deploy-website-netlify/8.png">}}
+    {{<figure src="/images/articles/deploy-website-netlify/8.png">}}
 </div>
 
 Caso queiramos atualizar alguma coisa no site basta atualizar na versão local, fazer push para o repositório remoto que o netlify vai fazer o deploy da nova versão automaticamente.

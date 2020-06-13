@@ -1,7 +1,7 @@
 ---
 title: "Ambiente Desenvolvimento Homestead"
 date: 2020-05-03T12:02:26Z
-images: ["laravel.png"]
+images: ["articles/laravel.png"]
 categories: ["How to", "Artigo Pessoal"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]

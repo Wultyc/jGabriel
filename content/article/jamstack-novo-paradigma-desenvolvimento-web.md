@@ -1,7 +1,7 @@
 ---
 title: "JAMStack: o novo paradigma do desenvolvimento web"
 date: 2020-06-06T17:41:48Z
-images: ["jamstack.jpg"] # The image resolution should be 900x500 or a proportional resolution
+images: ["articles/jamstack.jpg"] # The image resolution should be 900x500 or a proportional resolution
 categories: ["Conceito"]
 tags: ["JAMStack", "CDN", "Desenvolvimento Web", "Netlify", "HUGO", "Gatsby"]
 authors: ["Jorge Gabriel Azevedo"]
@@ -13,7 +13,7 @@ JAMStack é uma nova abordagem no desenvolvimento web que permite a disponibiliz
 Nos primórdios da internet o modo de disponibilizar um website era essencialmente escrever vários ficheiros HTML, um para cada página do site. Era sem dúvida um processo ineficiente e com o passar do tempo foram aparecendo soluções para tornar este processo mais dinâmico desde a partilha de código comum às páginas (p.e. estilos) até a gerar código HTML dinamicamente. E para auxiliar nesse dinamismo, ainda se incluiu as bases de dados para armazenar os dados de uma forma mais organizada e o resultado final é o que vemos na imagem abaixo.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/0.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/0.jpg">}}
 </div>
 
 >Neste diagrama usamos o termo servidor sendo referente ao software que está a ser executado e não necessariamente a máquinas físicas ou virtuais.
@@ -21,13 +21,13 @@ Nos primórdios da internet o modo de disponibilizar um website era essencialmen
 Em teoria este sistema é o ideal, mas no caso de um site que tenha muitos acessos diários (um site de notícias por exemplo), o servidor de base de dados pode-se tornar um problema. Milhares de acessos simultâneos podem fazer com que o sistema vá abaixo e por consequência o site fique indisponível. A solução poderia partir trocar o hardware atual por hardware mais potente. Esta ação é chamada de escalar verticalmente o serviço e é normalmente o método mais caro pois envolve adquirir novos componentes mais caros sem que na maioria dos casos se aproveite os componentes anteriores. Mas sabendo à partida que a base de dados estava na maioria das vezes a servir exatamente o mesmo resultado, uma solução mais eficiente passaria por criar uma cache da resposta da base de dados e atualizar essa cache periodicamente.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/1.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/1.jpg">}}
 </div>
 
 Com o aumento do número de visitas o problema pode passar a estar no servidor web, o servidor de cache ou até os dois podem deixar de ter capacidade de lidar com este número elevado de visitas diárias. Mais uma vez escalar verticalmente é uma opção, mas surgiu então uma outra opção, escalar horizontalmente. Neste processo, em vez de adquirir hardware novo para substituir o antigo, adquire-se hardware (normalmente da mesma gama do atual), o hardware novo serve para dividir o trabalho com a/as máquinas existentes. Esta é uma solução mais viável pois o número de pedidos que poderão ser processados será o maior sem que o investimento seja tão avultado. Caso necessário, basta adicionar mais hardware paralelamente para aumentar a capacidade. Normalmente nesta abordagem surge uma nova entidade no sistema, o balanceador de carga que como o próprio nome indica vai distribuir o trabalho pelas máquinas existentes.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/2.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/2.jpg">}}
 </div>
 
 Nesta fase os problemas podem ser vários: voltar a ter demasiados pedidos à base de dados, o balanceador de carga atingir o seu limite, consumo energético, manutenção (física e digital) de toda esta infraestrutura, contratação de profissionais capacitados para gerir todas estas máquinas etc…
@@ -55,7 +55,7 @@ A solução que construída foi-se tornando cada vez mais complexa, mas há uma 
 JAM de JAMStack significa: **J**avaScript, **A**PIs e **M**arkup. E basicamente isto descreve a abordagem a que me referia há pouco. Ficheiros HTML, CSS e JavaScript estáticos que são servidos aos clientes. E apesar de ser necessário um servidor na mesma, este tem uma carga de trabalho muito mais reduzida pois não tem de consultar base de dados, renderizar páginas, etc… que permite aumentar o número de pedidos respondidos que cada máquina consegue comportar.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/3.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/3.jpg">}}
 </div>
 
 Começar um projeto usando a filosofia JAMStack é bastante simples com ajuda de ferramentas como HUGO ou o Gatsby entre muitos outros. [Neste artigo]({{< relref "/article/criar-site-hugo" >}}) abordo o uso do HUGO para a criação de sites estáticos.
@@ -64,7 +64,7 @@ Começar um projeto usando a filosofia JAMStack é bastante simples com ajuda de
 Vamos pensar agora que queremos criar uma rede de alta redundância para este site. Pelo facto destes servidores serem muito mais baratos quando comparados com os servidores tradicionais (refiro-me ao custo por request), criar uma grande rede para a distribuição destes sites estáticos torna-se muito barato. E é com base nisso que algumas empresas, como a Netlify, disponibiliza o serviço gratuito bastante generoso e suficiente para comportar sites de tamanho médio. Plataformas como esta são chamadas de Content Delivery Network ou simplesmente CDN e servem exclusivamente para alojar ficheiros estáticos para sere usados em sites, como por exemplo, scripts JS, ficheiros CSS e conteúdo media dos sites. Este meio de partilha era a estratégia usada antes para a distribuição de componentes estáticos e normalmente mais pesados em servidores mais próximos dos clientes e assim diminuir o tempo que a página demora a carregar. CDNs como estas podem ter milhares de nós por todo o mudo.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/4.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/4.jpg">}}
 </div>
 
 ### Site estático, mas nem tanto
@@ -73,7 +73,7 @@ Neste momento pode surgir uma questão: trocar o meu site atual por um estático
 2.	Manter o conteúdo todo na CDN e usar uma máquina própria que vai atualizar o conteúdo da CDN periodicamente.
 
 <div align="center">
-    {{<figure src="/images/jamstack-novo-paradigma-desenvolvimento-web/5.jpg">}}
+    {{<figure src="/images/articles/jamstack-novo-paradigma-desenvolvimento-web/5.jpg">}}
 </div>
 
 Esta terá de ser uma decisão da própria equipa que terá de avaliar os prós e contras. Mesmo que se opte pela primeira alternativa, a carga provocada nos servidores próprios já não será tão alta pois não existe a necessidade de renderizar as páginas HTML. Além disso nada impede que haja uma solução híbrida. Voltando ao exemplo do site de notícias, as publicações seriam guardadas estaticamente na CDN, mas a área do utilizador, onde este gere a sua subscrição da newsletter usaria uma API que comunica diretamente com os servidores da empresa Assim reduzimos a carga da infraestrutura original sem ter de renunciar a tudo que já tinha sido feito. É tudo uma questão de analise sobre qual é a melhor maneira de aproveitar os recursos disponíveis.

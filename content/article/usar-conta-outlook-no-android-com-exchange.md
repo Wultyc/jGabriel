@@ -1,7 +1,7 @@
 ---
 title: "Usar conta Outlook no Android com Microsoft Exchange"
 date: 2020-05-09T23:07:36Z
-images: ["microsoft-exchange.png"] # The image resolution should be 900x500 or a proportional resolution
+images: ["articles/microsoft-exchange.png"] # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
 tags: []
 authors: ["Jorge Gabriel Azevedo"]
@@ -20,11 +20,11 @@ A app do Gmail para Android consegue ter acesso direto às contas de email guard
 ## Configurando o Android
 O processo é até bastante simples. Primeiro vamos ter de inciar o processo de criação de uma nova conta. Isto pode ser feito nas definições do sistema ou na app do Gmail como eu fiz.
 <div align="center">
-    {{<figure src="/images/ms_exchange-on-android/01.jpg" width="200">}}
+    {{<figure src="/images/articles/ms_exchange-on-android/01.jpg" width="200">}}
 </div>
 Selecionamos a opção adicionar uma conta, e a seguir escolhemos a opção “Exchange e Office 365”
 <div align="center">
-    {{<figure src="/images/ms_exchange-on-android/02.jpg" width="200">}}
+    {{<figure src="/images/articles/ms_exchange-on-android/02.jpg" width="200">}}
 </div>
 Introduzimos o email, mas em vez de carregar no botão “Seguinte”, selecionamos a opção “Configurar Manualmente”. Se carregarmos em “Seguinte”, vamos receber o erro de não ser uma conta Office365 e a sugestão para usar a opção “Outlook, Hotmail e Live” que usa o protocolo IMAP.  
 Nas configurações manuais, vamos preenchei com os dados da nossa conta. Preenchemos o campo email, com o email da conta que queremos sincronizar bem como o campo password. No campo “Domínio\Nome de Utilizador” é novamente o email. O servidor e porta são os seguintes:
@@ -36,18 +36,18 @@ Tipo de segurança: SSL/TLS
 ```
 
 <div align="center">
-    {{<figure src="/images/ms_exchange-on-android/03.jpg" width="200">}}
+    {{<figure src="/images/articles/ms_exchange-on-android/03.jpg" width="200">}}
 </div>
 
 Não deixa de ser curioso que o servidor seja do Office365.  
 Carregamos em “Seguinte” e o processo deve seguir sem demais problemas. 
 <div align="center">
-    {{<figure src="/images/ms_exchange-on-android/04.jpg" width="200">}}
+    {{<figure src="/images/articles/ms_exchange-on-android/04.jpg" width="200">}}
 </div>
 
 No final a conta estará registada no dispositivo e podemos verificar que esta a sincronizar email, contactos e calendário.
 <div align="center">
-    {{<figure src="/images/ms_exchange-on-android/05.jpg" width="200">}}
+    {{<figure src="/images/articles/ms_exchange-on-android/05.jpg" width="200">}}
 </div>
 
 ## Concluindo
