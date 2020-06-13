@@ -12,4 +12,4 @@ draft: true
 <!--more-->
 O projeto Butterfly foi um projeto desenvolvido em duas fases durante o primeiro semestre do segundo ano da licenciatura. A primeira fase ocorreu na unidade corricular de Investigação Operacional e consistiu em desenvolver um modelo matemático que calcula-se a melhor rota para um AGV fazer recolhas de produtos num armazém e implementar esse modelo no Excel com auxilio do Solver. A segunda fase decorreu durante a unidade corricular Laboratórios de Sistemas e consistiu em construir uma aplicação java para gerir um armazém e que com recurso a uma implementação mesmo modelo matemático em AMPL aplicasse as alterações definidas pela resposta do modelo na estrutura interna de dados da aplicação.
 
-Para mais detalhes, visitem a [documentação](.docs) do projeto e o repositório no [Github](.repo).
+Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).

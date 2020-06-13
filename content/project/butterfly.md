@@ -12,7 +12,7 @@ draft: false
 <!--more-->
 O projeto Butterfly foi um projeto desenvolvido durante o segundo semestre do primeiro ano da licenciatura na unidade curricular de Modelação e programação. Consistiu numa aplicação em java para auxiliar os diretores de curso a gerir os projetos de estágio.
 
-Para mais detalhes, visitem a [documentação](.docs) do projeto e o repositório no [Github](.repo).
+Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).
 
 ### Sobre o nome do projeto
 O nome Project Butterfly foi escolhido pelos alunos, e pretende exprimir o simbolismo que um estágio tem para os estudantes que inicialmente passam por todo este processo de aprendizagem (larva da borboleta) que futuramente se vai transformar em engenheiros (borboleta) e passarão por um processo de adaptação a sua nova realidade (metamorfose).

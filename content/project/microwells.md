@@ -17,4 +17,4 @@ Durante o projeto foram construídos os seguintes elementos:
 - Microwells Box: interface de comunicação entre o medidor e o serviço cloud.
 - Microwells Cloud: Serviço de armazenamento de registos online.
 
-Para mais detalhes, visitem a [documentação](.docs) do projeto e o repositório no [Github](.repo).
+Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).
