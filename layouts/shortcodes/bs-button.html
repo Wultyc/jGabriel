@@ -1,0 +1,11 @@
+{{ if .Get "href" }}
+    <a href='{{.Get "href"}}' {{- if .Get "target"}} target='{{- .Get "target" -}}' {{- end }}>
+{{ end }}
+
+<button type="button" class='btn {{.Get "class" }}'>
+    {{.Inner}}
+</button>
+
+{{ if .Get "href" }}
+    </a>
+{{ end }}
