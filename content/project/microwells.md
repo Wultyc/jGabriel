@@ -7,7 +7,7 @@ tags: ["Licenciatura", "3º Ano 1º Semestre", "Laboratórios de Sistemas 2", "J
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/Wultyc/ISEP_1819_3A1S_LSIS2"
 docs: "https://docs.jgabriel.eu/docs/projetos-academicos/licenciatura/microwells/"
-draft: true
+draft: false
 ---
 <!--more-->
 O projeto Microwells foi um projeto desenvolvido durante o primeiro semestre do terceiro ano da licenciatura na unidade curricular de Laboratórios de Sistemas 2. Consistia num aparelho capaz de comunicar com vários medidores de sinais vitais e enviar essa informação para um serviço de armazenamento online.

@@ -7,7 +7,7 @@ tags: ["Licenciatura", "3º Ano 2º Semestre", "Projeto Estágio", "PHP", "Larav
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/Wultyc/Relatorio-PROES-NaturalLife/blob/master/Relatorio_PROES.pdf"
 docs: "https://docs.jgabriel.eu/docs/projetos-academicos/licenciatura/projeto-de-estagio/"
-draft: true
+draft: false
 ---
 <!--more-->
 O projeto de estágio foi desenvolvido na empresa Natural Life, lda e consistiu em sustituir a aplicação principal de registo de informação de produção por uma nova desenvolvida com tecnologias web.
