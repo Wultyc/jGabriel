@@ -34,7 +34,7 @@ theme = "hugo-theme-chunky-poster"
   [[menu.main]]
     identifier = "notebook"
     name = "Notebook"
-    url = "/article/"
+    url = "https://notebook.jgabriel.eu"
     weight = 5
 
 [taxonomies]
