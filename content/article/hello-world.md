@@ -8,6 +8,7 @@ authors: ["Jorge Gabriel Azevedo"]
 sources: []
 draft: false
 ---
+<!--more-->
 <script type="text/javascript">
     window.location = "http://notebook.jgabriel.eu/posts/hello-world/";
 </script>
