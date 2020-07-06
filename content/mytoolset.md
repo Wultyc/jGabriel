@@ -58,3 +58,18 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 {{<figure src="/images/certification_badges/MC_Developer_Level1_bagde.png" width="50%">}}
 MuleSoft Certified Developer - Level 1
 {{% /centered_row %}}
+
+### Diplomas
+{{% centered_row %}}
+{{<figure src="/images/certificates/mcd-l1.png" title="Mulesoft Developer" width="250px">}}  
+&nbsp;
+<--->
+{{<figure src="/images/certificates/cc_scrum_the_basics.png" title="Scrum The Basics" width="250px">}}  
+&nbsp;
+<--->
+{{<figure src="/images/certificates/cc_vpe.png" title="Vlocity Platform Essencials" width="250px">}}  
+&nbsp;
+<--->
+{{<figure src="/images/certificates/cc_vom.png" title="Vlocity Order Management" width="250px">}}  
+&nbsp;
+{{% /centered_row %}}
