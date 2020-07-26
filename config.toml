@@ -2,13 +2,24 @@ baseURL = "https://jgabriel.eu"
 title = "Jorge Gabriel Azevedo"
 copyright = "Copyright © 2020, Jorge Gabriel Azevedo; all rights reserved."
 paginate = "6"
-languageCode = "pt-pt"
-DefaultContentLanguage = "pt-pt"
+languageCode = "en"
+DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-167181822-1"
 DisqusShortname = ""
 theme = "hugo-theme-chunky-poster"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        languageCode = "en-us"
+        url = "/en/"
+
+    [languages.pt]
+        languageName = "Portuguese"
+        languageCode = "pt-pt"
+        url = "/pt/"
 
 [menu]
   [[menu.main]]
