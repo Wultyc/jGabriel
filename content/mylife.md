@@ -6,21 +6,35 @@ aliases: ["about-me","my-life","Percurso profissional e academico"]
 author: "Jorge Gabriel Azevedo"
 ---
 
-### Percurso Profissional
-* [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade  
-Desenvolvimento de manutenção de sistema de integração usando Mulesoft.  
-Também já participei em outros projetos envolvendo Salesforce.
+{{% timeline title="My Life" %}}
 
-* [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019  
-Construção de uma aplicação em PHP usando o framework Laravel para o registo das informações de recolha de matéria prima e produção da empresa.
+#### Promotion in Deloitte Portugal
+###### January 2020
+Promoted to Junior Programmer and join Integration Services team.
 
-### Percurso Académico
-* Licenciatura em Engenharia de sistemas, no ISEP, entre os anos 2016 e 2020.
-* Membro do Núcleo de Engenharia de Sistemas ([NES-ISEP](http://nes-isep.pt))
-    * Vice Presidente: 2018/2019
-    * Comunicação e Imagem: 2017/2018  
-    Enquanto membro do nucleo participei:
-        * Organização da 3ª, 4ª e 5ª Jornadas de Enegnharia de Sistema
-        * Organização da 1ª e 2ª Edição do Mass Training de Suporte Básico de Vida
-        * Organização da 1ª Edição do Workshop de LaTeX
-        * Fundação do núcleo
+<--->
+
+#### Graduation in System Engineering
+###### January 2020
+Graduation Degree in System Engineering at Instituto Superior de Engenharia do Porto.  
+<sup>During the graduation I was founder member of *Núcleo de Estudantes de Sistemas  ([NES-ISEP](http://nes-isep.pt))* and colaborante in the organization of some events and workshops.</sup>
+
+<--->
+
+#### Deloitte Portugal 
+###### September 2019
+Join Deloitte Portugal as a Trainee to work with Salesforce team.
+
+<--->
+
+#### Natural Life, lda (internship)
+###### April 2019 to July 2019
+Development of an application to manage the entire production process of a factory.
+
+<--->
+
+#### Ivo Azevedo - Papelaria Amanhecer
+###### August 2015 to September 2015
+Development of an application to manage equipment left for repair.
+
+{{% /timeline %}}
