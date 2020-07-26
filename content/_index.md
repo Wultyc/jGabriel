@@ -5,8 +5,10 @@ date: "2020-04-25"
 aliases: ["homepage","home","jGabriel"]
 author: "Jorge Gabriel Azevedo"
 ---
-Nasci no Porto em 1997. O meu primeiro contacto com o desenvolvimento web foi com 14 anos e com 15 tive o meu primeiro contacto com Linux. Licenciei-me em Engenharia de Sistemas no início 2020, três meses depois de começar a trabalhar como programador na Deloitte Portugal.
+I born in Oporto in 1997. The first time I made my first web at at 14 years old and with 15 I start using linux. I graduate in System Engineering at Instituto Superior de Engenharia do Porto in January 2020, three months after joining Deloitte Portugal on September 2019.
 
+<!--
 {{< bs-button class="btn-outline-secondary" href="/cv.pdf" target="_blank">}}
 Download CV
 {{< /bs-button >}}
+-->
