@@ -6,8 +6,8 @@ aliases = ["about-us","about-hugo","contact"]
 author = "Hugo Authors"
 +++
 
-### Ferramentas do meu dia-a-dia
-Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbito profissional
+### Tools i use in my daily use
+These are the softwares I use in my daily for professional or personal projects
 {{% centered_row %}}
 {{<figure src="/images/logos/git.png" title="Git" width="100px">}}  
 &nbsp;
@@ -53,23 +53,19 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 &nbsp;
 {{% /centered_row %}}
 
-### Certificações
+### Certifications
+These are the certifications I have
 {{% centered_row %}}
 {{<figure src="/images/certification_badges/MC_Developer_Level1_bagde.png" width="50%">}}
 MuleSoft Certified Developer - Level 1
 {{% /centered_row %}}
 
-### Diplomas
+### Certificates of completion
+These are the certifications of completion I got from my personal training.
 {{% centered_row %}}
 {{<figure src="/images/certificates/mcd-l1.png" title="Mulesoft Developer" width="250px">}}  
 &nbsp;
 <--->
 {{<figure src="/images/certificates/cc_scrum_the_basics.png" title="Scrum The Basics" width="250px">}}  
-&nbsp;
-<--->
-{{<figure src="/images/certificates/cc_vpe.png" title="Vlocity Platform Essencials" width="250px">}}  
-&nbsp;
-<--->
-{{<figure src="/images/certificates/cc_vom.png" title="Vlocity Order Management" width="250px">}}  
 &nbsp;
 {{% /centered_row %}}
