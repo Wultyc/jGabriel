@@ -14,4 +14,4 @@ The internship project was developed at the company Natural Life, lda and consis
 
 The new application was built using PHP with the Laravel framework with a Microsoft SQL Server database as the backend.
 
-For more details, visit the project's [documentation] ({{<param docs>}}) or the [report] ({{<param repo>}}).
+For more details, visit the project's [documentation]({{<param docs>}}) and the repository on [Github]({{<param repo>}}).

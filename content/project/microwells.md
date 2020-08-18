@@ -17,4 +17,4 @@ During the project the following elements were built:
 - Microwells Box: communication interface between the meter and the cloud service.
 - Microwells Cloud: Online record storage service.
 
-For more details, visit the project's [documentation] ({{<param docs>}}) and the repository on [Github] ({{<param repo>}}).
+For more details, visit the project's [documentation]({{<param docs>}}) and the repository on [Github]({{<param repo>}}).
