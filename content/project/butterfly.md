@@ -6,7 +6,7 @@ categories: ["Projeto Académico", "Licenciatura"]
 tags: ["Licenciatura", "1º Ano 2º Semestre", "Modelação e Programação", "Java"]
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/Wultyc/ISEP_1617_1A2S_MOPRO"
-docs: "https://docs.jgabriel.eu/docs/projetos-academicos/licenciatura/butterfly/"
+docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/butterfly/"
 draft: false
 ---
 <!--more-->

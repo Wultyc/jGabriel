@@ -6,7 +6,7 @@ categories: ["Projeto Académico", "Licenciatura"]
 tags: ["Licenciatura", "3º Ano 1º Semestre", "Laboratórios de Sistemas 2", "Java", "PHP", "Laravel", "MariaDB", "Arduino"]
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/Wultyc/ISEP_1819_3A1S_LSIS2"
-docs: "https://docs.jgabriel.eu/docs/projetos-academicos/licenciatura/microwells/"
+docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/microwells/"
 draft: false
 ---
 <!--more-->

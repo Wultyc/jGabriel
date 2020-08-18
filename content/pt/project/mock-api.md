@@ -6,7 +6,7 @@ categories: ["Laravel"]
 tags: ["Laravel", "APIs"]
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/wultyc/mock-api"
-docs: "https://docs.jgabriel.eu/docs/projetos-pessoais/mock-api/"
+docs: "https://notebook.jgabriel.eu/docs/personal-projects/mock-api/"
 draft: false
 ---
 Serviço de API Mocking simples feito em Laravel.

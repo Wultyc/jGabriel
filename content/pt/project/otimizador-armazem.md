@@ -6,7 +6,7 @@ categories: ["Projeto Académico", "Licenciatura"]
 tags: ["Licenciatura", "2º Ano 1º Semestre", "Investigação Operacional", "Laboratórios de Engenharia 3", "Java", "AMPL"]
 authors: ["Jorge Gabriel Azevedo"]
 repo: "https://github.com/Wultyc/ISEP_1718_2A1S_LENG3"
-docs: "https://docs.jgabriel.eu/docs/projetos-academicos/licenciatura/otimizador-armazem/"
+docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/otimizador-armazem/"
 draft: false
 ---
 <!--more-->
