@@ -61,7 +61,7 @@ MuleSoft Certified Developer - Level 1
 {{% /centered_row %}}
 
 ### Certificates of completion
-These are the certifications of completion I got from my personal training.
+These are the certificates of completion I got from my personal training.
 {{% centered_row %}}
 {{<figure src="/images/certificates/mcd-l1.png" title="Mulesoft Developer" width="250px">}}  
 &nbsp;
