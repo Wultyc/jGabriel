@@ -6,21 +6,35 @@ aliases: ["about-me","my-life","Percurso profissional e academico"]
 author: "Jorge Gabriel Azevedo"
 ---
 
-### Percurso Profissional
-* [Deloitte Portugal](http://deloitte.pt): Setembro 2019 - Atualidade  
-Desenvolvimento de manutenção de sistema de integração usando Mulesoft.  
-Também já participei em outros projetos envolvendo Salesforce.
+{{% timeline title="My Life" %}}
 
-* [Natural Life, lda](http://naturallife.pt): Abril 2019 - Julho 2019  
-Construção de uma aplicação em PHP usando o framework Laravel para o registo das informações de recolha de matéria prima e produção da empresa.
+#### Promotion in Deloitte Portugal
+###### Janeiro 2020
+Promovido a Junior Programmer e integro a equipa de Integration Services.
 
-### Percurso Académico
-* Licenciatura em Engenharia de sistemas, no ISEP, entre os anos 2016 e 2020.
-* Membro do Núcleo de Engenharia de Sistemas ([NES-ISEP](http://nes-isep.pt))
-    * Vice Presidente: 2018/2019
-    * Comunicação e Imagem: 2017/2018  
-    Enquanto membro do nucleo participei:
-        * Organização da 3ª, 4ª e 5ª Jornadas de Enegnharia de Sistema
-        * Organização da 1ª e 2ª Edição do Mass Training de Suporte Básico de Vida
-        * Organização da 1ª Edição do Workshop de LaTeX
-        * Fundação do núcleo
+<--->
+
+#### Licenciatura em Engenharia de Sistemas
+###### Janeiro 2020
+Licenciatura em Engenharia de Sistemas pelo Instituto Superior de Engenharia do Porto.  
+<sup> Durante a licenciatura fui membro fundador do *Núcleo de Estudantes de Sistemas ([NES-ISEP](http://nes-isep.pt))* e colaborante na organização de alguns eventos e workshops. </sup>
+
+<--->
+
+#### Deloitte Portugal 
+###### Setembro 2019
+Entro na Deloitte Portugal, como trainee a trabalhar na equipa de Salesforce
+
+<--->
+
+#### Natural Life, lda (estágio)
+###### Abril 2019 ate Julho 2019
+Desenvolvimento de uma aplicação para gerir o processo de produção de uma fábrica
+
+<--->
+
+#### Ivo Azevedo - Papelaria Amanhecer
+###### Agosto 2015 to Setembro 2015
+Desenvolvimento de uma aplicação para gerir equipamentos para reparação.
+
+{{% /timeline %}}
