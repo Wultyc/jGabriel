@@ -10,6 +10,6 @@ docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/otimi
 draft: false
 ---
 <!--more-->
-O projeto Butterfly foi um projeto desenvolvido em duas fases durante o primeiro semestre do segundo ano da licenciatura. A primeira fase ocorreu na unidade corricular de Investigação Operacional e consistiu em desenvolver um modelo matemático que calcula-se a melhor rota para um AGV fazer recolhas de produtos num armazém e implementar esse modelo no Excel com auxilio do Solver. A segunda fase decorreu durante a unidade corricular Laboratórios de Sistemas e consistiu em construir uma aplicação java para gerir um armazém e que com recurso a uma implementação mesmo modelo matemático em AMPL aplicasse as alterações definidas pela resposta do modelo na estrutura interna de dados da aplicação.
+The Warehouse Optimizer project was developed in two phases during the first semester of the second year of the degree. The first phase took place at the Operational Research corrective unit and consisted of developing a mathematical model that calculates the best route for an AGV to collect products from a warehouse and implement this model in Excel with the help of Solver. The second phase took place during the corrective unit Laboratórios de Sistemas and consisted of building a java application to manage a warehouse and using the same mathematical model in AMPL to apply the changes defined by the model's response in the internal data structure of the application.
 
-Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).
+For more details, visit the project's [documentation] ({{<param docs>}}) and the repository on [Github] ({{<param repo>}}).

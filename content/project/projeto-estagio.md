@@ -10,8 +10,8 @@ docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/proje
 draft: false
 ---
 <!--more-->
-O projeto de estágio foi desenvolvido na empresa Natural Life, lda e consistiu em substituir a aplicação principal de registo de informação de produção por uma nova desenvolvida com tecnologias web.
+The internship project was developed at the company Natural Life, lda and consisted of replacing the main application for recording production information with a new one developed with web technologies.
 
-A nova aplicação foi construida usando PHP com o framework Laravel com uma base de dados Microsoft SQL Server como backend.
+The new application was built using PHP with the Laravel framework with a Microsoft SQL Server database as the backend.
 
-Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto ou o [relatório]({{< param repo >}}).
+For more details, visit the project's [documentation] ({{<param docs>}}) or the [report] ({{<param repo>}}).

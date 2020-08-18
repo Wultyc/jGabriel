@@ -10,11 +10,11 @@ docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/micro
 draft: false
 ---
 <!--more-->
-O projeto Microwells foi um projeto desenvolvido durante o primeiro semestre do terceiro ano da licenciatura na unidade curricular de Laboratórios de Sistemas 2. Consistia num aparelho capaz de comunicar com vários medidores de sinais vitais e enviar essa informação para um serviço de armazenamento online.
+The Microwells project was a project developed during the first semester of the third year of the degree in the course of Systems Laboratories 2. It consisted of a device capable of communicating with several vital signs meters and sending that information to an online storage service.
 
-Durante o projeto foram construídos os seguintes elementos:
-- Medidor de pulso cardíco: implementação do circuito de medição e tratamento do sinal analogico em par com um microcontrolador (arduino) para comunicação dos dados via usb.
-- Microwells Box: interface de comunicação entre o medidor e o serviço cloud.
-- Microwells Cloud: Serviço de armazenamento de registos online.
+During the project the following elements were built:
+- Cardiac pulse meter: implementation of the measurement circuit and treatment of the analog signal in pair with a microcontroller (arduino) for data communication via usb.
+- Microwells Box: communication interface between the meter and the cloud service.
+- Microwells Cloud: Online record storage service.
 
-Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).
+For more details, visit the project's [documentation] ({{<param docs>}}) and the repository on [Github] ({{<param repo>}}).

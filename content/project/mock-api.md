@@ -9,10 +9,10 @@ repo: "https://github.com/wultyc/mock-api"
 docs: "https://notebook.jgabriel.eu/docs/personal-projects/mock-api/"
 draft: false
 ---
-Serviço de API Mocking simples feito em Laravel.
-<!--more-->
-Vivemos na era dos micro-serviços e por isso, nos programadores, temos de usar frequentemente APIs. Mas nem sempre é possivel consumir a API final durante o desenvolvimento do sistema. Não temos credenciais, o outro sistema ainda não disponibilizou a API, etc...  
-Uma maneira de contronar este problema é usando um serviço de Mocking. Eu desenvolvi um serviço deste tipo em Laravel, muito simples de utilizar.  
-Para conhecer um pouco melhor o projeto, visitem o [Repositório no Github](https://github.com/wultyc/mock-api) ou a [documentação](https://docs.jgabriel.eu/docs/projetos-pessoais/mock-api/) que escrevi para este projeto.  
-Por agora é tudo.  
-Fiquem bem.
+Simple API Mocking service made in Laravel.
+<! - more ->
+We live in the age of micro-services and therefore, in programmers, we have to use APIs frequently. But it is not always possible to consume the final API during the development of the system. We don't have credentials, the other system has not yet made the API available, etc ...
+One way to counter this problem is to use a Mocking service. I developed a service of this type in Laravel, very simple to use.
+To learn more about the project, visit the [Github Repository] (https://github.com/wultyc/mock-api) or the [documentation] (https://docs.jgabriel.eu/docs/projetos- personal / mock-api /) that I wrote for this project.
+
+For now, it's everything.

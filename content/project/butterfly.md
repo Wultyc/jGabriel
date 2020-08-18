@@ -10,9 +10,9 @@ docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/butte
 draft: false
 ---
 <!--more-->
-O projeto Butterfly foi um projeto desenvolvido durante o segundo semestre do primeiro ano da licenciatura na unidade curricular de Modelação e programação. Consistiu numa aplicação em java para auxiliar os diretores de curso a gerir os projetos de estágio.
+The Butterfly project was a project developed during the second semester of the first year of the degree in the curricular unit of Modeling and programming. It consisted of a java application to assist course directors in managing internship projects.
 
-Para mais detalhes, visitem a [documentação]({{< param docs >}}) do projeto e o repositório no [Github]({{< param repo >}}).
+For more details, visit the project's [documentation] ({{<param docs>}}) and the repository on [Github] ({{<param repo>}}).
 
-### Sobre o nome do projeto
-O nome Project Butterfly foi escolhido pelos alunos, e pretende exprimir o simbolismo que um estágio tem para os estudantes que inicialmente passam por todo este processo de aprendizagem (larva da borboleta) que futuramente se vai transformar em engenheiros (borboleta) e passarão por um processo de adaptação a sua nova realidade (metamorfose).
+### About the project name
+The name Project Butterfly was chosen by the students, and it intends to express the symbolism that an internship has for students who initially go through this whole learning process (butterfly larva) that in the future will become engineers (butterfly) and will go through a process adaptation to their new reality (metamorphosis).
