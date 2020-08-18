@@ -13,7 +13,7 @@ draft: false
 O projeto Microwells foi um projeto desenvolvido durante o primeiro semestre do terceiro ano da licenciatura na unidade curricular de Laboratórios de Sistemas 2. Consistia num aparelho capaz de comunicar com vários medidores de sinais vitais e enviar essa informação para um serviço de armazenamento online.
 
 Durante o projeto foram construídos os seguintes elementos:
-- Medidor de pulso cardíco: implementação do circuito de medição e tratamento do sinal analogico em par com um microcontrolador (arduino) para comunicação dos dados via usb.
+- Medidor de pulso cardíco: implementação do circuito de medição e tratamento do sinal analógico em par com um microcontrolador (arduino) para comunicação dos dados via usb.
 - Microwells Box: interface de comunicação entre o medidor e o serviço cloud.
 - Microwells Cloud: Serviço de armazenamento de registos online.
 
