@@ -54,12 +54,14 @@ Ferramentas que uso no meu dia-a-dia, tanto para projetos pessoais com no âmbit
 {{% /centered_row %}}
 
 ### Certificações
+Certificações que eu tenho
 {{% centered_row %}}
 {{<figure src="/images/certification_badges/MC_Developer_Level1_bagde.png" width="50%">}}
 MuleSoft Certified Developer - Level 1
 {{% /centered_row %}}
 
-### Diplomas
+### Certificados de conclusão
+Estes são os certificados de conclusão que recebi do meu treinamento pessoal.
 {{% centered_row %}}
 {{<figure src="/images/certificates/mcd-l1.png" title="Mulesoft Developer" width="250px">}}  
 &nbsp;
