@@ -47,6 +47,16 @@ experiences:
     responsibilities:
     - Implement and develop on Salesforce platform.
 - company:
+    name: Instituto Superior de Engenharia do Porto (ISEP)
+    url: "https://www.isep.ipp.pt"
+    overview: Student at ISEP.
+  positions:
+  - designation: Master in Informatics Engineering
+    start: September 2020
+  - designation: Degree in Systems Engineering
+    start: September 2016
+    end: January 2020
+- company:
     name: Natural Life, lda
     url: "https://www.naturallife.pt"
     overview: Development of an application to manage the entire production process of a factory.
