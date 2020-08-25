@@ -59,8 +59,8 @@ params:
     url: /#about
   - name: My Life
     url: /mylife
-  - name: My toolset
-    url: /mytoolset
+  - name: My Skills
+    url: /myskills
   - name: My Projects
     url: /projects
     
