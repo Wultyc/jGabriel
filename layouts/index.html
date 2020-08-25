@@ -1,27 +1,47 @@
-{{ define "main" }}
-<main class="homepage container py-6">
-    <!-- Hero -->
-    <div class="hero row">
-        <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
-            {{- with .Site.Params.homepageImage -}}
-            <div class="homepage-image">
-                <img src="{{ . | relURL }}" class="img-fluid">
-            </div>
-            {{- end -}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{- .Site.Title -}}</title>
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <!-- import common headers -->
+    {{- partial "header.html" . -}}
 
-            <h1 class="display-4">{{ .Site.Title }}</h1>
-            {{- with .Site.Params.description -}}
-            <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
-            <!-- <p>&nbsp;</p> -->
-            {{- end -}}
+    <!-- import index page specific headers -->
+    <link rel="stylesheet" href="/assets/css/sections/home.css" />
+    <link rel="stylesheet" href="/assets/css/sections/about.css" />
+    <link rel="stylesheet" href="/assets/css/sections/skills.css" />
+    <link rel="stylesheet" href="/assets/css/sections/experiences.css" />
+    <link rel="stylesheet" href="/assets/css/sections/projects.css" />
+    <link rel="stylesheet" href="/assets/css/sections/recent-posts.css" />
+    <link rel="stylesheet" href="/assets/css/sections/achievements.css" />
 
-            <!-- Home content -->
-            <div class="row">
-                <div class="col-lg-6" align="justify">
-                    {{.Content}}
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-{{ end }}
+    <!-- Add Google Analytics if enabled in configuration -->
+    {{ if .Site.GoogleAnalytics }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+  </head>
+  <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
+
+    <!--- NAVBAR ------------------------->
+    {{- partial "navigators/navbar.html" . -}}
+
+    <!--- ADD HOME SECTION ---------------->
+    {{- partial "sections/home.html" . -}}
+
+    <!--- ADD OPTIONAL SECTIONS ----------->
+	
+    {{ .Page.Content }}
+
+    <!--- ADD FOOTER ----------------------->
+    {{- partial "footer.html" . -}}
+
+    <!--- ADD COMMON SCRIPTS --------------->
+    {{ partial "scripts.html" . }}
+
+    <!--- ADD INDEX PAGE SPECIFIC SCRIPTS -->
+    <script src="/assets/js/itype.min.js"></script>
+    <script src="/assets/js/github-button.js"></script>
+    <script src="/assets/js/home.js"></script>
+    <script src="/assets/js/jquery.filterizr.min.js"></script>
+  </body>
+</html>

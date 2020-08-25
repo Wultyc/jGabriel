@@ -1,57 +1,59 @@
-<footer class="footer text-center bg-dark py-6">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <ul class="list-inline">
-                    {{ if .Site.Params.social.rss -}}
-                    <li class="list-inline-item">
-                        {{- with .Site.GetPage "" -}}
-                            {{- with .OutputFormats.Get "RSS" -}}
-                                <a href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" class="icons d-block">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            {{- end -}}
-                        {{- end -}}
-                    </li>
-                    {{- end -}}
-                    {{- if .Site.Params.social.email -}}
-                    <li class="list-inline-item">
-                        <a href="mailto:{{ .Site.Params.social.email }}" class="icons d-block">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- range $name, $path := .Site.Params.social -}}
-                        {{- if and $path (not (in (slice "rss" "email") $name)) -}}
-                        <li class="list-inline-item">
-                            <a href="{{ $path | safeURL }}" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fab fa-{{ $name }} fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        {{- end -}}
-                    {{- end }}
-                </ul>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navigation</h5>
+        <ul>
+          {{ range site.Params.SiteMenu }}
+          <li class="nav-item">
+            <a class="smooth-scroll" href="{{ .url }}">{{ .name }}</a>
+          </li>
+          {{ end }}
+          {{ range site.Params.ExternalMenu }}
+          <li class="nav-item">
+            <a class="smooth-scroll" href="{{ .url }}" {{if .newtab}}target="_blank" {{end}}>{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
 
-                <p class="text-muted">
-                    {{ if .Site.Copyright }}
-                        {{ .Site.Copyright | safeHTML }}
-                    {{ else }}
-                        Copyright &copy; {{ .Site.Title }} {{ now.Year }}
-                    {{ end }}
-                </p>
-
-                <p class="text-muted">
-                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
-                </p>
-            </div>
-        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h5>Contact Me</h5>
+        <ul>
+          {{ range $key,$value:=.Site.Params.author.contactInfo }}
+          <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
+          {{ end }}
+        </ul>
+        <h5>Find Me on the web</h5>
+        <ul class="social-link d-flex">
+          {{ range $key,$value:=.Site.Params.author.socialMedia }}
+          <a href="{{$value}}" target="_blank"><i class="fab fa-{{$key}}"></i></a>
+          {{ end }}
+        </ul>
+      </div>
+      {{ if .Site.Params.contactForm.enable }}
+      <div class="col-md-4 col-sm-12">
+        {{- partial "sections/contact-form.html" . -}}
+      </div>
+      {{ end }}
     </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-4">
+        <a id="theme" href="https://github.com/hossainemruz/toha" target="#">
+          <img src="/assets/images/inverted-logo.png">
+          Toha
+        </a>
+      </div>
+      <div class="col-md-4 text-center">{{ if .Site.Params.copyright }}{{ .Site.Params.copyright }}{{ else }}© 2020
+        Copyright.{{ end }}</div>
+      <div class="col-md-4 text-right">
+        <a id="hugo" href="https://gohugo.io/">Powered by Hugo
+          <img src="/assets/images/hugo-logo-wide.svg" alt="Hugo Logo" height="18" />
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>

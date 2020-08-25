@@ -1,6 +1,9 @@
-+++
-aliases = ["projects"]
-title = "Projects"
-author = "Jorge Gabriel Azevedo"
-tags = ["index"]
-+++
+---
+menu:
+  after:
+    name: blog
+    weight: 5
+title: Project
+
+bookFlatSection: true
+---
