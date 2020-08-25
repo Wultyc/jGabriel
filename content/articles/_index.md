@@ -1,4 +1,4 @@
 ---
-title: Project
+title: Articles
 bookFlatSection: true
 ---

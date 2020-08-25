@@ -1,4 +1,4 @@
 ---
-title: Project
+title: Life
 bookFlatSection: true
 ---
