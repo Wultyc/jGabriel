@@ -42,7 +42,7 @@ params:
     favicon: /favicon.png
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
+  gitRepo: https://github.com/wultyc/jGabriel
 
   # specify whether you want to write blog post or not
   enableBlogPost: true
