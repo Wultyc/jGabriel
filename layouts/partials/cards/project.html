@@ -20,6 +20,7 @@
       </a>
       <div class="card-body text-justify pt-1 pb-1">
         <p>{{ .summary | markdownify }}</p>
+        <img src="{{.banner}}" alt="{{ .name }}" width="100%">
         <span class="float-right">
           {{ if .repo }}
           <a
@@ -32,7 +33,7 @@
           >
           {{ else if .url }}
           <a
-            class="btn btn-outline-info btn-sm mb-2"
+            class="btn btn-outline-info btn-sm mb-2 mt-2"
             href="{{ .url }}"
             target="#"
             >Details</a

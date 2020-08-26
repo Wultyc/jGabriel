@@ -11,8 +11,6 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Professional
-  filter: "professional"
 - name: Academic
   filter: "academic"
 - name: Hobby
@@ -20,44 +18,57 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+# - name: Mock API
+#   logo: /images/logos/laravel.png
+#   banner: "/images/projects/mock-api.png"
+#   role: Developer
+#   timeline: "May 2020 - Present"
+#   #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+#   url: "/project/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+#   summary: A simple mocking service made with PHP/Laravel.
+#   tags: ["hobby", "PHP", "Laravel", "Docker"]
 
-- name: Tensorflow
-  logo: /images/projects/tensorflow.png
+- name: Mock API
+  logo: /images/logos/laravel.png
+  banner: "/images/projects/mock-api.png"
   role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  timeline: "May 2020 - Present"
+  url: "/project/mock-api/"
+  summary: A simple mocking service made with PHP/Laravel.
+  tags: ["hobby", "PHP", "Laravel", "Docker"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Degree internship project
+  logo: /images/logos/laravel.png
+  banner: "/images/projects/internship-project.png"
+  role: Developer
+  timeline: "Apr 2019 - Jul 2019"
+  url: "/project/internship-project/"
+  summary: An application to manage a factory production process.
+  tags: ["academic", "internship", "production control", "Degree", "Laravel"]
 
-- name: Nocode
-  logo: /images/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+- name: Microwells
+  logo: /images/logos/laravel.png
+  banner: "/images/projects/microwells.png"
+  role: Developer
+  timeline: "Dec 2018 - Jan 2019"
+  url: "/project/microwells/"
+  summary: A platform to store data about users vital signs built.
+  tags: ["academic", "PHP", "Laravel", "Java", "Raspberry Pi", "Arduino"]
 
-- name: Toha
-  logo: /images/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name:  Warehouse Optimizer
+  logo: /images/logos/java.png
+  banner: "/images/projects/warehouse-optimizer.png"
+  role: Developer
+  timeline: "Dec 2017 - Jan 2018"
+  url: "/project/warehouse-optimizer/"
+  summary: An application built in java to generate optimal routes for an AGV.
+  tags: ["academic", "Java", "AMPL"]
+
+- name:  Butterfly Project
+  logo: /images/logos/java.png
+  banner: "/images/projects/butterfly.png"
+  role: Developer
+  timeline: "Feb 2017 - Jun 2017"
+  url: "/project/butterfly/"
+  summary: An application assist course directors in managing internship projects..
+  tags: ["academic", "Java"]
