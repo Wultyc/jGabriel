@@ -10,39 +10,91 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "/images/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
-
-- name: Go Development
-  icon: "/images/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  icon: "/images/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  icon: "/images/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  icon: "/images/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
-
-- name: Linux
-  icon: "/images/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-
 - name: Git
-  icon: "/images/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  icon: "/images/logos/git.png"
+  category: tool
+  summary: "Experienced with git-based development. Mostly, use Github and Bitbucket. Recently I stated using Github actions to automate some tasks on my development process."
   url: "https://git-scm.com/"
 
-- name: C++
-  icon: "/images/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+- name: Docker
+  icon: "/images/logos/docker.png"
+  category: Containers & Virtualization
+  summary: "Write most of the programs as dockerized container to get easy distribute the programs to everyone."
+  url: "https://www.docker.com/"
+
+- name: Visual Studio Code
+  icon: "/images/logos/vs_code.png"
+  category: Tool
+  summary: "My first option to software development. I'm very familiar with the capabilities of the editor."
+  url: "https://code.visualstudio.com/"
+
+- name: MariaDB
+  icon: "/images/logos/mariadb.png"
+  category: Database
+  summary: "This is my first option when I need to work with relational databases. I also worked with MySQL, Microsft SQL Server and Postgress"
+  url: "https://mariadb.org/"
+
+- name: MongoDB
+  icon: "/images/logos/mongodb.png"
+  category: Database
+  summary: "A non relational database I'm studding to implement in some projects. It's flexibility on data structure can be very useful in some situations."
+  url: "https://mongodb.com/"
+
+- name: Java
+  icon: "/images/logos/java.png"
+  category: Programming languages & Frameworks
+  summary: "I've used Java mostly for academic projects, but I recognized it is a very powerful language."
+  url: "https://java.com/"
+
+- name: PHP
+  icon: "/images/logos/php.png"
+  category: Programming languages & Frameworks
+  summary: "Was my first programming language and I developed very projects with this. Recently I adopted Laravel Framework and started using it to all my PHP based projects."
+  url: "https://php.com/"
+
+- name: Laravel
+  icon: "/images/logos/laravel.png"
+  category: Programming languages & Frameworks
+  summary: "A powerful PHP based framework. I use it since 2019 on all my projects that envolve PHP."
+  url: "https://laravel.com/"
+
+- name: Mulesoft
+  icon: "/images/logos/mulesoft.png"
+  category: Programming languages & Frameworks
+  summary: "Based on Java Spring framework, Mulesoft is a powerful platform to create integration layers especially in REST."
+  url: "https://mulesoft.com/"
+
+- name: JavaScript
+  icon: "/images/logos/javascript.png"
+  category: Programming languages & Frameworks
+  summary: "I use JavaScript since I started developing websites. I used to use jQuery but nowadays I use modern frameworks on the frontend. I use JavaScript to frontend and backend with node.js"
+  url: "https://www.ecma-international.org/memento/tc39.htm"
+
+- name: Vue.JS
+  icon: "/images/logos/vuejs.png"
+  category: Programming languages & Frameworks
+  summary: "Vue.JS is a frontend framework with some similarities with react and angular. I started using Vue because it is integrated with Laravel framework and it's very simple to learn."
+  url: "https://vuejs.org/"
+
+- name: Other languages and softwares
+  icon: "/images/logos/bin.png"
+  category: Programming languages & Frameworks
+  summary: "Beside this languages, frameworks and softwares, I also have some experience with C, C++, Python, R, Latex, Mathlab and some others."
+
+- name: Linux
+  icon: "/images/logos/linux.png"
+  category: Operating Systems
+  summary: "I used Linux distros as my main operating system for almost 7 years. During that period I used essentially Ubuntu and some derivatives. Nowadays I have a home server ruining CentOS."
+  url: "https://linux.org/"
+  
+- name: Windows
+  icon: "/images/logos/windows.png"
+  category: Operating Systems
+  summary: "The first desktop operating system I ever used. I use it since I have 6 years and I'm very familiar with it."
+  url: "https://windows.com/"
+  
+- name: Microsft Office
+  icon: "/images/logos/msoffice.png"
+  category: Tools
+  summary: "I use Microsft Office since I use Windows. Excel and Word are the application I feel more comfortable with."
+  url: "https://office.com/"
