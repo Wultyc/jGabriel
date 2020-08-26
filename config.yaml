@@ -56,7 +56,7 @@ params:
   - name: Home
     url: /
   - name: About me
-    url: /#about
+    url: /about
   - name: My Life
     url: /mylife
   - name: My Skills
