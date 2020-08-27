@@ -2,7 +2,7 @@
 title: " Warehouse Optimizer"
 date: 2018-01-10
 hero: /images/projects/warehouse-optimizer/hero.png
-banner: /images/projects/warehouse-optimizer/banner.png
+banner: /images/projects/warehouse-optimizer/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
