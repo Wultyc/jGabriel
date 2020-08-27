@@ -1,6 +1,11 @@
+<title>{{- .Site.Title -}}</title>
+<!-- ============ meta ========== -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+<meta name="author" content="{{.Site.Params.author.name}}">
 
 <!-- ============ import common css ========== -->
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
