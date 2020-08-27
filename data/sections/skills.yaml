@@ -79,7 +79,7 @@ skills:
 - name: Other languages and softwares
   icon: "/images/logos/bin.png"
   category: Programming languages & Frameworks
-  summary: "Beside this languages, frameworks and softwares, I also have some experience with C, C++, Python, R, Latex, Mathlab and some others."
+  summary: "Beside this languages, frameworks and softwares, I also have some experience with C, C++, Python, R, Latex, Matlab, OpenShift, Jenkins and some others."
 
 - name: Linux
   icon: "/images/logos/linux.png"
