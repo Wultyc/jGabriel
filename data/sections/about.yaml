@@ -1,0 +1,53 @@
+# section information
+section:
+  name: About
+  DisplayName: About
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+# your designation
+# designation: Developer
+# your company information
+#company:
+#  name: Deloitte Portugal.
+#  url: "https://www.deloitte.pt"
+
+# your resume. this file path should be relative to you "static" directory
+#resume: "files/resume.pdf"
+
+# your life lema
+lema: "An artisan's apprentice"
+
+# a summary about you
+summary: 'I born in Oporto in 1997. The first time I made my first web at 14 years old and with 15 I start using linux. I graduate in System Engineering at Instituto Superior de Engenharia do Porto in January 2020, three months after joining Deloitte Portugal on September 2019.'
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 100
+  color: blue
+- name: Team Work
+  percentage: 100
+  color: yellow
+- name: Communication
+  percentage: 100
+  color: pink
+- name: Hard Working
+  percentage: 100
+  color: green
+- name: Fast Learner
+  percentage: 100
+  color: sky
+- name: Problem Solving
+  percentage: 100
+  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"

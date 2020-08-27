@@ -1,26 +1,46 @@
-{{ define "main" }}
-<main class="list container py-6">
-    {{- if or .Title .Content -}}
-    <div class="row py-3">
-        <div class="col">
-            {{ with .Title }}<h3 class="display-4">{{ . }}</h3>{{ end }}
+{{ define "header" }}
+    <link rel="stylesheet" href="/assets/css/layouts/list.css">
+    <link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+{{ end }}
 
-            {{- with .Content -}}
-            <div class="content">
-                {{ . }}
+{{ define "navbar" }}
+    {{ partial "navigators/navbar-2.html" . }}
+{{ end }}
+
+{{ define "sidebar" }}
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                {{ partial "navigators/sidebar.html" (dict "menus" .Site.Menus.sidebar "ctx" .) }}
             </div>
-            {{- end -}}
+          </ul>
         </div>
+      </div>
     </div>
-    {{- end -}}
+  </section>
+{{ end }}
 
-    <div class="row row-cols-1 row-cols-lg-3">
-        {{ range .Paginator.Pages }}
-            <div class="col mb-3">
-                {{ .Render "card" }}
-            </div>
-        {{ end }}
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      {{ $paginator := .Paginate .RegularPagesRecursive 12 }}
+      {{ range $paginator.Pages }}
+        {{ partial "cards/post.html" . }}
+      {{ end }}
     </div>
-    {{ template "_internal/pagination.html" . }}
-</main>
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+    <script src="/assets/js/list.js"></script>
 {{ end }}

@@ -1,0 +1,107 @@
+baseURL: https://jgabriel.eu
+languageCode: en-us
+title: "Jorge Gabriel Azevedo"
+theme: "."
+
+#Number of posts per page
+paginate: 10
+
+# Allow raw html in markdown file
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
+    ordered: false
+
+# Enable Google Analytics
+googleAnalytics: UA-167181822-1
+
+# Enable Disqus forum
+#disqusShortname: false
+
+# Enable global emoji support
+enableEmoji: true
+
+# Custom parameters
+params:
+  # Copyright Notice
+  copyright:
+    startYear: "2020"
+    owner: Jorge Gabriel Azevedo
+    rights: All Rights Reserved.
+
+  # Meta description for your site.  This will help the search engines to find your site.
+  description: Portfolio and personal website of Jorge Gabriel Azevedo aka Wultyc.
+
+  # Meta description for your site.  This will help the search engines to find your site.
+  keywords: Jorge, Jorge Azevedo, Jorge Gabriel Azevedo, ISEP, Engenharia de Sistemas, Systems Engineering, Engenharia Informática, Informatics Engineering, Projects, Portfolio, Experience 
+
+  # background image of the landing page
+  background: "images/background.jpg"
+
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  # It will be default to the theme logos if not provided.
+  logo:
+    main: /images/main-logo.png
+    inverted: /images/inverted-logo.png
+    favicon: /favicon.png
+
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/wultyc/jGabriel
+
+  # specify whether you want to write blog post or not
+  enableBlogPost: true
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: false
+
+  # specify whether you want to show sidebar in reading page
+  enableSidebar: false
+
+  # specify the list of custom menus that you want to show in the top navbar.
+  # they will be separated by a divider from the main menus.
+  SiteMenu:
+  - name: Home
+    url: /
+  - name: About me
+    url: /about
+  - name: My Life
+    url: /mylife
+  - name: My Skills
+    url: /myskills
+  - name: My Projects
+    url: /projects
+    
+  ExternalMenu:
+  - name: Notebook
+    url: http://notebook.jgabriel.eu
+    newtab: true
+
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, you can just hide it from the footer.
+  contactForm:
+    enable: true
+
+  # some information about you
+  author:
+    name: "Jorge Gabriel Azevedo"
+    nickname: "Jorge"
+    image: "/images/profile.jpg"
+    # give your some contact information. they will be used in the footer
+    contactInfo:
+      email: "jorge.gfm.azevedo@outlook.pt"
+      #phone: "+0123456789"
+    socialMedia:
+      github: http://github.com/wultyc
+      twitter: https://twitter.com/wultyc
+      linkedin: https://linkedin.com/in/j-gabriel/
+      instagram: https://instagram.com/wultyc
+    # a summary of what you do
+    summary:
+    - I am a Developer
+    - I work with Web Technologies
+    - I love to work with some fun projects

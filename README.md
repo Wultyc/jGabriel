@@ -1,8 +1,9 @@
 # jGabriel
-My Personal Website
+My Personal Website and portfolio  
+Visit at http://jgabriel.eu
 
-Please access http://jgabriel.eu
+## Copyrights
+Copyright (c) 2020 Jorge Gabriel Azevedo
 
-## About
-Version: 1.0
-Date: 2020-04-27
+### Credits
+This website is powered by [HUGO](https://gohugo.io/) and the theme is a fork of [Toha](https://github.com/hossainemruz/toha)

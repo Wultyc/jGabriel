@@ -1,91 +1,137 @@
-{{ define "main" }}
-<main class="content-page container pt-7 pb-5">
-    {{ $page := . }}
-    <div class="row">
-        <div class="col">
-            <article>
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="meta text-muted mb-3">
-                            <p class="created text-muted text-uppercase font-weight-bold mb-1">
-                                {{ $page.Date.Format "02-01-2006" }}</p>
-                            <!--<span class="mr-2"><i class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>-->
-                            <!--<span><i class="fas fa-clock mr-2"></i>{{ T "readingTime" $page.ReadingTime }}</span>-->
-                        </div>
+{{ define "header" }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css" />
+<link rel="stylesheet" href="/assets/css/layouts/single.css" />
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+<link rel="stylesheet" href="/assets/css/sections/about.css" />
+{{ end }}
 
-                        <h1>{{ $page.Title }}</h1>
+{{ define "navbar" }}
+{{ partial "navigators/navbar.html" . }}
+{{ end }}
 
-                        {{ partial "authors.html" $page }}
-                    </div>
-                </div>
-
-                {{- with $page.Params.images -}}
-                {{- $images := . -}}
-                {{- with $page.Site.GetPage "section" "images" -}}
-                {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
-                {{- $image := .Fit "900x500" -}}
-                <div class="row justify-content-center mb-3">
-                    <div class="col-lg-9">
-                        <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block"
-                            alt="{{ $page.Title }}">
-                    </div>
-                </div>
-                {{- end -}}
-                {{- end -}}
-                {{- end -}}
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-
-                        <div class="my-3">
-                            {{ if $page.Params.repo }}
-                            <a class="badge badge-pill badge-light border mr-2" href="{{$page.Params.repo}}"
-                                target="_blank"><i class="fab fa-github"></i> &nbsp; Github</a>
-                            {{ end }}
-
-                            {{ if $page.Params.docs }}
-                            <a class="badge badge-pill badge-light border mr-2" href="{{$page.Params.docs}}"
-                                target="_blank"><i class="fas fa-book"></i> &nbsp; Documentação</a>
-                            {{ end }}
-                        </div>
-
-                        <div class="content" align="justify">
-                            {{ $page.Content }}
-                        </div>
-
-                        {{- with $page.Params.tags -}}
-                        <div class="tags my-3">
-                            {{- range . -}}
-                            <a class="badge badge-pill badge-light border mr-2"
-                                href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
-                                <i class="fas fa-tag mr-2"></i>{{ . }}
-                            </a>
-                            {{- end -}}
-                        </div>
-                        {{- end -}}
-
-                        {{ partial "sharer.html" . }}
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        {{ template "_internal/disqus.html" . }}
-                    </div>
-                </div>
-
-                {{- if .Site.Params.commento.enable -}}
-                <div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <div id="commento"></div>
-                        <script src="{{ .Site.Params.commento.url }}"></script>
-                    </div>
-                </div>
-                {{- end -}}
-            </article>
-        </div>
+{{ define "sidebar" }}
+<section class="sidebar-section" id="sidebar-section">
+  {{ if site.Params.enableSidebar }}
+  <div class="sidebar-holder">
+    <div class="sidebar" id="sidebar">
+      {{/* <input type="text" value="" placeholder="Search" data-search="" id="search-box" /> */}}
+        <div class="sidebar-tree pt-4">
+        <ul class="tree" id="tree">
+          <li id="list-heading"><a href="/project" data-filter="all">Projects</a></li>
+          <div class="subtree">
+            {{ partial "navigators/sidebar.html" (dict "menus" .Site.Menus.sidebar "ctx" .) }}
+          </div>
+        </ul>
+      </div>
     </div>
+  </div>
+  {{end}}
+</section>
+{{ end }}
 
-    {{ partial "related.html" $page }}
-</main>
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      <!--Hero Area-->
+      <div class="hero-area col-sm-12" id="hero-area"
+        style='background-image: url({{ strings.TrimSuffix "/" .Site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
+      </div>
+
+      <!--Content Start-->
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}' />
+          <h5 class="author-name">{{ partial "helpers/get-author-name.html" . }}</h5>
+          <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
+        </div>
+
+        <div class="title">
+          <h1>{{ .Page.Title }}</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+
+          <div class="post-details row">
+            <div class="col-md-6">
+              <img src="{{.Params.banner}}" alt="Project Mock">
+            </div>
+            <div class="col-md-6 text-justify">
+              {{if .Params.title}}
+              <p><strong>Project name:</strong> {{.Params.title}}</p>
+              {{end}}
+              {{if .Params.startdate}}
+              <p><strong>Start Date:</strong> {{.Params.startdate}}</p>
+              {{end}}
+              {{if .Params.enddate}}
+              <p><strong>End Date:</strong> {{.Params.enddate}}</p>
+              {{end}}
+              {{if .Params.docs}}
+              {{$urldocs :=  urls.Parse .Params.docs}}
+              <p><strong>Documentation:</strong> <a href="{{.Params.docs}}" alt="" target="_blank">{{$urldocs.Host}}</a> </p>
+              {{end}}
+              {{if .Params.repo}}
+              {{$urlrepo :=  urls.Parse .Params.repo}}
+              <p><strong>Git Repository:</strong> <a href="{{.Params.repo}}" alt="" target="_blank">{{$urlrepo.Host}}</a> </p>
+              {{end}}
+              {{if .Params.technologies}}
+              <p><strong>Main technologies:</strong> {{.Params.technologies}} </p>
+              {{end}}
+              {{if .Page.Content}}
+              <p><strong>About this project:</strong></p>
+              {{end}}
+              {{ .Page.Content }}
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!--- Improve this page button --->
+        {{ if .Site.Params.GitRepo }}
+        <div class="btn-improve-page">
+          <a href="{{ .Site.Params.GitRepo }}/edit/master/content/{{ .File.Path }}">
+            <i class="fas fa-code-branch"></i>
+            Improve This Page
+          </a>
+        </div>
+        {{ end }}
+
+        <!---Next and Previous Navigator -->
+        <hr />
+        {{ partial "navigators/next-prev-navigator.html" . }}
+        <hr />
+        <!-- Add Disqus forum  -->
+        {{ if .Site.DisqusShortname }}
+        {{ partial "disqus.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "toc" }}
+<section class="toc-section" id="toc-section">
+  {{ if site.Params.enableTOC }}
+  <div class="toc-holder">
+    <h5 class="text-center pl-3">Table of Contents</h5>
+    <hr>
+    <div class="toc">
+      {{ .TableOfContents }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+{{ if .Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
 {{ end }}
