@@ -14,7 +14,7 @@ section:
 #  url: "https://www.deloitte.pt"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+#resume: "files/resume.pdf"
 
 # your life lema
 lema: "An artisan's apprentice"
