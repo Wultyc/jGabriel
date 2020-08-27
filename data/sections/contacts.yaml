@@ -1,6 +1,7 @@
 # section information
 section:
   name: Contacts
+  DisplayName: Contacts
   enable: true
   weight: 6
   showOnNavbar: true

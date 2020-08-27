@@ -1,6 +1,7 @@
 # section information
 section:
   name: Achievements
+  DisplayName: Achievements
   enable: true
   weight: 6
   showOnNavbar: true

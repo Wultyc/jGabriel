@@ -1,6 +1,7 @@
 # section information
 section:
   name: Experiences
+  DisplayName: Experiences
   enable: true
   weight: 3
   showOnNavbar: true

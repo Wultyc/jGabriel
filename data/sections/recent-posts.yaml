@@ -1,6 +1,7 @@
 # section information
 section:
   name: Recent Posts
+  DisplayName: Recent Posts
   enable: true
   weight: 5
   showOnNavbar: true
