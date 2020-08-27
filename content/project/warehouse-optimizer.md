@@ -1,10 +1,10 @@
 ---
-title: "Otimizador Armazem"
+title: " Warehouse Optimizer"
 date: 2018-01-10
-images: ["projects/otimizador-armazem.png"] # The image resolution should be 900x500 or a proportional resolution
-categories: ["Projeto Académico", "Licenciatura"]
-tags: ["Licenciatura", "2º Ano 1º Semestre", "Investigação Operacional", "Laboratórios de Engenharia 3", "Java", "AMPL"]
-authors: ["Jorge Gabriel Azevedo"]
+hero: /images/projects/warehouse-optimizer.png
+author:
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 repo: "https://github.com/Wultyc/ISEP_1718_2A1S_LENG3"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/otimizador-armazem/"
 draft: false

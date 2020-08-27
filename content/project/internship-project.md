@@ -1,10 +1,10 @@
 ---
-title: "Projeto Estágio"
+title: "Internship Project"
 date: 2019-07-17
-images: ["projects/projeto-estagio.png"] # The image resolution should be 900x500 or a proportional resolution
-categories: ["Projeto Académico", "Licenciatura", "Projeto Final"]
-tags: ["Licenciatura", "3º Ano 2º Semestre", "Projeto Estágio", "PHP", "Laravel", "MS SQL Server",]
-authors: ["Jorge Gabriel Azevedo"]
+hero: /images/projects/internship-project.png
+author:
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 repo: "https://github.com/Wultyc/Relatorio-PROES-NaturalLife/blob/master/Relatorio_PROES.pdf"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/projeto-de-estagio/"
 draft: false

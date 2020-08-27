@@ -1,10 +1,10 @@
 ---
 title: "Butterfly"
 date: 2017-06-16
-images: ["projects/Butterfly.png"] # The image resolution should be 900x500 or a proportional resolution
-categories: ["Projeto Académico", "Licenciatura"]
-tags: ["Licenciatura", "1º Ano 2º Semestre", "Modelação e Programação", "Java"]
-authors: ["Jorge Gabriel Azevedo"]
+hero: /images/projects/butterfly.png
+author:
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 repo: "https://github.com/Wultyc/ISEP_1617_1A2S_MOPRO"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/butterfly/"
 draft: false

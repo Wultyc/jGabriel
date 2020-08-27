@@ -1,10 +1,10 @@
 ---
 title: "Microwells"
 date: 2019-01-14
-images: ["projects/microwells.png"] # The image resolution should be 900x500 or a proportional resolution
-categories: ["Projeto Académico", "Licenciatura"]
-tags: ["Licenciatura", "3º Ano 1º Semestre", "Laboratórios de Sistemas 2", "Java", "PHP", "Laravel", "MariaDB", "Arduino"]
-authors: ["Jorge Gabriel Azevedo"]
+hero: /images/projects/microwells.png
+author:
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 repo: "https://github.com/Wultyc/ISEP_1819_3A1S_LSIS2"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/microwells/"
 draft: false

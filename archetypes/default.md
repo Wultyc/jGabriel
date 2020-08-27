@@ -1,6 +1,8 @@
 ---
-hero: /assets/images/background/sunrise.jpg
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+hero: /images/background/sunrise.jpg
 author:
-    name: Md. Emruz Hossain
-    image: /assets/images/profile-image.jpg
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 ---

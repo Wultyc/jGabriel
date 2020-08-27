@@ -1,10 +1,10 @@
 ---
 title: "Mock Api"
 date: 2020-05-17T00:20:53Z
-images: ["projects/Mock-API.png"] # The image resolution should be 900x500 or a proportional resolution
-categories: ["Laravel"]
-tags: ["Laravel", "APIs"]
-authors: ["Jorge Gabriel Azevedo"]
+hero: /images/projects/mock-api.png
+author:
+    name: Jorge Gabriel Azevedo
+    image: /images/profile.jpg
 repo: "https://github.com/wultyc/mock-api"
 docs: "https://notebook.jgabriel.eu/docs/personal-projects/mock-api/"
 draft: false
