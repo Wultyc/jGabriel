@@ -1,12 +1,16 @@
 ---
 title: "Mock Api"
 date: 2020-05-17T00:20:53Z
-hero: /images/projects/mock-api.png
+hero: /images/projects/mock-api/hero.png
+banner: /images/projects/mock-api/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
 repo: "https://github.com/wultyc/mock-api"
 docs: "https://notebook.jgabriel.eu/docs/personal-projects/mock-api/"
+startdate: "May 2020"
+#enddate: ""
+technologies: "PHP, Laravel, JavaScript, Vue.JS, MariaDB, Docker"
 draft: false
 ---
 Simple API Mocking service made in Laravel.

@@ -1,12 +1,16 @@
 ---
 title: "Butterfly"
 date: 2017-06-16
-hero: /images/projects/butterfly.png
+hero: /images/projects/butterfly/hero.png
+banner: /images/projects/butterfly/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
 repo: "https://github.com/Wultyc/ISEP_1617_1A2S_MOPRO"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/butterfly/"
+startdate: "Feb 2017"
+enddate: "Jun 2017"
+technologies: "Java"
 draft: false
 ---
 <!--more-->

@@ -54,26 +54,28 @@
 
           <div class="post-details row">
             <div class="col-md-6">
-              <img src="/images/laptop-mock.jpg" alt="Project Mock">
+              <img src="{{.Params.banner}}" alt="Project Mock">
             </div>
             <div class="col-md-6 text-justify">
               {{if .Params.title}}
-              <p><strong>Project name:</strong> Mock API</p>
+              <p><strong>Project name:</strong> {{.Params.title}}</p>
               {{end}}
               {{if .Params.startdate}}
-              <p><strong>Start Date:</strong> 05/09/1997</p>
+              <p><strong>Start Date:</strong> {{.Params.startdate}}</p>
               {{end}}
               {{if .Params.enddate}}
-              <p><strong>End Date:</strong> 05/09/1997</p>
+              <p><strong>End Date:</strong> {{.Params.enddate}}</p>
               {{end}}
               {{if .Params.docs}}
-              <p><strong>Documentation:</strong> notebook.jgabriel.eu/docs/personal/projects/mock-api</p>
+              {{$urldocs :=  urls.Parse .Params.docs}}
+              <p><strong>Documentation:</strong> <a href="{{.Params.docs}}" alt="" target="_blank">{{$urldocs.Host}}</a> </p>
               {{end}}
               {{if .Params.repo}}
-              <p><strong>Git Repository:</strong> github.com/wultyc/mock-api</p>
+              {{$urlrepo :=  urls.Parse .Params.repo}}
+              <p><strong>Git Repository:</strong> <a href="{{.Params.repo}}" alt="" target="_blank">{{$urlrepo.Host}}</a> </p>
               {{end}}
               {{if .Params.technologies}}
-              <p><strong>Main technologies:</strong> PHP, Laravel, JavaScript, Vue.JS, MySQL</p>
+              <p><strong>Main technologies:</strong> {{.Params.technologies}} </p>
               {{end}}
               {{if .Page.Content}}
               <p><strong>About this project:</strong></p>

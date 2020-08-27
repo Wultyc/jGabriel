@@ -1,12 +1,16 @@
 ---
 title: " Warehouse Optimizer"
 date: 2018-01-10
-hero: /images/projects/warehouse-optimizer.png
+hero: /images/projects/warehouse-optimizer/hero.png
+banner: /images/projects/warehouse-optimizer/banner.png
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
 repo: "https://github.com/Wultyc/ISEP_1718_2A1S_LENG3"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/otimizador-armazem/"
+startdate: "Dec 2017"
+enddate: "Jan 2018"
+technologies: "Java, AMPL"
 draft: false
 ---
 <!--more-->

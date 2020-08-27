@@ -31,7 +31,7 @@ projects:
 
 - name: Mock API
   logo: /images/logos/laravel.png
-  banner: "/images/projects/mock-api.png"
+  banner: "/images/projects/mock-api/hero.png"
   role: Developer
   timeline: "May 2020 - Present"
   url: "/project/mock-api/"
@@ -40,7 +40,7 @@ projects:
 
 - name: Degree internship project
   logo: /images/logos/laravel.png
-  banner: "/images/projects/internship-project.png"
+  banner: "/images/projects/internship-project/hero.png"
   role: Developer
   timeline: "Apr 2019 - Jul 2019"
   url: "/project/internship-project/"
@@ -49,7 +49,7 @@ projects:
 
 - name: Microwells
   logo: /images/logos/laravel.png
-  banner: "/images/projects/microwells.png"
+  banner: "/images/projects/microwells/hero.png"
   role: Developer
   timeline: "Dec 2018 - Jan 2019"
   url: "/project/microwells/"
@@ -58,7 +58,7 @@ projects:
 
 - name:  Warehouse Optimizer
   logo: /images/logos/java.png
-  banner: "/images/projects/warehouse-optimizer.png"
+  banner: "/images/projects/warehouse-optimizer/hero.png"
   role: Developer
   timeline: "Dec 2017 - Jan 2018"
   url: "/project/warehouse-optimizer/"
@@ -67,7 +67,7 @@ projects:
 
 - name:  Butterfly Project
   logo: /images/logos/java.png
-  banner: "/images/projects/butterfly.png"
+  banner: "/images/projects/butterfly/hero.png"
   role: Developer
   timeline: "Feb 2017 - Jun 2017"
   url: "/project/butterfly/"

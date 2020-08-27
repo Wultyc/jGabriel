@@ -1,12 +1,16 @@
 ---
 title: "Internship Project"
 date: 2019-07-17
-hero: /images/projects/internship-project.png
+hero: /images/projects/internship-project/hero.png
+banner: /images/projects/internship-project/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
 repo: "https://github.com/Wultyc/Relatorio-PROES-NaturalLife/blob/master/Relatorio_PROES.pdf"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/projeto-de-estagio/"
+startdate: "Apr 2019"
+enddate: "Jul 2019"
+technologies: "PHP, Laravel, JavaScript, Microsoft SQL Server"
 draft: false
 ---
 <!--more-->
