@@ -46,6 +46,7 @@ experiences:
     end: September 2019
     responsibilities:
     - Implement and develop on Salesforce platform.
+
 - company:
     name: Instituto Superior de Engenharia do Porto (ISEP)
     url: "https://www.isep.ipp.pt"
@@ -56,6 +57,12 @@ experiences:
   - designation: Degree in Systems Engineering
     start: September 2016
     end: January 2020
+    responsibilities:
+    - Representative of LES students.
+    - Vice president of *Núcleo de Engenharia de Sistemas* [NES-ISEP](https://nes-isep.pt).
+    - Organization of 3rd, 4th and 5th *Jornadas de Engenharia de Sistemas*.
+    - Organization of some workshops.
+
 - company:
     name: Natural Life, lda
     url: "https://www.naturallife.pt"

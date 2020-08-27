@@ -19,7 +19,7 @@
         <h6 class="designation">{{ $position.designation }}</h6>
         <p class="text-muted">{{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} Present {{end}}</p>
         <!-- Add the responsibilities handled at this position -->
-        <ul class="justify-content-around">
+        <ul class="justify-content-around ml-4">
         {{ range $position.responsibilities }}
             <li>{{ . | markdownify }}</li>
         {{ end }}

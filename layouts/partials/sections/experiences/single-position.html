@@ -13,7 +13,7 @@
     <p>{{ .company.overview | markdownify }}</p>
     <!-- Add the responsibilities handled at this position -->
     <h6 class="text-muted">Responsibilities:</h6>
-    <ul class="justify-content-around">
+    <ul class="justify-content-around ml-4">
     {{ range $position.responsibilities }}
         <li>{{ . | markdownify }}</li>
     {{ end }}
