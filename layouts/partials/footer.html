@@ -42,13 +42,24 @@
   <div class="container">
     <div class="row text-left">
       <div class="col-md-4">
-        <a id="theme" href="https://github.com/hossainemruz/toha" target="#">
-          <img src="/assets/images/inverted-logo.png">
-          Toha
+        <a id="theme" href="https://jgabriel.eu" target="#">
+          <img class="mr-2" src="/images/inverted-logo.png">
+          jGabriel
         </a>
       </div>
-      <div class="col-md-4 text-center">{{ if .Site.Params.copyright }}{{ .Site.Params.copyright }}{{ else }}© 2020
-        Copyright.{{ end }}</div>
+      <div class="col-md-4 text-center">
+        ©
+        {{ if and (.Site.Params.copyright.startYear) (not (eq (now.Format "2006") (.Site.Params.copyright.startYear)))}}
+          {{.Site.Params.copyright.startYear}} -
+        {{ end }}
+        
+        {{now.Format "2006"}}
+
+        {{.Site.Params.copyright.owner}}
+
+        {{.Site.Params.copyright.rights}}
+        
+      </div>
       <div class="col-md-4 text-right">
         <a id="hugo" href="https://gohugo.io/">Powered by Hugo
           <img src="/assets/images/hugo-logo-wide.svg" alt="Hugo Logo" height="18" />
