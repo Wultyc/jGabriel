@@ -1,47 +1,44 @@
-{{$class:= "n/a"}}
+{{$class:= "final-navbar"}}
 
 {{if .IsHome}}
-	{{$class = "initial-navbar"}}
+  {{$class = "initial-navbar"}}
 {{else}}
-	{{$class = "final-navbar"}}
+  {{$class = "final-navbar"}}
 {{end}}
 
 <nav class="navbar navbar-expand-xl top-navbar {{ $class }}" id="top-navbar">
   <div class="container">
     {{ $mainLogo:="/assets/images/main-logo.png" }}
     {{ $invertedLogo:="/assets/images/inverted-logo.png" }}
+
     {{ if .Site.Params.logo.main }}
       {{ $mainLogo = .Site.Params.logo.main }}
     {{ end }}
+    
     {{ if .Site.Params.logo.inverted }}
       {{ $invertedLogo = .Site.Params.logo.inverted }}
     {{ end }}
     <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-      <img src="{{ $invertedLogo }}" id="logo">
+      <img src="{{if .IsHome}}{{ $invertedLogo }}{{else}}{{ $mainLogo }}{{end}}" id="logo">
       {{- .Site.Title -}}
     </a>
-    <button
-      class="navbar-toggler navbar-dark"
-      id="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#top-nav-items"
-    >
+    <button class="navbar-toggler navbar-dark" id="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#top-nav-items">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
         {{ range site.Params.SiteMenu }}
-			<li class="nav-item">
-				<a class="nav-link" href="{{ .url }}">{{ .name }}</a>
-			</li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .url }}">{{ .name }}</a>
+        </li>
         {{ end }}
-			<div class="dropdown-divider" id="top-navbar-divider"></div>
-		{{ range site.Params.ExternalMenu }}
-			<li class="nav-item">
-				<a class="nav-link" href="{{ .url }}" {{if .newtab}}target="_blank"{{end}} >{{ .name }}</a>
-			</li>
+        <div class="dropdown-divider" id="top-navbar-divider"></div>
+        {{ range site.Params.ExternalMenu }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .url }}" {{if .newtab}}target="_blank" {{end}}>{{ .name }}</a>
+        </li>
         {{ end }}
       </ul>
     </div>
