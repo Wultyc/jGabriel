@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ define "navbar" }}
-    {{ partial "navigators/navbar-2.html" . }}
+    {{ partial "navigators/navbar.html" . }}
 {{ end }}
 
 {{ define "sidebar" }}
@@ -30,7 +30,7 @@
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      {{ $paginator := .Paginate .RegularPagesRecursive 12 }}
+      {{ $paginator := .Paginate .RegularPagesRecursive .Paginator.Pages }}
       {{ range $paginator.Pages }}
         {{ partial "cards/post.html" . }}
       {{ end }}

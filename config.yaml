@@ -3,6 +3,9 @@ languageCode: en-us
 title: "Jorge Gabriel Azevedo"
 theme: "."
 
+#Number of posts per page
+paginate: 10
+
 # Allow raw html in markdown file
 markup:
   goldmark:
@@ -48,7 +51,10 @@ params:
   enableBlogPost: true
 
   # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
+  enableTOC: false
+
+  # specify whether you want to show sidebar in reading page
+  enableSidebar: false
 
   # specify the list of custom menus that you want to show in the top navbar.
   # they will be separated by a divider from the main menus.

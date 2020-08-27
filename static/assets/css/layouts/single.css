@@ -16,8 +16,8 @@ body {
 }
 
 .content-section {
-  flex: 60%;
-  max-width: 60%;
+  flex: 80%;
+  max-width: 80%;
   order: 2;
   /* background-color: lightseagreen; */
   padding: 0;
@@ -29,9 +29,9 @@ body {
   background: #e5e9f2;
 }
 .toc-section {
-  flex: 20%;
+  flex: 5%;
   order: 3;
-  max-width: 20%;
+  max-width: 5%;
   /* background-color: lightpink; */
   transition: all ease-out 0.5s;
 }

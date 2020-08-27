@@ -7,11 +7,12 @@
 {{ end }}
 
 {{ define "navbar" }}
-{{ partial "navigators/navbar-2.html" . }}
+{{ partial "navigators/navbar.html" . }}
 {{ end }}
 
 {{ define "sidebar" }}
 <section class="sidebar-section" id="sidebar-section">
+  {{ if site.Params.enableSidebar }}
   <div class="sidebar-holder">
     <div class="sidebar" id="sidebar">
       {{/* <input type="text" value="" placeholder="Search" data-search="" id="search-box" /> */}}
@@ -25,6 +26,7 @@
       </div>
     </div>
   </div>
+  {{end}}
 </section>
 {{ end }}
 
@@ -50,7 +52,38 @@
         </div>
 
         <div class="post-content" id="post-content">
-          {{ .Page.Content }}
+
+          <div class="post-details row">
+            <div class="col-md-6">
+              <img src="/images/laptop-mock.jpg" alt="Project Mock">
+            </div>
+            <div class="col-md-6 text-justify">
+              {{if .Params.title}}
+              <p><strong>Project name:</strong> Mock API</p>
+              {{end}}
+              {{if .Params.startdate}}
+              <p><strong>Start Date:</strong> 05/09/1997</p>
+              {{end}}
+              {{if .Params.enddate}}
+              <p><strong>End Date:</strong> 05/09/1997</p>
+              {{end}}
+              {{if .Params.docs}}
+              <p><strong>Documentation:</strong> notebook.jgabriel.eu/docs/personal/projects/mock-api</p>
+              {{end}}
+              {{if .Params.repo}}
+              <p><strong>Git Repository:</strong> github.com/wultyc/mock-api</p>
+              {{end}}
+              {{if .Params.technologies}}
+              <p><strong>Main technologies:</strong> PHP, Laravel, JavaScript, Vue.JS, MySQL</p>
+              {{end}}
+              {{if .Page.Content}}
+              <p><strong>About this project:</strong></p>
+              {{end}}
+              {{ .Page.Content }}
+            </div>
+          </div>
+
+          
         </div>
 
         <!--- Improve this page button --->
