@@ -38,8 +38,13 @@ experiences:
     url: "https://www.deloitte.pt"
     overview: Join Deloitte Portugal as a Trainee to work with Salesforce team.
   positions:
+  - designation: Programmer
+    start: September 2020
+    responsibilities:
+    - Develop integration applications with Mulesoft.
   - designation: Junior Programmer
     start: January 2020
+    end: August 2020
     responsibilities:
     - Develop integration applications with Mulesoft.
   - designation: Trainee
