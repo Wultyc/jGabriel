@@ -1,44 +1,32 @@
-<div
-  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
-  data-category='all, {{ delimit  .tags ","}}'
->
+<div class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item" data-category='all, {{ delimit  .Params.tags ","}}'>
   <div class="card mt-1">
     <div class="card">
-      <a class="card-header" href="{{ if .repo }}{{ .repo }}{{ else if .url }}{{ .url }}{{ else }}#{{ end }}">
+      <a class="card-header" href="{{ .RelPermalink }}">
         <div>
           <div class="d-flex">
-            {{ if .logo }}
-            <img class="card-img-xs" src="{{ .logo }}" alt="{{ .name }}" />
+            {{ if .Params.logo }}
+            <img class="card-img-xs" src="{{ .Params.logo }}" alt="{{ .Params.title }}" />
             {{ end }}
-            <h5 class="card-title mb-0">{{ .name }}</h5>
+            <h5 class="card-title mb-0">{{ .Params.title }}</h5>
           </div>
           <div class="sub-title">
-            <span>{{ .role }}</span>
-            <span>{{ .timeline }}</span>
+            <span>{{ .Params.role }}</span>
+            <span>{{ if .Params.startdate }}{{ .Params.startdate }}{{ if .Params.enddate }} - {{ .Params.enddate }}{{else}} - Present{{ end }}{{ end }}</span>
           </div>
         </div>
       </a>
       <div class="card-body text-justify pt-1 pb-1">
-        <p>{{ .summary | markdownify }}</p>
-        <img src="{{.banner}}" alt="{{ .name }}" width="100%">
+        <p>{{ .Params.summary | markdownify }}</p>
+        <img src="{{.Params.hero}}" alt="{{ .Params.title }}" width="100%">
+        {{/* 
+        <span class="float-left">
+          {{ if .Params.repo }}
+          <a class="github-button-inactive" href="{{ .Params.repo }}" data-icon="octicon-standard" data-show-count="true" aria-label="Star {{ .Params.name }}">Star</a>
+          {{end}}
+        </span>
+        */}} 
         <span class="float-right">
-          {{ if .repo }}
-          <a
-            class="github-button-inactive"
-            href="{{ .repo }}"
-            data-icon="octicon-standard"
-            data-show-count="true"
-            aria-label="Star {{ .name }}"
-            >Star</a
-          >
-          {{ else if .url }}
-          <a
-            class="btn btn-outline-info btn-sm mb-2 mt-2"
-            href="{{ .url }}"
-            target="#"
-            >Details</a
-          >
-          {{ end }}
+          <a class="btn btn-outline-info btn-sm mb-2 mt-2" href="{{ .RelPermalink }}" target="#">Details</a>
         </span>
       </div>
     </div>

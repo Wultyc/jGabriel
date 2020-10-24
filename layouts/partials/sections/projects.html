@@ -13,7 +13,7 @@
   </div>
   <div class="container filtr-projects">
     <div class="row" id="project-card-holder">
-      {{ range ( where site.RegularPages "Section" "project" )}}
+      {{ range ( where site.RegularPages "Type" "project" )}}
         {{ partial "cards/project" . }}
       {{ end }}
     </div>
