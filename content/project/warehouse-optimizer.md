@@ -6,11 +6,15 @@ banner: /images/projects/warehouse-optimizer/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
+role: "Developer"
 repo: "https://github.com/Wultyc/ISEP_1718_2A1S_LENG3"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/otimizador-armazem/"
 startdate: "Dec 2017"
 enddate: "Jan 2018"
 technologies: "Java, AMPL"
+logo: "/images/logos/java.png"
+summary: "An application built in java to generate optimal routes for an AGV."
+tags: ["academic", "Java", "AMPL"]
 draft: false
 ---
 <!--more-->

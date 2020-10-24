@@ -6,11 +6,15 @@ banner: /images/projects/butterfly/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
+role: "Developer"
 repo: "https://github.com/Wultyc/ISEP_1617_1A2S_MOPRO"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/butterfly/"
 startdate: "Feb 2017"
 enddate: "Jun 2017"
 technologies: "Java"
+logo: "/images/logos/java.png"
+summary: "An application assist course directors in managing internship projects."
+tags: ["academic", "Java"]
 draft: false
 ---
 <!--more-->

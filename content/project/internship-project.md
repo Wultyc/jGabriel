@@ -6,11 +6,15 @@ banner: /images/projects/internship-project/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
+role: "Developer"
 repo: "https://github.com/Wultyc/Relatorio-PROES-NaturalLife/blob/master/Relatorio_PROES.pdf"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/projeto-de-estagio/"
 startdate: "Apr 2019"
 enddate: "Jul 2019"
 technologies: "PHP, Laravel, JavaScript, Microsoft SQL Server"
+logo: "/images/logos/laravel.png"
+summary: An application to manage a factory production process.
+tags: ["academic", "internship", "production control", "Degree", "Laravel"]
 draft: false
 ---
 <!--more-->

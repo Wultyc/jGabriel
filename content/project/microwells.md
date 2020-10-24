@@ -6,11 +6,15 @@ banner: /images/projects/microwells/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
+role: "Developer"
 repo: "https://github.com/Wultyc/ISEP_1819_3A1S_LSIS2"
 docs: "https://notebook.jgabriel.eu/docs/academic-projects/graduate-degree/microwells/"
 startdate: "Dec 2018"
-enddate: Jan 2019"
+enddate: "Jan 2019"
 technologies: "PHP, Laravel, JavaScript, Java, Raspbery Pi, Arduino"
+logo: "/images/logos/java.png"
+summary: "A platform to store data about users vital signs."
+tags: ["academic", "PHP", "Laravel", "Java", "Raspberry Pi", "Arduino"]
 draft: false
 ---
 <!--more-->

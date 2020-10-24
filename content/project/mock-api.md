@@ -6,11 +6,15 @@ banner: /images/projects/mock-api/banner.jpg
 author:
     name: Jorge Gabriel Azevedo
     image: /images/profile.jpg
+role: "Developer"
 repo: "https://github.com/wultyc/mock-api"
 docs: "https://notebook.jgabriel.eu/docs/personal-projects/mock-api/"
 startdate: "May 2020"
-#enddate: ""
+enddate: ""
 technologies: "PHP, Laravel, JavaScript, Vue.JS, MariaDB, Docker"
+logo: "/images/logos/laravel.png"
+summary: A platform to store data about users vital signs built.
+tags: ["hobby", "PHP", "Laravel", "Docker"]
 draft: false
 ---
 Simple API Mocking service made in Laravel.
