@@ -1,4 +1,0 @@
----
-title: Life
-bookFlatSection: true
----
