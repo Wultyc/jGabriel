@@ -1,62 +1,71 @@
 <template>
   <div>
+    <!-- Navbar Start -->
+    <NavBar />
+    <!-- Navbar End -->
+
+    <!-- Page Content Start -->
     <Nuxt />
+    <!-- Page Content End -->
+
+    <!-- Footer Start -->
+    <Footer />
+    <!-- Footer End -->
+
+    <!-- To up btn Start -->
+    <ToUp />
+    <!-- To up btn End -->
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+
+    <!-- Magnific Js -->
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific.init.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/owl.init.js "></script>
+
+    <!-- Contact -->
+    <script src="js/contact.js"></script>
+
+    <!-- Counter init -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- Feather icon -->
+    <script src="js/feather.min.js"></script>
+
+    <!-- Typed -->
+    <script src="js/typed.js"></script>
+    <script src="js/typed.init.js"></script>
+
+    <!-- Flickity Js -->
+    <script src="js/flickity.pkgd.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
   </div>
 </template>
 
+<script >
+import Vue from "vue";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import ToUp from "../components/ToUp";
+
+export default Vue.extend({
+  components: {
+    NavBar,
+    Footer,
+    ToUp,
+  },
+});
+</script>
+
 <style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>

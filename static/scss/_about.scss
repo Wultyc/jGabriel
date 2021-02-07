@@ -1,0 +1,37 @@
+//
+// about.scss
+//
+
+// About us
+.shadow {
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+}
+.card .card-body {
+    padding: 1.5rem;
+}
+.avatar.avatar-large {
+    height: 140px;
+    width: 140px;
+}
+.fea.icon-sm {
+    height: 16px;
+    width: 16px;
+}
+.public-profile {
+    margin-top: -110px;
+}
+.about-details {
+    border-radius: 10px;
+    position: relative; 
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+    padding: 18px;
+}
+.media-body .title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.bor-bottom {
+    padding: 0px;
+    border: 0.5px dashed darken($light, 12%);   
+}

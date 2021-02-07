@@ -1,4 +1,7 @@
 export default {
+  //Project global name
+  globalName: 'myCustomName',
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -11,7 +14,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'charset', name: 'charset', content: 'utf-8' },
+      { hid: 'author', name: 'author', content: 'Jorge Gabriel Azevedo' },
+      { hid: 'description', name: 'description', content: 'Jorge Gabriel Azevedo personal website and portfolio' },
+      { hid: 'keywords', name: 'keywords', content: 'Wultyc, jGabriel, Notebook, jGabriel Notebook, Jorge Gabriel Azevedo,' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -20,6 +26,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/static/css/bootstrap.min.css',
+    '~/static/css/magnific-popup.css',
+    '~/static/css/materialdesignicons.min.css',
+    //'~/static/css/owl.carousel.min.css',
+    '~/static/css/owl.theme.default.min.css',
+    '~/static/css/flickity.css',
+    '~/static/css/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

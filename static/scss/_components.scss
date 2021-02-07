@@ -1,0 +1,109 @@
+//
+// Components
+//
+.btn {
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px 34px;
+    transition: all 0.5s;
+    letter-spacing: 0.5px;
+    box-shadow: none !important;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    &:focus {
+        box-shadow: none !important;
+    }
+    &:hover {
+        transform: translateY(-2px);
+        transition: all 0.5s;
+    }
+    &.btn-lg {
+        padding: 10px 22px !important;
+        font-size: 18px !important;
+    }
+    &.btn-sm {
+        padding: 8px 16px !important;
+        font-size: 14px !important;
+    }
+    @each $color,
+    $value in $theme-colors {
+        &.btn-#{$color} {
+            background-color: #{$value} !important;
+            border: 1px solid #{$value} !important;
+            color: $white;
+            box-shadow: 0 16px 16px -8px rgba($black, 0.16);
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: #{darken($value, 3%)}!important;
+                border:1px solid #{darken($value, 3%)}!important;
+                color: $white !important;
+            }
+        }
+        &.btn-outline-#{$color} {
+            border: 1px solid #{$value} !important;
+            color: #{$value} !important;
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: #{$value} !important;
+                border:1px solid #{$value} !important;
+                box-shadow: 0 3px 10px rgba($value, 0.5);
+                color: $white !important;
+            }
+        }
+    }
+    &.btn-light {
+        background-color: $light;
+        border: 1px solid $light;
+        color: $dark !important;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: lighten($light, 3%);
+            border: 1px solid lighten($light, 3%);
+            box-shadow: 0 0 0 2px rgba($light, .08);
+            color: $dark !important;
+        }
+    }
+    &.btn-outline-primary {
+        border: 1px solid $primary;
+        color: $primary !important;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $primary;
+            border: 1px solid $primary;
+            color: $white !important;
+        }
+    }
+
+    // custom button
+    .btn-primary {
+        color: $white;
+        background-color: $primary !important;
+        border: 1px solid $primary !important;
+        color: $white !important;
+        box-shadow: 0 3px 5px 0 rgba(229, 75, 75, 0.3);
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &.focus,
+        .open > .dropdown-toggle.btn-custom {
+            outline: none;
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
