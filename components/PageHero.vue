@@ -2,7 +2,7 @@
     <!-- Hero Start -->
     <section class="bg-half bg-light d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
         <div class="bg-overlay bg-overlay-white"></div>
-        <div class="container">
+        <div class="container" id="counter">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="page-next-level">
