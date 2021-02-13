@@ -6,13 +6,9 @@
                     <div class="col-12 text-center">
                         <a href="javascript:void(0)" class="footer-logo text-black">Queue</a>
                         <p class="para-desc mx-auto mt-5 text-black">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                        <ul class="list-unstyled mb-0 mt-4 social-icon">
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-facebook"></i></a></li>
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-twitter"></i></a></li>
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-instagram"></i></a></li>
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-vimeo"></i></a></li>
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-google-plus"></i></a></li>
-                            <li class="list-inline-item mr-1"><a href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-linkedin"></i></a></li>
+                        <ul class="list-unstyled mb-0 mt-4 social-icon" v-for="link in $store.state.links" :key="link.name">
+                            <li class="list-inline-item mr-1"><a target="_blank" :href="link.url" class="rounded-circle"><i :class="link.icon"></i></a></li>
+                        <!--<li class="list-inline-item mr-1"><a                  href="javascript:void(0)" class="rounded-circle"><i class="mdi mdi-linkedin"></i></a></li> -->
                         </ul>
                     </div><!--end col-->
                 </div><!--end row-->
