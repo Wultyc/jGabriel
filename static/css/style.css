@@ -852,6 +852,7 @@ a {
 .navbar-custom .nav-social li a {
   color: #007bff !important;
   font-size: 18px;
+  margin: 5px;
 }
 
 .navbar-custom .navbar-brand {
