@@ -1,6 +1,6 @@
 export default {
   //Project global name
-  globalName: 'myCustomName',
+  globalName: 'jGabriel',
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -20,19 +20,20 @@ export default {
       { hid: 'keywords', name: 'keywords', content: 'Wultyc, jGabriel, Notebook, jGabriel Notebook, Jorge Gabriel Azevedo,' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css', integrity:'sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==', crossorigin:'anonymous' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/magnific-popup.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/materialdesignicons.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/owl.carousel.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/owl.theme.default.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/flickity.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/style.css' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/static/css/bootstrap.min.css',
-    '~/static/css/magnific-popup.css',
-    '~/static/css/materialdesignicons.min.css',
-    //'~/static/css/owl.carousel.min.css',
-    '~/static/css/owl.theme.default.min.css',
-    '~/static/css/flickity.css',
-    '~/static/css/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,6 +59,5 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {},
 }
