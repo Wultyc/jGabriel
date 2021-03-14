@@ -1,6 +1,6 @@
 <template>
     <!-- Hero Start -->
-    <section class="bg-half bg-light d-table w-100" style="background: url('images/bg-posted.jpg')center center;">
+    <section class="bg-half bg-light d-table w-100" style="background: url('images/{{background}}')center center;">
         <div class="bg-overlay bg-overlay-white"></div>
         <div class="container" id="counter">
             <div class="row justify-content-center">
@@ -31,6 +31,9 @@ export default Vue.extend( {
     props: {
         path: {
             required: true
+        },
+        background: {
+            default: 'bg-posted.jpg'
         }
     }
 })
