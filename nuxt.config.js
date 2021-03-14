@@ -64,8 +64,15 @@ export default {
   //environment configuration
   env: {
     projectName: 'jGabriel',
+    internalPages: [
+      { name:'Home', icon:'', url:'/', showOnNavBar: true},
+      { name:'About Me', icon:'', url:'/about-me', showOnNavBar: true},
+      { name:'Portfolio', icon:'', url:'/portfolio', showOnNavBar: true},
+      { name:'Notebook', icon:'', url:'/articles', showOnNavBar: true},
+      { name:'Contacts', icon:'', url:'/contact', showOnNavBar: true},
+    ],
     externalPages: [
-        { name:'notebook', icon:'', url:'https://notebook.jgabriel.eu', showOnNavBar: true},
+        { name:'jGabriel', icon:'', url:'https://jgabriel.eu', showOnNavBar: false},
     ],
     social:[
         { name:'github', icon:'fab fa-github', url:'http://github.com/wultyc', showOnNavBar: true},
