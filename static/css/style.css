@@ -1469,7 +1469,7 @@ img {
   height: 18px;
   position: absolute;
   right: 15%;
-  top: 13%;
+  top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1507,7 +1507,7 @@ img {
 }
 
 .education-badge {
-  width: 100px !important;
+  width: auto !important;
   height: 25px;
 }
 

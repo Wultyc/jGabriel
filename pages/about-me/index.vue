@@ -1,19 +1,20 @@
 <template>
   <section class="section pb-0" id="contact">
     <div class="container">
-      <article>
-        <nuxt-content :document="life" />
-      </article>
+      <LifeEvents :lifeEvents="life.experiences"/>
     </div>
   </section>
 </template>
 
 <script>
 import Vue from 'vue'
-import Event from 'models/Event'
+import Event from '@/models/Event'
+import LifeEvents from '@/components/LifeEvents'
 
 export default Vue.extend({
-  
+  components: {
+    LifeEvents,
+  },
   data(){
     return {
       lifeEvents: Event
@@ -21,8 +22,6 @@ export default Vue.extend({
   },
   async asyncData({ $content, params }) {
     const life = await $content("life", "events").fetch();
-    console.log(life)
-
     return { life };
   }
 });

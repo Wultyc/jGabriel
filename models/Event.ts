@@ -1,31 +1,27 @@
 export default class Event {
+    id: number
     type: string
-    name: string
-    url: string
-    location: string
-    overview: string
-    positions: Position[]
-
-    constructor(type: string, name: string, url: string, location: string, overview: string, positions: Position[]){
-        this.type = type
-        this.name = name
-        this.url = url
-        this.location = location
-        this.overview = overview
-        this.positions = positions
-    }
-}
-
-export class Position {
-    designation: string
+    title: string
     start: string
     end: string
+    company: string
+    url: string
+    location: string
+    role: string
+    description: string
     responsibilities: string[]
 
-    constructor(designation: string, start: string, end: string, responsibilities: string[]){
-        this.designation = designation
+    constructor(id: number, type: string, title: string, start: string, end: string, company: string, url: string, location: string, role:string, description: string, responsibilities: string[]){
+        this.id = id
+        this.type = type
+        this.title = title
         this.start = start
-        this.end = end
+        this.end = end ?? "Present"
+        this.company = company
+        this.url = url
+        this.location = location
+        this.role = role
+        this.description = description
         this.responsibilities = responsibilities
     }
 }
