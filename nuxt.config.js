@@ -68,7 +68,7 @@ export default {
     externalPages: [
         { name:'notebook', icon:'', url:'https://notebook.jgabriel.eu', showOnNavBar: true},
     ],
-    links:[
+    social:[
         { name:'github', icon:'fab fa-github', url:'http://github.com/wultyc', showOnNavBar: true},
         { name:'twitter', icon:'fab fa-twitter', url:'https://twitter.com/wultyc', showOnNavBar: true},
         { name:'linkedin', icon:'fab fa-linkedin', url:'https://linkedin.com/in/j-gabriel/', showOnNavBar: false},

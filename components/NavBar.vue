@@ -39,6 +39,7 @@
 
 <script>
 import Vue from 'vue'
+import { EnvParams } from '../models/EnvParams'
 
 export default Vue.extend( {
     name: "NavBar",
@@ -51,9 +52,11 @@ export default Vue.extend( {
         }
     },
     mounted(){
-        this.projectName = process.env.projectName ?? '',
-        this.externalPages = process.env.externalPages.filter((l) => l.showOnNavBar) ?? [],
-        this.links = process.env.links.filter((l) => l.showOnNavBar) ?? []
+        const envData = new EnvParams()
+        this.projectName = envData.projectName,
+        this.externalPages = envData.externalPages.filter((l) => l.showOnNavBar),
+        this.links = envData.socialLinks.filter((l) => l.showOnNavBar)
+
     }
 })
 </script>
