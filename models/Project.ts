@@ -1,0 +1,35 @@
+export default class Project {
+    title: string
+    url: string
+    date: string
+    hero: string
+    banner: string
+    role: string
+    repo: string
+    startdate: string
+    enddate: string
+    technologies: string[]
+    logo: string
+    summary: string
+    tags: string[]
+    category: string
+    draft: boolean
+
+    constructor(title: string, url: string, date: string, hero: string, banner: string, role: string, repo: string, startdate: string, enddate: string, technologies: string[],  logo: string, summary: string, tags: string[], category: string, draft: boolean){
+        this.title = title
+        this.url = url
+        this.date = date
+        this.hero = hero
+        this.banner = banner
+        this.role = role
+        this.repo = repo
+        this.startdate = startdate
+        this.enddate = enddate
+        this.technologies = technologies
+        this.logo = logo
+        this.summary = summary
+        this.tags = tags
+        this.category = category
+        this.draft = draft
+    }
+}

@@ -2,7 +2,7 @@
   <section class="section pb-0" id="contact">
     <div class="container">
       <article>
-        <nuxt-content :document="project" />
+        <Project :project="project"/>
       </article>
     </div>
   </section>
@@ -10,13 +10,17 @@
 
 <script>
 import Vue from 'vue'
-export default Vue.extend({
-  async asyncData({ $content, params }) {
-    const project = await $content("projects", params.slug).fetch();
+import Project from '@/components/Project'
 
-    console.log(project)
+export default Vue.extend({
+  component: {
+    Project
+  },
+  async asyncData({ $content, params }) {
+    const project = await $content("portfolio", params.slug).fetch();
 
     return { project };
   }
 });
 </script>
+
