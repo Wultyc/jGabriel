@@ -60,4 +60,21 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  //environment configuration
+  env: {
+    projectName: 'jGabriel',
+    externalPages: [
+        { name:'notebook', icon:'', url:'https://notebook.jgabriel.eu', showOnNavBar: true},
+    ],
+    links:[
+        { name:'github', icon:'fab fa-github', url:'http://github.com/wultyc', showOnNavBar: true},
+        { name:'twitter', icon:'fab fa-twitter', url:'https://twitter.com/wultyc', showOnNavBar: true},
+        { name:'linkedin', icon:'fab fa-linkedin', url:'https://linkedin.com/in/j-gabriel/', showOnNavBar: false},
+        { name:'instagram', icon:'fab fa-instagram', url:'https://instagram.com/wultyc', showOnNavBar: false},
+    ],
+    contactInfo: {
+        'email': 'jorge.gfm.azevedo@outlook.pt',
+    }
+  }
 }

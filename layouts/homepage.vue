@@ -68,7 +68,7 @@ export default Vue.extend({
     Footer,
     ToUp,
     Loader,
-  },
+  }
 });
 </script>
 

@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
                 <!-- Logo container-->
-                <a class="logo navbar-brand" href="#">{{ $store.state.projectName }}</a>
+                <a class="logo navbar-brand" href="#">{{ projectName }}</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
                 aria-label="Toggle navigation">
@@ -23,13 +23,13 @@
                         <li class="nav-item">
                             <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
                         </li>
-                        <li class="nav-item" v-for="link in $store.state.externalPages.filter((l) => l.showOnNavBar)" :key="link.name">
+                        <li class="nav-item" v-for="link in externalPages" :key="link.name">
                             <a class="nav-link" target="_blank" :href="link.url">{{link.name}}</a>
                         </li>
                     </ul>
 
                     <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                        <li class="list-inline-item" v-for="link in $store.state.links.filter((l) => l.showOnNavBar)" :key="link.name"><a target="_blank" :href="link.url"><i :class="link.icon"></i></a></li>
+                        <li class="list-inline-item" v-for="link in links" :key="link.name"><a target="_blank" :href="link.url"><i :class="link.icon"></i></a></li>
                     </ul>
                     
                 </div> 
@@ -37,12 +37,24 @@
     </nav><!--end navbar-->
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend( {
     name: "NavBar",
-    props: []
+    props: [],
+    data(){
+        return {
+            projectName: null,
+            externalPages: null,
+            links: null
+        }
+    },
+    mounted(){
+        this.projectName = process.env.projectName ?? '',
+        this.externalPages = process.env.externalPages.filter((l) => l.showOnNavBar) ?? [],
+        this.links = process.env.links.filter((l) => l.showOnNavBar) ?? []
+    }
 })
 </script>
 
