@@ -9,13 +9,21 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+import Event from 'models/Event'
+
+export default Vue.extend({
+  
+  data(){
+    return {
+      lifeEvents: Event
+    }
+  },
   async asyncData({ $content, params }) {
     const life = await $content("life", "events").fetch();
-
     console.log(life)
 
     return { life };
   }
-};
+});
 </script>
