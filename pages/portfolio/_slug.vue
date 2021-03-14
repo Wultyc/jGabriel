@@ -9,7 +9,8 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+export default Vue.extend({
   async asyncData({ $content, params }) {
     const project = await $content("projects", params.slug).fetch();
 
@@ -17,5 +18,5 @@ export default {
 
     return { project };
   }
-};
+});
 </script>
