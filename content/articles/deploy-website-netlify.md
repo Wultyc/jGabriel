@@ -1,7 +1,7 @@
 ---
 title: "Deploy website on netlify"
 date: 2020-06-05T23:10:07Z
-images: ["articles/netlify.jpg"] # The image resolution should be 900x500 or a proportional resolution
+image: "articles/netlify.jpg" # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
 #tags: ["Netlify", "JAMStack", "HUGO"]
 authors: ["Jorge Gabriel Azevedo"]

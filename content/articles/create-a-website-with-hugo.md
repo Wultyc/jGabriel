@@ -1,7 +1,7 @@
 ---
 title: "Create a website with Hugo"
 date: 2020-04-30T22:30:30Z
-images: ["articles/configurar-hugo/00.jpg"]
+image: "articles/configurar-hugo/00.jpg"
 categories: ["How to"]
 #tags: ["JAMStack", "HUGO","Go Hugo","gohugo.io","criação de sites","site estático"]
 authors: ["Jorge Gabriel Azevedo"]

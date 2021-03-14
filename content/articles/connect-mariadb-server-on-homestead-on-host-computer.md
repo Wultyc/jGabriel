@@ -1,7 +1,7 @@
 ---
 title: "Connect MariaDB server on Homestead on Host computer"
 date: 2020-05-23T20:10:13Z
-images: ["articles/mariadb.png"] # The image resolution should be 900x500 or a proportional resolution
+image: "articles/mariadb.png" # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
 #tags: ["MariaDB","Homestead","conexão remota","DBeaver",]
 authors: ["Jorge Gabriel Azevedo"]

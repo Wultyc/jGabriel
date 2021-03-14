@@ -1,7 +1,7 @@
 ---
 title: "Use Outlook account on Android with Microsoft Exchange"
 date: 2020-05-09T23:07:36Z
-images: ["articles/microsoft-exchange.png"] # The image resolution should be 900x500 or a proportional resolution
+image: "articles/microsoft-exchange.png" # The image resolution should be 900x500 or a proportional resolution
 categories: ["How to"]
 #tags: []
 authors: ["Jorge Gabriel Azevedo"]

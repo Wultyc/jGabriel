@@ -1,7 +1,7 @@
 ---
 title: "JAMStack: the new paradigm of web development"
 date: 2020-06-06T17:41:48Z
-images: ["articles/jamstack.jpg"] # The image resolution should be 900x500 or a proportional resolution
+image: "articles/jamstack.jpg" # The image resolution should be 900x500 or a proportional resolution
 categories: ["Conceito"]
 #tags: ["JAMStack", "CDN", "Desenvolvimento Web", "Netlify", "HUGO", "Gatsby"]
 authors: ["Jorge Gabriel Azevedo"]
