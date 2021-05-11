@@ -18,7 +18,7 @@
                 <div :class="'col-lg-4 col-md-6 col-12 mt-4 pt-2 ' + project.category" v-for="project in projects" :key="project.title">
                     <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img :src="'images/' + project.hero" class="img-fluid" alt="work-image">
+                            <img :src="'/images/' + project.hero" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
                                 <h5 class="mb-0"><a :href="project.url" class="text-white title">{{project.title}}</a></h5>
@@ -69,7 +69,7 @@ export default Vue.extend( {
         this.projectsList.forEach(element => {
             this.projects.push( new Project(
                 element.title,
-                element.path,
+                element.path.substring(0,element.path.length-5),
                 element.date,
                 element.hero,
                 element.banner,

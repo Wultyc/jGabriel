@@ -11,8 +11,8 @@ export default Vue.extend({
         ProjectList
     },
     async asyncData({ $content, params }) {
-        const projects = await $content('portfolio', params.slug)
-        .where({ draft: { $eq: false } })
+        const projects = await $content('portfolio', {deep:true})
+        .where({ home:true, draft: false })
         .sortBy('startdate', 'desc')
         .fetch()
 

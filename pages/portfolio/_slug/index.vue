@@ -17,7 +17,7 @@ export default Vue.extend({
     Project
   },
   async asyncData({ $content, params }) {
-    const project = await $content("portfolio", params.slug).fetch();
+    const project = await $content("portfolio", params.slug, 'index').fetch();
 
     return { project };
   }
