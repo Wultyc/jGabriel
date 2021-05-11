@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Loader -->
-    <Loader />
+    <!-- <Loader /> -->
     <!-- Loader -->
 
     <!-- PageHero -->
@@ -64,11 +64,11 @@
 
 <script >
 import Vue from "vue";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import ToUp from "../components/ToUp";
-import Loader from "../components/Loader";
-import PageHero from '../components/PageHero'
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
+import ToUp from "@/components/ToUp";
+import Loader from "@/components/Loader";
+import PageHero from '@/components/PageHero'
 
 export default Vue.extend({
     components: {

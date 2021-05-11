@@ -10,7 +10,7 @@
 
 <script>
 import Vue from 'vue'
-import Article from '@/components/Article'
+import Article from '@/components/Article/Article'
 
 export default Vue.extend({
   component: {

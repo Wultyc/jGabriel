@@ -10,7 +10,7 @@
 
 <script>
 import Vue from 'vue'
-import Project from '@/components/Project'
+import Project from '@/components/Project/Project'
 
 export default Vue.extend({
   component: {

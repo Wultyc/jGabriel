@@ -4,7 +4,7 @@
 
 <script>
 import Vue from "vue";
-import ProjectList from '@/components/ProjectList'
+import ProjectList from '@/components/Project/ProjectList'
 
 export default Vue.extend({
     components:{

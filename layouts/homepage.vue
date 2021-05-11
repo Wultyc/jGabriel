@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Loader -->
-    <Loader />
+    <!-- <Loader /> -->
     <!-- Loader -->
     <!-- Navbar Start -->
     <NavBar />

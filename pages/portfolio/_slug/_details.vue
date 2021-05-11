@@ -11,8 +11,8 @@
 
 <script>
 import Vue from 'vue'
-import Project from '@/components/Project'
-import ProjectDetails from '@/components/ProjectDetails'
+import Project from '@/components/Project/Project'
+import ProjectDetails from '@/components/Project/ProjectDetails'
 
 export default Vue.extend({
   component: {

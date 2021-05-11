@@ -181,7 +181,7 @@
 
 <script>
 import Vue from "vue";
-import PageHero from "../components/PageHero";
+import PageHero from "@/components/PageHero";
 
 export default Vue.extend({
   components: {
