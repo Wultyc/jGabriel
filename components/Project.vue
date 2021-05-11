@@ -46,7 +46,8 @@
 
                 <div class="col-lg-5 col-md-6 order-1 order-md-2">
                     <div class="port-images sticky-sidebar">
-                        <img :src="'/images/' + project.hero" class="img-fluid mx-auto d-block rounded" alt="img">
+                        <ProjectFiles :projectFiles="projectFiles" />
+                        <img :src="'/images/' + project.hero" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
                         <img :src="'/images/' + project.banner" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
                     </div>
                 </div><!--end col-->
@@ -59,14 +60,22 @@
 
 <script>
 import Vue from 'vue'
+import ProjectFiles from './ProjectFiles'
 
 export default Vue.extend( {
     name: "Project",
+    components:{
+        ProjectFiles
+    },
     props: {
         project: {
             type: Object,
             required: true
         },
+        projectFiles: {
+            type: Array,
+            required: true
+        }
     },
     mounted(){}
 })

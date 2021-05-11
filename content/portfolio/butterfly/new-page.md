@@ -1,5 +1,5 @@
 ---
-title: "Butterfly"
+title: "New Page"
 date: 2017-06-16
 hero: projects/butterfly/hero.png
 banner: projects/butterfly/banner.jpg

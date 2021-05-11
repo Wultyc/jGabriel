@@ -69,7 +69,7 @@ export default Vue.extend( {
         this.projectsList.forEach(element => {
             this.projects.push( new Project(
                 element.title,
-                element.path.substring(0,element.path.length-5),
+                element.path,
                 element.date,
                 element.hero,
                 element.banner,

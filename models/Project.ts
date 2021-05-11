@@ -17,7 +17,7 @@ export default class Project {
 
     constructor(title: string, url: string, date: string, hero: string, banner: string, role: string, repo: string, startdate: string, enddate: string, technologies: string[],  logo: string, summary: string, tags: string[], category: string, draft: boolean){
         this.title = title
-        this.url = url
+        this.url = (url.substring(url.length-5) == "index") ? url.substring(0,url.length-5) : url
         this.date = date
         this.hero = hero
         this.banner = banner
