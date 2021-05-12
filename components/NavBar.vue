@@ -1,16 +1,16 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
                 <!-- Logo container-->
-                <nuxt-link class="logo navbar-brand" to="/">{{ projectName }}</nuxt-link>
+                <nuxt-link :class="navBarStyle.logo" to="/">{{ projectName }}</nuxt-link>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                    <span data-feather="menu" class="fea icon-md"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
                 </button><!--end button-->
 
                 <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-                    <ul class="navbar-nav navbar-nav-link ml-auto">
+                    <ul id="navbar-navlist" :class="navBarStyle.pageList">
                         <li class="nav-item" v-for="link in internalPages" :key="link.name">
                             <nuxt-link class="nav-link" :to="link.url">{{link.name}}</nuxt-link>
                         </li>
@@ -34,13 +34,18 @@ import { EnvParams } from '../models/EnvParams'
 
 export default Vue.extend( {
     name: "NavBar",
-    props: [],
+    props: {
+        isHome: {
+            default: false
+        },
+    },
     data(){
         return {
             projectName: null,
             internalPages: null,
             externalPages: null,
-            links: null
+            links: null,
+            navBarStyle: {logo: "", pageList: ""},
         }
     },
     mounted(){
@@ -49,6 +54,12 @@ export default Vue.extend( {
         this.internalPages = envData.internalPages.filter((l) => l.showOnNavBar),
         this.externalPages = envData.externalPages.filter((l) => l.showOnNavBar),
         this.links = envData.socialLinks.filter((l) => l.showOnNavBar)
+
+        if(this.isHome == true){
+            this.navBarStyle = {logo: "logo navbar-brand", pageList: "navbar-nav navbar-nav-link ml-auto"}
+        } else {
+            this.navBarStyle = {logo: "logo", pageList: "navbar-nav ms-auto"}
+        }
 
     }
 })

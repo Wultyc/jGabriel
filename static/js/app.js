@@ -1,8 +1,8 @@
-/* Template Name: Queue - Personal Portfolio Template
-   Author: Zoyothemes
-   E-mail: zoyothemes@gmail.com
-   Created: Jun 2019
-   Version: 1.0
+/* Template Name: Queue - Personal Responsive Landing Template
+   Author:        Zoyothemes
+   E-mail:        zoyothemes@gmail.com
+   Created:       July 2021
+   Version:       1.1
    File Description: Main JS file of the template
 */
 
@@ -16,101 +16,56 @@
  *     03.  Back to top     *
 ############################*/
 
-! function($) {
-    "use strict"; 
-    // Loader 
-    $(window).on('load', function() {
-        $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-    });
+window.addEventListener('load',   fn , false )
 
-    // Navbar-toggle Menu
-    $('.navbar-toggle').on('click', function (event) {
-        $(this).toggleClass('open');
-        $('#navbar-nav').slideToggle(400);
-    });
+//  window.onload = function loader() {
+function fn() {
+    // Preloader
+    // setTimeout(() => {
+    //     document.getElementById('preloader').style.visibility = 'hidden';
+    //     document.getElementById('preloader').style.opacity = '0';
+    // }, 350);
+}
+
+// Menu sticky
+function windowScroll() {
+    const navbar = document.getElementById("navbar");
+    if (
+        document.body.scrollTop >= 50 ||
+        document.documentElement.scrollTop >= 50
+    ) {
+        navbar.classList.add("nav-sticky");
+    } else {
+        navbar.classList.remove("nav-sticky");
+    }
+}
+
+window.addEventListener('scroll', (ev) => {
+    ev.preventDefault();
+    windowScroll();
+})
 
 
-    // Sticky Menu
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+// Back-to-top
+var mybutton = document.getElementById("back-to-top");
+window.onscroll = function () {
+    scrollFunction();
+};
 
-        if (scroll >= 50) {
-            $(".sticky").addClass("nav-sticky");
+function scrollFunction() {
+    if(mybutton!=null){
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            mybutton.style.display = "block";
         } else {
-            $(".sticky").removeClass("nav-sticky");
+            mybutton.style.display = "none";
         }
-    });
+    }
+}
 
-    // Dropdown menu 
-    $('.navbar-nav a, .mouse-down').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
-    // Scrollspy
-    $(".navbar-nav").scrollspy({ offset: 70 });
-
-    // Back to top
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn();
-        } else {
-            $('.back-to-top').fadeOut();
-        }
-    }); 
-    $('.back-to-top').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 3000);
-        return false;
-    }); 
-
-    //Feather icon
-    feather.replace()
-
-    // Magnific Popup
-    $('.mfp-image').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-fade',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        }
-    });
-
-    //Portfolio filter
-    $(window).on('load', function() {
-        var $container = $('.projects-wrapper');
-        var $filter = $('#filter');
-        $container.isotope({
-            filter: '*',
-            layoutMode: 'masonry',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear'
-            }
-        });
-        $filter.find('a').click(function() {
-            var selector = $(this).attr('data-filter');
-            $filter.find('a').removeClass('active');
-            $(this).addClass('active');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    animationDuration: 750,
-                    easing: 'linear',
-                    queue: false,
-                }
-            });
-            return false;
-        });
-    });
-    
-}(jQuery)
+//Feather icon
+feather.replace();

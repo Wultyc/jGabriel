@@ -28,7 +28,10 @@ export default {
       { rel: 'stylesheet', type: 'text/css', href: '/css/owl.carousel.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/owl.theme.default.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/flickity.css' },
-      { rel: 'stylesheet', type: 'text/css', href: '/css/style.css' }
+      { rel: 'stylesheet', type: 'text/css', href: '/css/style.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/mklb.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/tiny-slider.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/colors/green.css' }
     ]
   },
 

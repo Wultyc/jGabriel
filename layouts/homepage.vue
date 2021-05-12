@@ -4,7 +4,7 @@
     <!-- <Loader /> -->
     <!-- Loader -->
     <!-- Navbar Start -->
-    <NavBar />
+    <!-- <NavBar :isHome="true"/> -->
     <!-- Navbar End -->
 
     <!-- Page Content Start -->
@@ -22,17 +22,13 @@
     <!-- Javascript -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/jquery.easing.min.js"></script>
-    <script src="/js/scrollspy.min.js"></script>
 
-    <!-- Magnific Js -->
-    <script src="/js/isotope.js"></script>
-    <script src="/js/jquery.magnific-popup.min.js"></script>
-    <script src="/js/magnific.init.js"></script>
+    <!-- Slider -->
+    <script src="/js/tiny-slider.js "></script>
+    <script src="/js/tiny-slider-init.js "></script>
 
-    <!-- Slider Js -->
-    <script src="/js/owl.carousel.min.js "></script>
-    <script src="/js/owl.init.js "></script>
+    <!-- MK Lightbox -->
+    <script src="/js/mklb.js"></script>
 
     <!-- Contact -->
     <script src="/js/contact.js"></script>
@@ -43,12 +39,16 @@
     <!-- Feather icon -->
     <script src="/js/feather.min.js"></script>
 
+    <!-- Ripples -->
+    <script src="/js/jquery.ripples-min.js"></script>
+    <script src="/js/ripple.init.js"></script>
+
     <!-- Typed -->
     <script src="/js/typed.js"></script>
     <script src="/js/typed.init.js"></script>
 
-    <!-- Flickity Js -->
-    <script src="/js/flickity.pkgd.min.js"></script>
+    <!-- Switcher -->
+    <script src="/js/switcher.js"></script>
 
     <!-- Main Js -->
     <script src="/js/app.js"></script>
