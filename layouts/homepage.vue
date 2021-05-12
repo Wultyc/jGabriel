@@ -4,7 +4,7 @@
     <!-- <Loader /> -->
     <!-- Loader -->
     <!-- Navbar Start -->
-    <!-- <NavBar :isHome="true"/> -->
+    <NavBar :isHome="true"/>
     <!-- Navbar End -->
 
     <!-- Page Content Start -->

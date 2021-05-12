@@ -1,65 +1,6 @@
 <template>
   <div class="page">
-    <!-- Navbar Start -->
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-    		<div class="container">
-                <!-- Logo container-->
-                <a class="logo navbar-brand" href="#">Queue</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button><!--end button-->
-
-                <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-                    <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">Blog</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages
-                            </a>
-                            <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
-                                <div class="container ms-0 ms-md-0">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <a class="dropdown-item" href="page-blog.html">Blog</a>
-                                            <a class="dropdown-item" href="page-blog-detail.html">Blog Detail</a>
-                                            <a class="dropdown-item" href="page-portfolio.html">Portfolio</a>
-                                            <a class="dropdown-item" href="page-portfolio-detail.html">Portfolio Detail</a>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </div><!--end container-->
-                            </div>
-                        </li><!--end nav item-->
-                    </ul>
-
-                    <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                        <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                    </ul>
-                    
-                </div> 
-            </div><!--end container-->
-		</nav><!--end navbar-->
-        <!-- Navbar End -->
-
+    
         <!-- Hero Area -->
         <div class="hero-area position-relative bg-half-120" style="background-image:url('images/hero-bg.jpg')" id="home">
             <div class="bg-overlay"></div>

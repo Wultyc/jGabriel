@@ -20,7 +20,7 @@
                     </ul>
 
                     <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                        <li class="list-inline-item" v-for="link in links" :key="link.name"><a target="_blank" :href="link.url"><i :class="link.icon"></i></a></li>
+                        <li class="list-inline-item me-2" v-for="link in links" :key="link.name"><a target="_blank" :href="link.url"><i :class="link.icon"></i></a></li>
                     </ul>
                     
                 </div> 
@@ -56,7 +56,7 @@ export default Vue.extend( {
         this.links = envData.socialLinks.filter((l) => l.showOnNavBar)
 
         if(this.isHome == true){
-            this.navBarStyle = {logo: "logo navbar-brand", pageList: "navbar-nav navbar-nav-link ml-auto"}
+            this.navBarStyle = {logo: "logo navbar-brand", pageList: "navbar-nav navbar-nav-link ms-auto"}
         } else {
             this.navBarStyle = {logo: "logo", pageList: "navbar-nav ms-auto"}
         }
