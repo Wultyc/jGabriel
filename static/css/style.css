@@ -1513,8 +1513,8 @@ button:not(:disabled) {
   background-color: rgba(0, 123, 254, 0.08);
   height: 18px;
   position: absolute;
-  right: 15%;
-  top: 13%;
+  right: 17%;
+  top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1552,7 +1552,7 @@ button:not(:disabled) {
 }
 
 .education-badge {
-  width: 100px !important;
+  width: auto !important;
   height: 25px;
 }
 
