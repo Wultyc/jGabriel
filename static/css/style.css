@@ -1509,7 +1509,7 @@ button:not(:disabled) {
 
 .skill-badge {
   cursor: pointer;
-  width: 36px;
+  width: auto;
   background-color: rgba(0, 123, 254, 0.08);
   height: 18px;
   position: absolute;
