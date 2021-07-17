@@ -2,7 +2,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
                 <!-- Logo container-->
-                <nuxt-link :class="navBarStyle.logo" to="/">{{ projectName }}</nuxt-link>
+                <nuxt-link :class="navBarStyle.logo" :to="'/'">{{ projectName }}</nuxt-link>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
                     aria-label="Toggle navigation">
