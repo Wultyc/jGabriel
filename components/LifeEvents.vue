@@ -21,7 +21,7 @@
                                         <i data-feather="target" class="fea icon-md"></i>
                                     </div>
                                     <h3 class="title mb-0">{{event.title}}</h3>
-                                    <a :href="event.url" class="company">{{event.company}} | {{event.role}}</a>
+                                    <nuxt-link :to="event.url" class="company">{{event.company}} | {{event.role}}</nuxt-link>
                                     <span class="badge skill-badge education-badge badge-light">{{event.start}} - {{event.end}}</span>
                                     <p class="description text-light-muted mt-2">
                                         {{event.description}}

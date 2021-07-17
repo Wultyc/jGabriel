@@ -10,12 +10,12 @@
                                 <img :src="'/images/' + article.images" class="img-fluid rounded-top" alt="">
                             </div>
                             <div class="content pt-4 pb-4 p-3">
-                                <h5><a :href="article.url" class="title text-dark">{{article.title}}</a></h5>
+                                <h5><nuxt-linka :to="article.url" class="title text-dark">{{article.title}}</nuxt-linka></h5>
                                 <div class="post-meta d-flex justify-content-between mt-3">
                                     <ul class="list-unstyled mb-0 d-flex justify-content-between">
                                         <li class="list-inline-item mr-2 mb-0 text-light-muted date"><i class="mdi mdi-calendar-edit mr-1"></i>{{article.date}}</li>
                                     </ul>
-                                    <a :href="article.url" class="text-muted readmore">Read More <i class="mdi mdi-chevron-right"></i></a>
+                                    <nuxt-link :to="article.url" class="text-muted readmore">Read More <i class="mdi mdi-chevron-right"></i></nuxt-link>
                                 </div>
                             </div><!--end content-->
                         </div><!--end blog post-->

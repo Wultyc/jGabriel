@@ -21,7 +21,7 @@
                             <img :src="'/images/' + project.hero" class="img-fluid" alt="work-image">
                             <div class="overlay-work bg-dark"></div>
                             <div class="content">
-                                <h5 class="mb-0"><a :href="project.url" class="text-white title">{{project.title}}</a></h5>
+                                <h5 class="mb-0"><nuxt-link :to="project.url" class="text-white title">{{project.title}}</nuxt-link></h5>
                                 <h6 class="text-light tag mb-0">{{project.category}}</h6>
                             </div>
                         </div>
