@@ -1,0 +1,7 @@
+routes:
+  - id: home
+    url: /
+    local: true
+  - id: 1
+    url: http://jgabriel.eu
+    local: false
