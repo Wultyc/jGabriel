@@ -1,4 +1,7 @@
 export default {
+  //Debug Mode
+  debug: true,
+
   //Project global name
   globalName: 'jGabriel',
 

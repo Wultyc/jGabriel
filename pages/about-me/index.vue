@@ -1,34 +1,23 @@
 <template>
-  <section class="section pb-0" id="contact">
-    <div class="container">
-      <LifeEvents :lifeEvents="life.experiences"/>
-    </div>
-    <div class="container">
-      <Skills :skillsList="skills.skills"/>
-    </div>
-  </section>
+  <AboutMe :AboutMe="aboutme" :Pages="pages" />
 </template>
 
 <script>
-import Vue from 'vue'
-import Event from '@/models/Event'
-import LifeEvents from '@/components/LifeEvents'
-import Skills from '@/components/Skills'
+import Vue from "vue";
+import AboutMe from "@/components/AboutMe"
 
 export default Vue.extend({
   components: {
-    LifeEvents,
-    Skills
+    AboutMe
   },
-  data(){
-    return {
-      lifeEvents: Event
-    }
+  data() {
+    return {};
   },
   async asyncData({ $content, params }) {
-    const life = await $content("life", "events").fetch();
-    const skills = await $content("life", "skills").fetch();
-    return { life, skills };
+    const aboutme = await $content("aboutme", "aboutme").fetch();
+    const pages = await $content("aboutme", "pages").fetch();
+    console.log({ aboutme, pages })
+    return { aboutme, pages };
   }
 });
 </script>
