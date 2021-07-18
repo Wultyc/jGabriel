@@ -83,8 +83,8 @@ export default {
     social:[
         { name:'github', icon:'fab fa-github', url:'http://github.com/wultyc', showOnNavBar: true},
         { name:'twitter', icon:'fab fa-twitter', url:'https://twitter.com/wultyc', showOnNavBar: true},
-        { name:'linkedin', icon:'fab fa-linkedin', url:'https://linkedin.com/in/j-gabriel/', showOnNavBar: false},
-        { name:'instagram', icon:'fab fa-instagram', url:'https://instagram.com/wultyc', showOnNavBar: false},
+        { name:'instagram', icon:'fab fa-instagram', url:'https://instagram.com/wultyc/', showOnNavBar: true},
+        { name:'linkedin', icon:'fab fa-linkedin', url:'https://linkedin.com/in/jorge-gfm-azevedo/', showOnNavBar: true},
     ],
     contactInfo: {
         'email': 'jorge.gfm.azevedo@outlook.pt',
