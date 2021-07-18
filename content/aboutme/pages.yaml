@@ -1,0 +1,9 @@
+- id: skills
+  label: Skills
+  text: My Skills
+  url: skills
+
+- id: timeline
+  label: Timeline
+  text: My Lifetime events
+  url: timeline
