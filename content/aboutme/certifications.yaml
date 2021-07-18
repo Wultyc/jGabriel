@@ -1,0 +1,13 @@
+info:
+  title: My Certifications
+  phrase: Those are the certifications I have.
+certs: 
+  - id: mule4dev1
+    label: Mulesoft Certified Developer I
+    Description: ""
+    img: /images/certificates/mcd-l1.png
+
+  - id: scrumbasis
+    label: "Scrum: The Basis"
+    Description: ""
+    img: /images/certificates/cc_scrum_the_basics.png

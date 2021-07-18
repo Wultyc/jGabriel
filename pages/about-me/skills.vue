@@ -1,7 +1,7 @@
 <template>
   <section class="section pb-0" id="contact">
     <div class="container">
-      <Skills :skillsList="skills.skills"/>
+      <Skills :skillsList="skills"/>
     </div>
   </section>
 </template>
@@ -15,7 +15,7 @@ export default Vue.extend({
     Skills
   },
   async asyncData({ $content, params }) {
-    const skills = await $content("life", "skills").fetch();
+    const skills = await $content("aboutme", "skills").fetch();
     return { skills };
   }
 });

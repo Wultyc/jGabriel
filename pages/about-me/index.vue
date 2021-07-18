@@ -14,9 +14,8 @@ export default Vue.extend({
     return {};
   },
   async asyncData({ $content, params }) {
-    const aboutme = await $content("aboutme", "aboutme").fetch();
-    const pages = await $content("aboutme", "pages").fetch();
-    console.log({ aboutme, pages })
+    const aboutme = await $content("aboutme", "introduction").fetch();
+    const pages = await $content("aboutme", "subpages").fetch();
     return { aboutme, pages };
   }
 });

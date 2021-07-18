@@ -6,8 +6,8 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-4">
                     <div class="work-content mt-4">
-                        <h2 class="text-capitalize">Work/study experience</h2>
-                        <p class="mb-0 text-light-muted">I'm working in software development since very young.</p>
+                        <h2 class="text-capitalize">{{lifeEvents.info.title}}</h2>
+                        <p class="mb-0 text-light-muted">{{lifeEvents.info.phrase}}</p>
                         <!-- <a href="#" class="btn btn btn-primary rounded mt-4 pt-2">See More <i class="mdi mdi-chevron-right"></i></a> -->
                     </div>
                 </div>
@@ -57,12 +57,12 @@ export default Vue.extend( {
     },
     props: {
         lifeEvents: {
-            type: Array,
+            type: Object,
             required: true
         },
     },
     mounted(){
-        this.lifeEvents.forEach(element => {
+        this.lifeEvents.experiences.forEach(element => {
             this.events.push( new Event(
                 element.id,
                 element.type,

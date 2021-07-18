@@ -9,9 +9,9 @@
                             <div class="col-12 text-center mb-3">
                                 <div class="container-title">
                                     <div class="titles">
-                                        <h4 class="title title-line text-capitalize mb-4">Work Expertise</h4>
+                                        <h4 class="title title-line text-capitalize mb-4">{{skillsList.info.title}}</h4>
                                     </div>
-                                    <p class="text-light-muted mx-auto width-max mb-0">During my carrear I worked with many tools. Here is a list of some I feal more confortble with.</p>
+                                    <p class="text-light-muted mx-auto width-max mb-0">{{skillsList.info.phrase}}</p>
                                 </div>
                             </div><!--end col-->
                         </div><!--end row-->
@@ -52,12 +52,12 @@ export default Vue.extend( {
     },
     props: {
         skillsList: {
-            type: Array,
+            type: Object,
             required: true
         },
     },
     mounted(){
-        this.skillsList.forEach(element => {
+        this.skillsList.skills.forEach(element => {
             this.skills.push(new Skill(
                 element.id,
                 element.label,

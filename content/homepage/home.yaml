@@ -1,13 +1,9 @@
-me:
-  name: Jorge Gabriel Azevedo
-  img: images/profile.jpg
-  phrase:
-    main: Hello I'm Jorge Gabriel Azevedo
-    second: I'm a Passionate Web Designer
-  links:
-      - id: cv
-        label: Download CV
-        url: ''
-page:
-  hero:
-    bg: images/background.jpg
+hero:
+  bg: images/background.jpg
+phrase:
+  main: Hello I'm Jorge Gabriel Azevedo
+  second: I'm a Passionate Web Designer
+links:
+    - id: cv
+      label: Download CV
+      url: ''
