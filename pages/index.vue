@@ -1,5 +1,5 @@
 <template>
-    <Presentation :homeData="data" />
+    <Presentation :PersonalData="personalData" :HomeData="homeData" />
 </template>
 
 <script>
@@ -14,8 +14,9 @@ export default Vue.extend({
     },
     
     async asyncData({ $content, params }) {
-        const data = await $content("homepage", "home").fetch();
-        return { data };
+        const personalData = await $content("aboutme", "introduction").fetch();
+        const homeData = await $content("homepage", "home").fetch();
+        return { personalData, homeData };
     }
 });
 </script>
