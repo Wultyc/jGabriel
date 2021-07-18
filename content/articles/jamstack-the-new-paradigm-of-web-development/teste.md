@@ -6,6 +6,7 @@ categories: ["Conceito"]
 #tags: ["JAMStack", "CDN", "Desenvolvimento Web", "Netlify", "HUGO", "Gatsby"]
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
+home: false
 draft: false
 ---
 JAMStack is a new approach to web development that allows scalable websites and webapps to be made available in a simpler and more effective way with considerable cost savings.

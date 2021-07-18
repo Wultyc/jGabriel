@@ -5,6 +5,7 @@ image: "jorge-gabriel-azevedo.jpg"
 categories: ["Artigo Pessoal"]
 #tags: ["Sobre mim", "C", "PHP", "Laravel", "HTML", "Mulesoft", "Java"]
 authors: ["Jorge Gabriel Azevedo"]
+home: true
 draft: false
 ---
 Hi, I'm a programmer born in Porto. During my childhood I had the opportunity to have contact with technology and that made me want to start developing software very early.

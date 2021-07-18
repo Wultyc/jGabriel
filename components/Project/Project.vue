@@ -12,6 +12,23 @@
                                 <nuxt-content :document="project"/>
                             </div>
                         </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end col-->
+
+                <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                    <div class="port-images sticky-sidebar">
+                        <ProjectFiles :projectFiles="projectFiles" />
+
+                        <div class="card blog blog-detail border-0 shadow rounded mt-4">
+                            <div class="card-body content">
+                                <h3>Table of contents</h3>
+                                <ul>
+                                    <li v-for="link of project.toc" :key="link.id">
+                                    <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         
                         <div class="col-lg-12 mt-4 pt-2">
                             <div class="work-details bg-light rounded">
@@ -41,12 +58,7 @@
                                 </ul>                          
                             </div>
                         </div><!--end col-->
-                    </div><!--end row-->
-                </div><!--end col-->
 
-                <div class="col-lg-5 col-md-6 order-1 order-md-2">
-                    <div class="port-images sticky-sidebar">
-                        <ProjectFiles :projectFiles="projectFiles" />
                         <img :src="'/images/' + project.hero" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
                         <img :src="'/images/' + project.banner" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
                     </div>

@@ -6,6 +6,7 @@ categories: ["How to"]
 #tags: ["JAMStack", "HUGO","Go Hugo","gohugo.io","criação de sites","site estático"]
 authors: ["Jorge Gabriel Azevedo"]
 sources: ["https://gohugo.io/","https://github.com/puresyntax71/hugo-theme-chunky-poster"]
+home: true
 draft: false
 ---
 HUGO is a framework that allows the creation of static websites without the need for a deep knowledge of HTML, JavaScript or CSS.

@@ -2,7 +2,7 @@
   <section class="section pb-0" id="contact">
     <div class="container">
       <article>
-        <Project :project="project" :projectFiles="projectFiles"/>
+        <Article :article="article" :articleFiles="articleFiles"/>
       </article>
     </div>
   </section>
@@ -10,24 +10,19 @@
 
 <script>
 import Vue from 'vue'
-import Project from '@/components/Project/Project'
+import Article from '@/components/Article/Article'
 
 export default Vue.extend({
   component: {
-    Project
+    Article
   },
   async asyncData({ $content, params }) {
-
-    const slug = params.slug
-    const details = params.details
-
-    const project = await $content("portfolio", params.slug, params.details).fetch();
-    const projectFiles = await $content("portfolio", params.slug)
+    const article = await $content("articles", params.slug, 'index').fetch();
+    const articleFiles = await $content("articles", params.slug)
                                         .sortBy('title', 'asc')
                                         .fetch();
 
-    return { project, projectFiles , slug, details };
+    return { article, articleFiles };
   }
 });
 </script>
-

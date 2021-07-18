@@ -18,7 +18,10 @@
                 <!-- START SIDEBAR -->
                 <div class="col-lg-4 col-md-6 col-12 mt-4 mb-4 mt-sm-0 pt-2 pt-sm-0">
                     <div class="sticky-sidebar">
-                        <div class="card blog blog-detail border-0 shadow rounded">
+
+                        <ArticleFiles :ArticleFiles="articleFiles" />
+
+                        <div class="card blog blog-detail border-0 shadow rounded mt-4">
                             <div class="card-body content">
                                 <h3>Table of contents</h3>
                                 <ul>
@@ -40,16 +43,26 @@
 
 <script>
 import Vue from 'vue'
+import ArticleFiles from './ArticleFiles'
 
 export default Vue.extend( {
     name: "Article",
+    components:{
+        ArticleFiles
+    },
     props: {
         article: {
             type: Object,
             required: true
         },
+        articleFiles: {
+            type: Array,
+            required: true
+        }
     },
-    mounted(){}
+    mounted(){
+        console.log(this.article)
+    }
 })
 </script>
 

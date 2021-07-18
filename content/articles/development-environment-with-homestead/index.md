@@ -6,6 +6,7 @@ categories: ["How to"]
 #tags: []
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
+home: true
 draft: false
 ---
 It is no secret that I have a clear preference for web development, especially with PHP and Laravel. Since most of the web backend developed in PHP is hosted on Linux servers, the Laravel team provides a very interesting solution to create a Laravel development environment in minutes: Homestead!

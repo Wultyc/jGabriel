@@ -6,6 +6,7 @@ categories: ["How to"]
 #tags: ["MariaDB","Homestead","conexão remota","DBeaver",]
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
+home: true
 draft: false
 ---
 During software development it is often necessary to test how information is being stored in the database, and this becomes a little more complicated when the database management system is not installed locally.

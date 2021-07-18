@@ -6,6 +6,7 @@ categories: ["How to"]
 #tags: ["Netlify", "JAMStack", "HUGO"]
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
+home: true
 draft: false
 ---
 Netlify is a platform for the provision of static websites that has been popularized by its public CDN for the provision of websites and static content.

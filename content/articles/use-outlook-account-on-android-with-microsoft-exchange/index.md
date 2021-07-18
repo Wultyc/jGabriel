@@ -6,6 +6,7 @@ categories: ["How to"]
 #tags: []
 authors: ["Jorge Gabriel Azevedo"]
 sources: []
+home: true
 draft: false
 ---
 Setting up an Outlook.com service account on android with the Microsoft Exchange protocol has numerous advantages and is not that difficult to set up.
