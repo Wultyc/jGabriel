@@ -3,8 +3,7 @@
     <section class="cta-full">
         <div class="container">
             <div class="row position-relative">
-                <div class="col-lg-4 padding-less img" style="background-image:url('images/skills.jpg')" data-jarallax='{"speed": 0.5}'></div><!-- end col -->
-                <div class="col-lg-8 offset-lg-5">
+                <div class="col-lg-12">
                     <div class="cta-full-img-box">
                         <div class="row justify-content-center">
                             <div class="col-12 text-center mb-3">
