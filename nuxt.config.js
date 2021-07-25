@@ -86,7 +86,7 @@ export default {
       { name:'About Me', icon:'', url:'/about-me', showOnNavBar: true},
       { name:'Portfolio', icon:'', url:'/portfolio', showOnNavBar: true},
       { name:'Notebook', icon:'', url:'/articles', showOnNavBar: true},
-      { name:'Contacts', icon:'', url:'/contact/', showOnNavBar: true},
+      { name:'Contacts', icon:'', url:'/contact', showOnNavBar: true},
     ],
     externalPages: [
       { name:'jGabriel', icon:'', url:'https://jgabriel.eu', showOnNavBar: false},
