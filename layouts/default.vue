@@ -34,7 +34,6 @@
 
     <!-- MK Lightbox -->
     <script src="/js/mklb.js"></script>
-    <script src="/js/filter.init.js"></script>
 
     <!-- Contact -->
     <script src="/js/contact.js"></script>

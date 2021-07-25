@@ -2,6 +2,7 @@
     <!-- Blog STart -->
     <!-- Blog STart -->
     <section class="section">
+        <script src="/js/filter.init.js"></script>
         <div class="container">
             <div class="row">
                 <ul class="col container-filter list-unstyled categories-filter text-center mb-0" id="filter">
@@ -90,6 +91,7 @@ export default Vue.extend( {
                 element.draft
             ))
         });
+
     }
 })
 </script>
