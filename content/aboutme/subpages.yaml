@@ -6,13 +6,16 @@ links:
     label: Skills
     text: My Skills
     url: /about-me/skills
+    forceReload: false
 
   - id: certs
     label: Certifications
     text: My Certifications
     url: /about-me/certifications
+    forceReload: true
 
   - id: timeline
     label: Timeline
     text: My Lifetime events
     url: /about-me/timeline
+    forceReload: false
