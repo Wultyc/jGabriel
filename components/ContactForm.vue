@@ -25,7 +25,7 @@
         <div class="col-lg-12">
           <div class="custom-form mb-sm-30">
             <div id="message"></div>
-            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+            <form id="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="row">
