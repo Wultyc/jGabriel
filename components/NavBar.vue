@@ -12,8 +12,7 @@
                 <div class="collapse navbar-collapse navigation" id="navbarCollapse">
                     <ul id="navbar-navlist" :class="navBarStyle.pageList">
                         <li class="nav-item" v-for="link in internalPages" :key="link.name">
-                            <nuxt-link class="nav-link" :to="link.url" v-if="link.forceReload == false">{{link.name}}</nuxt-link>
-                            <a class="nav-link" :href="link.url" v-else>{{link.name}}</a>
+                            <nuxt-link class="nav-link" :to="link.url">{{link.name}}</nuxt-link>
                         </li>
                         <li class="nav-item" v-for="link in externalPages" :key="link.name">
                             <a class="nav-link" target="_blank" :href="link.url">{{link.name}}</a>
