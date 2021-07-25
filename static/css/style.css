@@ -1502,6 +1502,12 @@ button:not(:disabled) {
   width: 35px;
 }
 
+.card-body  img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
 .shadow-lg {
   -webkit-box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
           box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
