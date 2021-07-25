@@ -4,6 +4,6 @@ phrase:
   main: Hello I'm Jorge Gabriel Azevedo
   second: I'm a Passionate Web Designer
 links:
-    - id: cv
-      label: Download CV
-      url: ''
+    #- id: cv
+    #  label: Download CV
+    #  url: ''
