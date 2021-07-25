@@ -18,7 +18,6 @@ export default Vue.extend({
     },
     async asyncData({ $content, params }) {
         const articles = await $content('articles', params.slug, {deep:true})
-        .only(['title','date','image','categories','tags','authors','sources','draft', 'slug'])
         .where({ home:true, draft: false })
         .sortBy('date', 'desc')
         .fetch()
