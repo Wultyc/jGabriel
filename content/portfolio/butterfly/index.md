@@ -2,7 +2,7 @@
 title: "Butterfly"
 date: 2017-06-16
 hero: projects/butterfly/hero.png
-banner: projects/butterfly/banner.jpg
+banner: "no_image.jpg"
 role: "Developer"
 repo: "https://github.com/Wultyc/ISEP_1617_1A2S_MOPRO"
 startdate: "Feb 2017"
