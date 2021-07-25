@@ -70,7 +70,6 @@ export default Vue.extend( {
                 element.draft
             ))
         });
-        console.log(this.articles)
     }
 })
 </script>
