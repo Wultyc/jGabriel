@@ -14,21 +14,19 @@
             </div><!--end row-->
 
             <div class="row">
-                <div class="col-12">
-                    <div class="client-review-slider">
-                        <div class="tiny-slide" v-for="cert in Certifications.certs" :key="cert.id">
-                            <div class="client-review rounded shadow m-2">
-                                <div class="align-items-center justify-content-start justify-content-sm-center">
-                                    <div class="position-relative">
-                                        <img :src="cert.img" class="img-fluid rounded-top" :alt="cert.label">
-                                    </div>
-                                    <p class="pera-title text-light-muted mb-0 mt-2">{{cert.label}}</p>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" v-for="cert in Certifications.certs" :key="cert.id">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <img :src="cert.img" class="img-fluid" :alt="cert.label">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="text-white title">{{cert.label}}</a></h5>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
         </div>
         <!--end container -->
     </section>

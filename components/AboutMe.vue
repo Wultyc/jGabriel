@@ -56,8 +56,7 @@
                     <div class="services-texts">
                         <h3 class="title mb-3">{{page.label}}</h3>
                         <p class="text-light-muted mb-4">{{page.text}}</p>
-                        <nuxt-link :to="page.url" class="text-primary" v-if="page.forceReload == false">Read more <i class="mdi mdi-chevron-right"/></nuxt-link>
-                        <a :href="page.url" class="text-primary" v-else >Read more <i class="mdi mdi-chevron-right"/></a>
+                        <nuxt-link :to="page.url" class="text-primary" >Read more <i class="mdi mdi-chevron-right"/></nuxt-link>
                     </div>
                 </div>
             </div>
