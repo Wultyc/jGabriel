@@ -83,13 +83,13 @@ export default {
     projectName: 'jGabriel',
     internalPages: [
       { name:'Home', icon:'', url:'/', showOnNavBar: true},
-      { name:'About Me', icon:'', url:'/about-me', showOnNavBar: true},
-      { name:'Portfolio', icon:'', url:'/portfolio', showOnNavBar: true},
-      { name:'Notebook', icon:'', url:'/articles', showOnNavBar: true},
-      { name:'Contacts', icon:'', url:'/contact', showOnNavBar: true},
+      { name:'About Me', icon:'', url:'/about-me', showOnNavBar: true, forceReload: false},
+      { name:'Portfolio', icon:'', url:'/portfolio', showOnNavBar: true, forceReload: false},
+      { name:'Notebook', icon:'', url:'/articles', showOnNavBar: true, forceReload: false},
+      { name:'Contacts', icon:'', url:'/contact/', showOnNavBar: true, forceReload: true}, //force reload so netlify can inject reCaptcha and form works
     ],
     externalPages: [
-        { name:'jGabriel', icon:'', url:'https://jgabriel.eu', showOnNavBar: false},
+      { name:'jGabriel', icon:'', url:'https://jgabriel.eu', showOnNavBar: false},
     ],
     social:[
         { name:'github', icon:'fab fa-github', url:'http://github.com/wultyc', showOnNavBar: true},
