@@ -64,7 +64,7 @@
                 <div data-netlify-recaptcha="true"></div>
               </div>
               <!--end row-->
-              <div class="row mb-4">
+              <div class="row mb-4 mt-4">
                 <div class="col-sm-12 text-right">
                   <input
                     type="submit"
