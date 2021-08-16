@@ -21,7 +21,7 @@
 
                         <ArticleFiles :ArticleFiles="articleFiles" />
 
-                        <div class="work-details rounded mt-4">
+                        <div class="work-details rounded mt-4" v-if="article.toc.length > 0">
                             <h4 class="title border-bottom pb-3 mb-3">Table of contents</h4>
                             <div class="content">
                                 <ul class="list-unstyled mb-0">

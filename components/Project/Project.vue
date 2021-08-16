@@ -19,7 +19,7 @@
                     <div class="port-images sticky-sidebar">
                         <ProjectFiles :projectFiles="projectFiles" />
 
-                        <div class="work-details rounded mt-4">
+                        <div class="work-details rounded mt-4" v-if="project.toc.length > 0">
                             <h4 class="title border-bottom pb-3 mb-3">Table of contents</h4>
                             <div class="content">
                                 <ul class="list-unstyled mb-0">
