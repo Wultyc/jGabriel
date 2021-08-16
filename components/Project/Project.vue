@@ -30,8 +30,7 @@
                             </div>
                         </div>
                         
-
-                        <div class="work-details rounded mt-4">
+                        <div class="work-details rounded mt-4" v-if="project.home == true">
                             <h4 class="title border-bottom pb-3 mb-3">Project Info :</h4>
                             <ul class="list-unstyled mb-0">
                                 <li class="mt-3">
