@@ -9,7 +9,9 @@
                         <NuxtLink :to="`${homePath}`">Home</NuxtLink>
                     </li>
                     <li v-for="file of files" :key="file.title">
-                        <NuxtLink :to="`${file.url}`">{{file.title}}</NuxtLink>
+                        <NuxtLink :to="`${file.url}`">
+                            {{writeTitle(file)}}
+                        </NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -21,6 +23,8 @@
 <script>
 import Vue from 'vue'
 import Article from '@/models/Article'
+import Compare from '@/utils/compare-files'
+import WriteTitleWithIndentation from '~/utils/write-title-with-indentation'
 
 export default Vue.extend( {
     name: "ArticleFiles",
@@ -36,31 +40,36 @@ export default Vue.extend( {
             required: true
         },
     },
+    methods:{
+        writeTitle(file){
+            return WriteTitleWithIndentation(file.level, file.title)
+        }
+    },
     mounted(){
         this.ArticleFiles.forEach(element => {
 
-            if(element.path.substring(element.path.length-5) == "index"){
-                this.homePath = element.path.substring(0,element.path.length-5)
-            } else {
-                this.files.push( new Article(
+            const article = new Article(
                     element.title,
                     element.path,
                     element.date,
-                    element.hero,
-                    element.banner,
-                    element.role,
-                    element.repo,
-                    element.startdate,
-                    element.enddate,
-                    element.technologies,
-                    element.logo,
-                    element.summary,
+                    element.image,
+                    element.categories,
                     element.tags,
-                    element.category,
+                    element.authors,
+                    element.sources,
+                    element.level,
+                    element.order,
                     element.draft
-                ))
+                )
+
+            if(article.isHome){
+                this.homePath = article.url
+            } else {
+                this.files.push( article )
             }
         });
+
+        this.files.sort(Compare)
     }
 })
 </script>

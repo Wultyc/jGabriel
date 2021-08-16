@@ -61,7 +61,7 @@ export default Vue.extend( {
         }
     },
     mounted(){
-        console.log(this.article)
+        
     }
 })
 </script>

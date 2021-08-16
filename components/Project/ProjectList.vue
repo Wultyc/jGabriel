@@ -88,6 +88,8 @@ export default Vue.extend( {
                 element.summary,
                 element.tags,
                 element.category,
+                element.level,
+                element.order,
                 element.draft
             ))
         });

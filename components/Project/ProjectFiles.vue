@@ -9,7 +9,9 @@
                         <NuxtLink :to="`${homePath}`">Home</NuxtLink>
                     </li>
                     <li v-for="file of files" :key="file.title">
-                        <NuxtLink :to="`${file.url}`">{{file.title}}</NuxtLink>
+                        <NuxtLink :to="`${file.url}`">
+                            {{writeTitle(file)}}
+                        </NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -21,6 +23,8 @@
 <script>
 import Vue from 'vue'
 import Project from '@/models/Project'
+import Compare from '@/utils/compare-files'
+import WriteTitleWithIndentation from '~/utils/write-title-with-indentation'
 
 export default Vue.extend( {
     name: "ProjectFiles",
@@ -36,13 +40,15 @@ export default Vue.extend( {
             required: true
         },
     },
+    methods:{
+        writeTitle(file){
+            return WriteTitleWithIndentation(file.level, file.title)
+        }
+    },
     mounted(){
         this.projectFiles.forEach(element => {
 
-            if(element.path.substring(element.path.length-5) == "index"){
-                this.homePath = element.path.substring(0,element.path.length-5)
-            } else {
-                this.files.push( new Project(
+            const project = new Project(
                     element.title,
                     element.path,
                     element.date,
@@ -57,10 +63,19 @@ export default Vue.extend( {
                     element.summary,
                     element.tags,
                     element.category,
+                    element.level,
+                    element.order,
                     element.draft
-                ))
+                )
+
+            if(project.isHome){
+                this.homePath = project.url
+            } else {
+                this.files.push( project )
             }
         });
+
+        this.files.sort(Compare)
     }
 })
 </script>

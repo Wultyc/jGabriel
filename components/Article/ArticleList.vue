@@ -67,6 +67,8 @@ export default Vue.extend( {
                 element.tags,
                 element.authors,
                 element.sources,
+                element.level,
+                element.order,
                 element.draft
             ))
         });
