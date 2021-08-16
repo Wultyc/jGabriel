@@ -21,10 +21,10 @@
 
                         <ArticleFiles :ArticleFiles="articleFiles" />
 
-                        <div class="card blog blog-detail border-0 shadow rounded mt-4">
-                            <div class="card-body content">
-                                <h3>Table of contents</h3>
-                                <ul>
+                        <div class="work-details rounded mt-4">
+                            <h4 class="title border-bottom pb-3 mb-3">Table of contents</h4>
+                            <div class="content">
+                                <ul class="list-unstyled mb-0">
                                     <li v-for="link of article.toc" :key="link.id">
                                     <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
                                     </li>

@@ -19,10 +19,10 @@
                     <div class="port-images sticky-sidebar">
                         <ProjectFiles :projectFiles="projectFiles" />
 
-                        <div class="card blog blog-detail border-0 shadow rounded mt-4">
-                            <div class="card-body content">
-                                <h3>Table of contents</h3>
-                                <ul>
+                        <div class="work-details rounded mt-4">
+                            <h4 class="title border-bottom pb-3 mb-3">Table of contents</h4>
+                            <div class="content">
+                                <ul class="list-unstyled mb-0">
                                     <li v-for="link of project.toc" :key="link.id">
                                     <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
                                     </li>
@@ -30,34 +30,33 @@
                             </div>
                         </div>
                         
-                        <div class="col-lg-12 mt-4 pt-2">
-                            <div class="work-details bg-light rounded">
-                                <h4 class="title border-bottom pb-3 mb-3">Project Info :</h4>
-                                <ul class="list-unstyled mb-0">
-                                    <li class="mt-3">
-                                        <b>Techologies: </b>
-                                        <span>{{project.technologies}}</span>
-                                    </li>
-                                    <li class="mt-3">
-                                        <b>Status: </b>
-                                        <span v-if="project.enddate">Completed</span>
-                                        <span v-else>On Going</span>
-                                    </li>
-                                    <li class="mt-3">
-                                        <b>Start Date: </b>
-                                        <span>{{project.startdate}}</span>
-                                    </li>
-                                    <li class="mt-3" v-if="project.enddate">
-                                        <b>End Date: </b>
-                                        <span>{{project.enddate}}</span>
-                                    </li>
-                                    <li class="mt-3">
-                                        <b>Repository: </b>
-                                        <span><a :href="project.repo">GitHub</a></span>
-                                    </li>
-                                </ul>                          
-                            </div>
-                        </div><!--end col-->
+
+                        <div class="work-details rounded mt-4">
+                            <h4 class="title border-bottom pb-3 mb-3">Project Info :</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mt-3">
+                                    <b>Techologies: </b>
+                                    <span>{{project.technologies}}</span>
+                                </li>
+                                <li class="mt-3">
+                                    <b>Status: </b>
+                                    <span v-if="project.enddate">Completed</span>
+                                    <span v-else>On Going</span>
+                                </li>
+                                <li class="mt-3">
+                                    <b>Start Date: </b>
+                                    <span>{{project.startdate}}</span>
+                                </li>
+                                <li class="mt-3" v-if="project.enddate">
+                                    <b>End Date: </b>
+                                    <span>{{project.enddate}}</span>
+                                </li>
+                                <li class="mt-3">
+                                    <b>Repository: </b>
+                                    <span><a :href="project.repo">GitHub</a></span>
+                                </li>
+                            </ul>                          
+                        </div>
 
                         <img :src="'/images/' + project.hero" class="img-fluid mx-auto d-block rounded mt-4" alt="img">
                         <img :src="'/images/' + project.banner" class="img-fluid mx-auto d-block rounded mt-4" alt="img">

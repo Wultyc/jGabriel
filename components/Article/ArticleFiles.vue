@@ -1,10 +1,10 @@
 <template>
     <!-- Blog STart -->
     <div class="sidebar">
-        <div class="card blog blog-detail border-0 shadow rounded">
-            <div class="card-body content">
-                <h3>Pages</h3>
-                <ul>
+        <div class="work-details rounded">
+            <h4 class="title border-bottom pb-3 mb-3">Pages</h4>
+            <div class="content">
+                <ul class="list-unstyled mb-0">
                     <li>
                         <NuxtLink :to="`${homePath}`">Home</NuxtLink>
                     </li>
