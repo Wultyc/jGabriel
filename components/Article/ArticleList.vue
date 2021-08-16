@@ -10,7 +10,7 @@
                                 <img :src="'/images/' + article.images" class="img-fluid rounded-top" alt="">
                             </div>
                             <div class="content pt-4 pb-4 p-3">
-                                <h5><nuxt-linka :to="article.url" class="title text-dark">{{article.title}}</nuxt-linka></h5>
+                                <h5><nuxt-link :to="article.url" class="title text-dark">{{article.title}}</nuxt-link></h5>
                                 <div class="post-meta d-flex justify-content-between mt-3">
                                     <ul class="list-unstyled mb-0 d-flex justify-content-between">
                                         <li class="list-inline-item mr-2 mb-0 text-light-muted date"><i class="mdi mdi-calendar-edit mr-1"></i>{{article.date}}</li>
