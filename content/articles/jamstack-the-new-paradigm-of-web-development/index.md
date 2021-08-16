@@ -58,7 +58,7 @@ Comunidade
 
 ![](/images/articles/jamstack-novo-paradigma-desenvolvimento-web/3.jpg)
 
-Starting a project using the JAMStack philosophy is quite simple with the help of tools like HUGO or Gatsby among many others. [In this article] (/articles/create-a-website-with-hugo) I discuss the use of HUGO for the creation of static websites.
+Starting a project using the JAMStack philosophy is quite simple with the help of tools like HUGO or Gatsby among many others. [In this article](/articles/create-a-website-with-hugo) I discuss the use of HUGO for the creation of static websites.
 
 ### Content Delivery Network
 Let's think now that we want to create a high redundancy network for this site. Because these servers are much cheaper when compared to traditional servers (I mean the cost per request), creating a large network for the distribution of these static sites becomes very cheap. And it is based on this that some companies, such as Netlify, offer the free service quite generous and sufficient to support medium-sized sites. Platforms like this are called Content Delivery Network or simply CDN and serve exclusively to host static files to be used on websites, such as JS scripts, CSS files and media content on the websites. This means of sharing was the strategy used before for the distribution of static and normally heavier components on servers closer to the customers and thus reducing the time that the page takes to load. CDNs like these can have thousands of us all over the world.

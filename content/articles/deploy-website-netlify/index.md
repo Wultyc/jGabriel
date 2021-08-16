@@ -25,7 +25,7 @@ The site that we are going to deploy is the following.
 As you can see, the address is that of my development virtual machine.
 
 ### Account creation
-First, we go to the Netlify website, [www.netlify.com] (https://www.netlify.com) and create an account. In this case the free account will do, but for sites with a higher volume of traffic, a paid plan may be necessary. Having created the account and the team, let's start creating the site. First we click on the “New site from git” button.
+First, we go to the Netlify website, [www.netlify.com](https://www.netlify.com) and create an account. In this case the free account will do, but for sites with a higher volume of traffic, a paid plan may be necessary. Having created the account and the team, let's start creating the site. First we click on the “New site from git” button.
 
 ![](/images/articles/deploy-website-netlify/1.png)
 
