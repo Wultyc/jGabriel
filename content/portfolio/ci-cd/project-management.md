@@ -1,11 +1,11 @@
 ---
 title: "Project management"
 date: 2021-01-17T00:00:00Z
-hero: projects/ci-cd/hero.png
+hero: projects/ci-cd/trello-hero.jpg
 banner: no_image.jpg
 level: 0
 order: 30
-home: true
+home: false
 draft: false
 ---
 ## Project Management

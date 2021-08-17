@@ -5,7 +5,7 @@ hero: projects/ci-cd/hero.png
 banner: no_image.jpg
 level: 0
 order: 40
-home: true
+home: false
 draft: false
 ---
 Our CI/CD pipeline was built on a Jenkins server. This pipeline takes all steps to release code for an environment.

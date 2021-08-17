@@ -5,7 +5,7 @@ hero: projects/ci-cd/git-hero.jpg
 banner: no_image.jpg
 level: 0
 order: 20
-home: true
+home: false
 draft: false
 ---
 Git organization was something being improved since the first day on the subject. Organizing the team to have a full synchronized with separated environments. The team decided to make an adaptation Git Flow due the fact it has a clear distinction between environments (Develop and Production)

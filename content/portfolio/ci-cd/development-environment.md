@@ -5,7 +5,7 @@ hero: projects/ci-cd/gradle-hero.png
 banner: no_image.jpg
 level: 0
 order: 10
-home: true
+home: false
 draft: false
 ---
 ## Docker
