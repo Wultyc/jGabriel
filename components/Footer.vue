@@ -16,6 +16,7 @@
         <footer class="footer footer-bar bg-black">
             <div class="container text-foot text-center">
                 <p class="mb-0 text-white-50">© {{year}} Jorge Gabriel Azevedo.</p>
+                <nuxt-link to="/legal-disclaimer">Legal Disclaimer</nuxt-link>
             </div><!--end container-->
         </footer><!--end footer-->
     </div>
