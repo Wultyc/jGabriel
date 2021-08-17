@@ -5,8 +5,8 @@ hero: projects/ci-cd/hero.png
 banner: no_image.jpg
 role: "Developer"
 repo: "https://github.com/Wultyc/ISEP_2021_1A1S_ODSOFT"
-startdate: "2020-10-15"
-enddate: "2021-01-17"
+startdate: "October 2020"
+enddate: "January 2021"
 technologies: "Jenkins, Docker, Gradle, Java, Spring Boot, TomCat"
 logo: "logos/<logo>.png"
 summary: A project meant to implement a strategy of automation and CI/CD upgrade da web service using a collaborative approach
