@@ -13,7 +13,7 @@ export default Vue.extend({
     async asyncData({ $content, params }) {
         const projects = await $content('portfolio', {deep:true})
         .where({ home:true, draft: false })
-        .sortBy('startdate', 'desc')
+        .sortBy('date', 'desc')
         .fetch()
 
         const settings = await $content('settings', 'projectsList')
