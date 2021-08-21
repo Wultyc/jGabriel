@@ -2,7 +2,7 @@ hero:
   bg: images/background.jpg
 phrase:
   main: Hello I'm Jorge Gabriel Azevedo
-  second: I'm a Passionate Web Designer
+  second: I'm a passionate Web Developer
 links:
     #- id: cv
     #  label: Download CV
