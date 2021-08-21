@@ -33,6 +33,10 @@ body {
   font-size: 16px;
   color: #161c2d;
 }
+blockquote{
+  font-style: italic;
+  color: #706f6f
+}
 .card-body img {
   display: block;
   margin-left: auto;
