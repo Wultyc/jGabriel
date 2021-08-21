@@ -5,7 +5,7 @@ presentation:
   short:
     Iam:
       list: Web Developer,Integration Engineer,DevOps Engineer
-    presentationText: I started my carrear at 16 years old developing WebApp for small business on my town. Nowadays I work with Microservices, ESB and System Integrations and DevOps
+    presentationText: I started my carrear at 16 years old developing WebApp for small business on my town. Nowadays I work with Microservices, ESB, System Integrations and DevOps
 personalDetails:
   - id: langs
     label: Languages
