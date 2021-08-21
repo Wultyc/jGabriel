@@ -1,0 +1,53 @@
+//
+// home.scss
+//
+
+.bg-half-120 {
+    padding: 170px 0;
+    background-size: cover;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+.title-heading {
+    line-height: 26px;
+    .heading {
+        font-size: 57px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+} 
+.pb-60 {
+    padding-bottom: 60px;
+}
+.py--50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.alert.alert-pills {
+    border-radius: 30px;
+    display: inline-block;
+    background: $white;
+}
+.alert {
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.badge.badge-pill {
+    border-radius: 12px;
+}
+.alert.alert-pills .content {
+    font-weight: 600;
+}
+.hero-area {    
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+.title-heading img {
+    height: 200px;
+    border: 5px solid #dee2e6;
+}

@@ -1,0 +1,51 @@
+info:
+  title: Work Expertise
+  phrase: During my carrear I worked with many tools. Here is a list of some I feal more confortble with.
+skills: 
+  - id: git
+    label: Git
+    icon: git.svg
+
+  - id: docker
+    label: Docker
+    icon: docker.svg
+
+  - id: mariadb
+    label: MariaDB
+    icon: mariadb.svg
+
+  - id: mongodb
+    label: MongoDB
+    icon: mongodb.svg
+
+  - id: csharp
+    label: C#
+    icon: c-sharp.svg
+
+  - id: typescript
+    label: TypeScript
+    icon: typescript.svg
+
+  - id: php
+    label: PHP
+    icon: php.svg
+
+  - id: java
+    label: Java
+    icon: java.svg
+
+  - id: vue
+    label: Vue.JS
+    icon: vuejs.svg
+
+  - id: angular
+    label: Angular
+    icon: angular.svg
+
+  - id: laravel
+    label: Laravel
+    icon: laravel.svg
+
+  - id: mulesoft
+    label: Mulesoft
+    icon: mulesoft.svg

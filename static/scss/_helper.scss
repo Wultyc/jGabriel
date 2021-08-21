@@ -1,0 +1,46 @@
+//
+// Helper.scss
+//
+
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        color: #{$value} !important;
+    }
+    .bg-#{$color} {
+        background-color: #{$value} !important;
+    }
+}
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.bg-light {
+    background: #f6f7fa;
+    opacity: 1;
+}
+.rounded {
+    border-radius: 10px !important;
+}
+.rounded-top {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+// icon file
+.fea.icon-md {
+    height: 26px;
+    width: 26px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+
+// sticky bar using blog details
+.sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}

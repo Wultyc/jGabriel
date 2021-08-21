@@ -1,0 +1,21 @@
+info:
+  title: More about me
+  phrase: Bellow I have some more informations about what I've been doing for the last couple of years, what are my technical skill and the certifications I have.
+links: 
+  - id: skills
+    label: Skills
+    text: My Skills
+    url: /about-me/skills
+    forceReload: false
+
+  - id: certs
+    label: Certifications
+    text: My Certifications
+    url: /about-me/certifications
+    forceReload: true
+
+  - id: timeline
+    label: Timeline
+    text: My Lifetime events
+    url: /about-me/timeline
+    forceReload: false

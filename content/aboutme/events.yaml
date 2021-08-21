@@ -1,0 +1,82 @@
+info:
+  title: Work/study experience
+  phrase: I'm working in software development since very young.
+# Your experiences
+experiences:
+# -   id: X
+#     type: Education | Job
+#     title: 
+#     start: September 2016
+#     end: January 2020
+#     company: Instituto Superior de Engenharia do Porto (ISEP)
+#     role: "Student"
+#     url: "https://www.isep.ipp.pt"
+#     description: Degree in Systems Engineering
+#     responsibilities:
+#     - Representative of LES students.
+#     - Vice president of *Núcleo de Engenharia de Sistemas* [NES-ISEP](https://nes-isep.pt).
+#     - Organization of 3rd, 4th and 5th *Jornadas de Engenharia de Sistemas*.
+#     - Organization of some workshops.
+
+- id: 5
+  type: Job
+  title: Consultant
+  start: September 2019
+  #end:
+  company: Deloitte Portugal
+  url: "https://www.deloitte.pt"
+  role: "Integration Developer"
+  description: Integration Services Team
+  responsibilities:
+  - Development and maintenance of integration applications with Mulesoft.
+  - DevOps Engineer.
+  
+- id: 4
+  type: Education
+  title: Master
+  start: September 2020
+  #end: July 2022
+  company: Instituto Superior de Engenharia do Porto (ISEP)
+  url: "https://www.isep.ipp.pt"
+  role: "Student"
+  description: Master in Informatics Engineering
+  responsibilities:
+
+- id: 3
+  type: Education
+  title: Degree
+  start: September 2016
+  end: January 2020
+  company: Instituto Superior de Engenharia do Porto (ISEP)
+  url: "https://www.isep.ipp.pt"
+  role: "Student"
+  description: Degree in Systems Engineering
+  responsibilities:
+  - Representative of LES students.
+  - Vice president of Núcleo de Engenharia de Sistemas (NES-ISEP).
+  - Organization of 3rd, 4th and 5th *Jornadas de Engenharia de Sistemas*.
+  - Organization of some workshops.
+
+- id: 2
+  type: Job
+  title: Intern
+  start: April 2019
+  end: July 2019
+  company: Natural Life, lda
+  url: "https://www.naturallife.pt"
+  role: "Developer"
+  description: Development of an application to manage the entire production process of a factory.
+  responsibilities:
+  - Plan and implement the project
+  - Data migration
+
+- id: 1
+  type: Job
+  title: Developer
+  start: August 2015
+  end: September 2015
+  company: Ivo Azevedo - Papelaria Amanhecer
+  description: Application to manage equipment left for maintenance
+  role: Developer
+  responsibilities:
+  - Plan and implement the project.

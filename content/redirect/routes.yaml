@@ -1,0 +1,52 @@
+routes:
+  - id: home
+    url: /
+    local: true
+  - id: articles-connect-mariadb-server-on-homestead-on-host-computer
+    url: /articles/connect-mariadb-server-on-homestead-on-host-computer
+    local: true
+  - id: articles-create-a-website-with-hugo
+    url: /articles/create-a-website-with-hugo
+    local: true
+  - id: articles-deploy-website-netlify
+    url: /articles/deploy-website-netlify
+    local: true
+  - id: articles-development-environment-with-homestead
+    url: /articles/development-environment-with-homestead
+    local: true
+  - id: articles-dot-files
+    url: /articles/dot-files
+    local: true
+  - id: articles-hello-world
+    url: /articles/hello-world
+    local: true
+  - id: articles-jamstack-the-new-paradigm-of-web-development
+    url: /articles/jamstack-the-new-paradigm-of-web-development
+    local: true
+  - id: articles-replacing-a-vpn-with-a-ssh-unnel
+    url: /articles/replacing-a-vpn-with-a-ssh-unnel
+    local: true
+  - id: articles-use-outlook-account-on-android-with-microsoft-exchange
+    url: /articles/use-outlook-account-on-android-with-microsoft-exchange
+    local: true
+  - id: portfolio-butterfly
+    url: /portfolio/butterfly
+    local: true
+  - id: portfolio-ci-cd
+    url: /portfolio/ci-cd
+    local: true
+  - id: portfolio-internship-project
+    url: /portfolio/internship-project
+    local: true
+  - id: portfolio-microwells
+    url: /portfolio/microwells
+    local: true
+  - id: portfolio-mock-api
+    url: /portfolio/mock-api
+    local: true
+  - id: portfolio-public-transports-information-system-mvp
+    url: /portfolio/public-transports-information-system-mvp
+    local: true
+  - id: portfolio-warehouse-optimizer
+    url: /portfolio/warehouse-optimizer
+    local: true

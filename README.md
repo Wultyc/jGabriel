@@ -1,9 +1,20 @@
 # jGabriel
-My Personal Website and portfolio  
-Visit at http://jgabriel.eu
 
-## Copyrights
-Copyright (c) 2020 Jorge Gabriel Azevedo
+## Build Setup
 
-### Credits
-This website is powered by [HUGO](https://gohugo.io/) and the theme is a fork of [Toha](https://github.com/hossainemruz/toha)
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
