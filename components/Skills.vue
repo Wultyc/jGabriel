@@ -22,7 +22,7 @@
                                 <div class="card explore-feature border-0 text-center bg-white p-3">
                                     <div class="card-body p-0">
                                         <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                            <img :src="'/images/skills/' + skill.icon" alt="" class="img-fluid mx-auto">
+                                            <img :src="'/images/skills/' + skill.icon" alt="" class="img-fluid mx-auto" style="display:revert">
                                         </div>
                                         <span class="badge skill-badge badge-light">{{skill.label}}</span>
                                     </div>
