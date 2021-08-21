@@ -8,7 +8,7 @@
                     <div class="row mr-lg-4">
                         <div class="col-lg-12">
                             <div class="work-details rounded">
-                                <h4 class="title mb-3 border-bottom pb-3">Project Name : {{project.title}}</h4>
+                                <h4 class="title mb-3 border-bottom pb-3">{{project.title}}</h4>
                                 <nuxt-content :document="project"/>
                             </div>
                         </div><!--end col-->
