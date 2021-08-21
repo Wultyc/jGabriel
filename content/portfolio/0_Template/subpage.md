@@ -5,7 +5,7 @@ hero: projects/<project-name>/hero.png
 banner: projects/<project-name>/banner.jpg
 level: 0
 order: 10
-home: true
+home: false
 draft: true
 ---
 Text

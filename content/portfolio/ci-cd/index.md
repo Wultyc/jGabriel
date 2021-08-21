@@ -16,7 +16,7 @@ home: true
 draft: false
 ---
 On the first semester, there was a subject named Software Development Organization where were shown how manage software development focusing on task automation, code collaboration and automated testing for modern software development.
-The section was divided in X parts regarding each specific part of the process
+The section was divided in four parts regarding each specific part of the process
 * Development environment configuration
 * GIT organization
 * Project management
