@@ -2,12 +2,15 @@ info:
   title: My Certifications
   phrase: Those are the certifications I have.
 certs: 
-  - id: mule4dev1
-    label: Mulesoft Certified Developer I
+  - id: mule4-platform-architect-1
+    label: MuleSoft Certified Platform Architect - Level 1
+    Description: ""
+    img: /images/certificates/mcpa-l1-2022.png
+  - id: mule4-dev-1
+    label: Mulesoft Certified Developer - Level 1
     Description: ""
     img: /images/certificates/mcd-l1.png
-
-  - id: scrumbasis
+  - id: scrum-basis
     label: "Scrum: The Basis"
     Description: ""
     img: /images/certificates/cc_scrum_the_basics.png
