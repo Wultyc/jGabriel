@@ -2,6 +2,10 @@ info:
   title: My Certifications
   phrase: Those are the certifications I have.
 certs: 
+  - id: az-900
+    label: "Microsoft Certified: Azure Fundamentals"
+    Description: ""
+    img: /images/certificates/msft-azure-fundamentals.png
   - id: mule4-platform-architect-1
     label: MuleSoft Certified Platform Architect - Level 1
     Description: ""
