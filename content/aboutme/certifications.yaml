@@ -13,7 +13,19 @@ certs:
   - id: mule4-dev-1
     label: Mulesoft Certified Developer - Level 1
     Description: ""
-    img: /images/certificates/mcd-l1.png
+    img: /images/certificates/mcd-l1-2022.png
+  - id: workato-automation-pro-i
+    label: Workato Automation Pro I
+    Description: ""
+    img: /images/certificates/workato-automation-pro-i.png
+  - id: workato-automation-pro-ii
+    label: Workato Automation Pro II
+    Description: ""
+    img: /images/certificates/workato-automation-pro-ii.png
+  - id: workato-automation-pro-iii
+    label: Workato Automation Pro III
+    Description: ""
+    img: /images/certificates/workato-automation-pro-iii.png
   - id: scrum-basis
     label: "Scrum: The Basis"
     Description: ""
