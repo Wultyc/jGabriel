@@ -2,6 +2,10 @@ info:
   title: My Certifications
   phrase: Those are the certifications I have.
 certs: 
+  - id: professional-scrum-master-i
+    label: "Professional Scrum Master I"
+    Description: ""
+    img: /images/certificates/professional_scrum_master_i.png
   - id: az-900
     label: "Microsoft Certified: Azure Fundamentals"
     Description: ""
