@@ -1,0 +1,67 @@
+//
+// client scss
+// 
+
+.highlight-selected {
+    position: relative;
+    z-index: 1;
+}
+.client-review {
+    padding: 30px 30px 30px 30px;
+}
+.avatar {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    flex-shrink: 0;
+}
+.avatar.avatar-xl {
+    width: 5rem;
+    height: 5rem;
+    box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+}
+.flickity-prev-next-button {
+    padding: 0;
+    background: $white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -0.0625rem 0 0.625rem 0 rgba(0,0,0,0.07),0.3125rem 1.25rem 2.5rem 0 rgba(0,0,0,0.04) !important;
+    .flickity-button-icon {
+        position: absolute;
+        left: 27%;
+        top: 29%;
+        width: 17px !important;
+        height: 17px !important;
+    }
+}
+.flickity-button:focus,
+.flickity-button:active {
+    outline: none;
+    box-shadow: 0 0 40px rgba(95, 125, 149, 0.1);
+    opacity: 1;
+}
+.clt-section {
+    .clt-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: $black;
+    }
+}
+
+.tns-nav {
+    text-align: center;
+  }
+.tns-nav button {
+    transition: all 0.5s ease;
+    background: rgba(0, 123, 255, 0.7);
+    border-radius: 3px;
+    width: 8px;
+    height: 5px;
+    margin: 5px;
+} 
+.tns-nav button.tns-nav-active {
+    background: $primary !important;
+}

@@ -1,0 +1,200 @@
+// 
+// Eduction 
+//
+
+// Eduction Timeline
+.main-timeline:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.main-timeline {
+  .timeline{
+    width: 80%;
+    float: left;
+  }
+  .timeline-content{
+    color: $black;
+    background: $white;
+    padding: 15px 20px 15px 150px;
+    margin: 0 0 60px;
+    border-radius: 100px 0px 0px;
+    display: block;
+    position: relative;
+    border: 1px dashed #ddd;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .timeline-icon{
+    background: rgb(240, 240, 254);
+    line-height: 100px;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    line-height: 64px;
+    border: 7px solid $white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -42px;
+    left: 20px;
+    box-shadow: 0px 0px 0px 1px #f0f0fe;
+  }
+  .title{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+  }
+  .description{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+.main-timeline .timeline:nth-child(even){
+  margin: -60px 0 60px;
+  float: right;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+  padding: 20px 170px 20px 20px;
+  margin: 60px 0 0;
+  border-radius: 0 0 100px 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+  left: auto;
+  right: 20px;
+  bottom: auto;
+  top: -42px;
+}
+
+@media screen and (max-width:767px){
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even){
+    width: 100%;
+    margin: 0 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-timeline .timeline-content,
+  .main-timeline .timeline:nth-child(even) .timeline-content{
+    padding: 60px 15px 15px 15px;
+    margin: 40px 0 0;
+    border-radius: 0 0 50px 0;
+  }
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon{
+    font-size: 30px;
+    line-height: 60px;
+    height: 80px;
+    width: 80px;
+    right: 15px;
+    left: auto;
+    top: -40px;
+  }
+  // badge
+  .skill-badge {
+    top: 30%;
+  }
+}
+@media screen and (max-width:567px){
+  .main-timeline .title{ font-size: 18px; }
+}
+
+
+// WORK EXPERTISE Skill 
+.cta-full {
+  .container-fluid {
+    max-width: 100%;
+  }
+  .padding-less.img {
+    background: scroll center no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+  }
+  .cta-full-img-box {
+    padding: 100px 10%;
+  }
+}
+.nav-pills {
+  .nav-link.active {
+    background-color: $primary;
+    color: $white !important;
+    border-color: $primary !important;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+  }
+  .nav-link {
+    color: $black !important;
+    margin: auto 15px;
+    border: 1px solid #e9ecef;
+  }
+}
+@media (max-width: 768px) {
+  .cta-full .padding-less {
+    position: relative !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-full .cta-full-img-box {
+    padding: 60px 10%;
+  }
+}
+
+// skill icon file
+.card-body {
+  .skill-icon { 
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    transition: all 0.5s ease;
+    img {
+      width: 35px;
+    }
+  }
+}
+.shadow-lg {
+  box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+}
+.skill-badge {
+  cursor: pointer;
+  width: 36px;
+  background-color: rgba(0, 123, 254, 0.08);
+  height: 18px;
+  position: absolute;
+  right: 15%;
+  top: 13%;
+  display: flex;
+  color: $primary;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgba(243, 246, 247, 0.05);
+}
+
+@media (max-width: 320px) and (min-width: 767px) {
+  .skill-badge {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+  }
+}
+@media (min-width: 767px) and (max-width: 768px) {
+  .skill-badge {
+    position: absolute;
+    right: 87px;
+    top: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .cta-full .padding-less.img {
+    display: none;
+  }
+}
+.education-badge {
+  width: 100px !important;
+  height: 25px;
+}
+.margin-50 {
+  margin-right: 50px;
+}

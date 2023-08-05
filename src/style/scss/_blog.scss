@@ -1,0 +1,160 @@
+//
+// blog Section
+// 
+.blog-post {
+  box-shadow: 0 0 0.625rem -0.1875rem rgba(0,0,0,0.13) !important;
+  .content {
+    .title{
+      font-weight: 600;
+      font-size: 20px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $primary !important;
+      }
+    }
+    .post-meta .date, .readmore {
+      font-size: 16px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+.owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  outline: none;
+}
+.owl-theme {
+  .owl-dots {
+    .owl-dot span {
+      transition: all 0.5s ease;
+      background: rgba(0, 123, 255, 0.7);
+      border-radius: 3px;
+      width: 8px;
+      height: 5px;
+    }
+  }
+}
+.owl-theme {
+  .owl-dots {
+    .owl-dot:hover span {
+      background: $primary !important;
+    }
+  }
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 15px;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots.clickable .owl-dot:hover span {
+  width: 15px;
+  display: inline-block;
+  position: relative;    
+  background: $primary !important;
+}
+
+// blog new page
+.bg-half {
+  padding: 160px 0px;
+  background-size: cover;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  position: relative;
+  background-position: center center;
+}
+.pagination {
+  .page-item {
+    .page-link {
+      color: $black;
+      border: 1px solid #dee2e6;
+      padding: 10px 15px;
+      font-size: 14px;
+      &:hover {
+        border-color: rgba(0, 123, 255,0.9);
+        background-color: rgba(0, 123, 255,0.9);
+        color: $white;
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+}
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.pagination .page-item.active .page-link {
+  color: $white;
+  background: $primary !important;
+  border-color: $primary;
+  cursor: not-allowed;
+}
+.page-next-level {
+  .page-next {
+    position: relative;
+    z-index: 99;
+  }
+  .title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+.breadcrumb {
+  letter-spacing: 0.5px;
+  padding: 8px 24px;
+  display: block;
+  background: none;
+  .breadcrumb-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 0;
+    color: $black;
+    display: inline-block;
+    &:before {
+      content: "";
+    }
+    a {
+      color: $black;
+      &:hover {
+        color: $primary;  
+      }
+    }
+  }
+}
+.breadcrumb .breadcrumb-item:after {
+  content: "\f142";
+  font-size: 14px;
+  color: $black;
+  font-family: 'Material Design Icons';
+  padding-left: 5px;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: $primary;
+}
+.breadcrumb .breadcrumb-item:last-child:after {
+  display: none;
+}
+// Blog Details
+.avatar.avatar-md-sm {
+  height: 70px;
+  width: 70px;
+}
+.form-group {
+  .icons {
+    position: absolute;
+    top: 36px;
+    left: 18px;
+  }
+}

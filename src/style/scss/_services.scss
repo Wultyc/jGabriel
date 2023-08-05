@@ -1,0 +1,29 @@
+//
+// services.scss
+//
+.feature-widget {
+    padding: 30px 45px;
+    background-color: $white;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    box-shadow: -0.0625rem 0 0.625rem 0 rgba(0,0,0,0.07),0.3125rem 1.25rem 2.5rem 0 rgba(0,0,0,0.04) !important;
+    .fea.icon-md {
+        height: 38px;
+        width: 38px;
+    }
+}
+.services-texts {
+    .title {
+        font-size: 20px;
+    }
+}
+.feature-widget:hover {
+    box-shadow: 0 10px 25px 10px rgba(0,0,0,.1);  
+    .services-texts {
+        .title {
+            color: $black;
+        }
+    }
+    .services-icon { 
+        color: $primary;
+    }
+}

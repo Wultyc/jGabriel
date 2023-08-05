@@ -1,0 +1,68 @@
+#style-switcher {
+    background: none repeat scroll 0 0 $white;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    transition: all 0.4s;
+    left: -170px;
+    position: fixed;
+    top: 17%;
+    width: 170px;
+    z-index: 9999;
+    padding: 10px 5px;
+    .title {
+        font-size: 16px;
+    }
+    .bottom {
+        background: none repeat scroll 0 0 $white;
+        a.settings {
+            background: none repeat scroll 0 0 $white;
+            height: 41px;
+            position: absolute;
+            right: -41px;
+            top: 0px;
+            width: 40px;
+            padding: 3px;
+            border-radius: 0 10px 10px 0;
+            i {
+                margin-left: 4px;
+            }
+        }
+    }
+    ul.pattern {
+        list-style: none outside none;
+        overflow: hidden;
+        padding: 0;
+        border-radius: 0px;
+        li a {
+            cursor: pointer;
+            display: block;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        .default {
+            background-color: #2d84fb;
+        }
+        .blue {
+            background-color: #e54b4b;
+        }
+        .green {
+            background-color: #01a479;
+        }
+        .mosaic-blue {
+            background-color: #00758f;
+        }
+        .light-yellow {
+            background-color: #fdd76e;
+        }
+        .purple {
+            background-color: #280677;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #style-switcher {
+        display: none;
+    }
+}
