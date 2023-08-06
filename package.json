@@ -60,6 +60,6 @@
   "@testing-library/dom": "^8.20.0",
   "autoprefixer": "^10.4.7",
   "postcss": "^8.4.21",
-  "tailwindcss": "^3.0.24"
+  "tailwindcss": "^3.3.3"
  }
 }
