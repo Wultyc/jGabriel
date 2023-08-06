@@ -11,7 +11,7 @@
   "react-build": "yarn run react-scripts build",
   "react-test": "react-scripts test",
   "react-eject": "react-scripts eject",
-  "react-build:css": "postcss src/css/tailwind.css -o src/css/main.css"
+  "react-build:css": "postcss src/style/css/tailwind.css -o src/style/css/main.css"
  },
  "eslintConfig": {
   "extends": [
