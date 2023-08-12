@@ -1,12 +1,16 @@
 "use client";
 
+import { Providers } from "./providers";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import ScrollToTop from "components/ScrollToTop";
 //import "../../node_modules/react-modal-video/css/modal-video.css";
 import "styles/index.css";
 
+import blogData from "data/blogData";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  console.log(blogData)
   return (
     <html suppressHydrationWarning lang='en'>
       {/*
@@ -26,5 +30,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
-import { Providers } from "./providers";
