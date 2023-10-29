@@ -1,1 +1,22 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <a href="javascript:void(0)" class="footer-logo text-black">{{ site.Params.footerMessageTitle }}</a>
+                <p class="para-desc mx-auto mt-5 text-black">{{ site.Params.footerMessage }}</p>
+                <ul class="list-unstyled mb-0 mt-4 social-icon">
+                    {{- range $link := site.Params.links}}
+                        {{if eq $link.showInFooter true}}
+                            <li class="list-inline-item me-1"><a href="{{$link.url}}" class="rounded-circle"><i class="mdi mdi-{{$link.icon}}"></i></a></li>
+                        {{end}}
+                    {{- end}}
+                </ul>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</footer><!--end footer-->
+<footer class="footer footer-bar bg-black">
+    <div class="container text-foot text-center">
+        <p class="mb-0 text-white-50">Copyright &copy; {{ now.Year }} - {{ .Site.Params.siteAuthor }} - All rights reserved.</p>
+    </div><!--end container-->
+</footer>

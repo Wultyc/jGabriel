@@ -8,7 +8,26 @@ languageCode = 'en-us'
   description = ""
   keywords = ""
 
+  # Website favicon
   favicon = "favicon.ico"
+
+  # Features Toggles
+  featuresToggles = { styleSwitcher = false, preloader = false }
+
+  # Footer
+  footerMessageTitle = "Queue"
+  footerMessage = "Follow me on Social Media"
+  footerCopywrite = ""
+
+  # Links
+  links = [
+    {icon = "facebook", url = "#", showInNavBar = true, showInFooter = true},
+    {icon = "twitter", url = "#", showInNavBar = true, showInFooter = true},
+    {icon = "instagram", url = "#", showInNavBar = true, showInFooter = true},
+    {icon = "vimeo", url = "#", showInNavBar = false, showInFooter = true},
+    {icon = "google-plus", url = "#", showInNavBar = false, showInFooter = true},
+    {icon = "linkedin", url = "#", showInNavBar = false, showInFooter = true},
+  ]
 
   # Website Resources
   css = [
@@ -24,34 +43,49 @@ languageCode = 'en-us'
     "js/jquery.min.js", 
     "js/bootstrap.bundle.min.js", 
     "js/gumshoe.js", 
-    "js/tiny-slider.js ", 
-    "js/tiny-slider-init.js ", 
+    #"js/tiny-slider.js ", 
+    #"js/tiny-slider-init.js ", 
     "js/mklb.js", 
     "js/contact.js", 
     "js/counter.init.js", 
     "js/feather.min.js", 
     "js/jquery.ripples-min.js", 
     "js/ripple.init.js", 
-    "js/typed.js", 
-    "js/typed.init.js", 
+    #"js/typed.js", 
+    #"js/typed.init.js", 
     "js/switcher.js", 
     "js/app.js"
   ]
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+  [[menus.main]]
+    name = 'Services'
+    url = '/services'
+    weight = 20
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+  [[menus.main]]
+    name = 'Resume'
+    url = '/resume'
+    weight = 30
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+  [[menus.main]]
+    name = 'Projects'
+    url = '/projects'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Blog'
+    url = '/news'
+    weight = 50
+
+  [[menus.main]]
+    name = 'Contact'
+    url = '/contact'
+    weight = 60
 
 [module]
   [module.hugoVersion]

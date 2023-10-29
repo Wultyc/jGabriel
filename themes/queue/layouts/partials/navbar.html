@@ -1,0 +1,80 @@
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    <div class="container">
+
+        <a class="logo navbar-brand" href="/">{{site.Title}}</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+        </button>
+
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+            <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
+
+                    {{- $page := page }}
+                    {{- range site.Menus.main }}
+
+                        {{- $anchorAttrs := dict "href" .URL }}
+
+                        {{- if $page.IsMenuCurrent .Menu . }}
+                            {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link active") }}
+                        {{- else }}
+                            {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link") }}
+                        {{- end }}
+
+                        {{- $name := .Name }}
+
+                        {{- with .Identifier }}
+                            {{- with T . }}
+                            {{- $name = . }}
+                            {{- end }}
+                        {{- end }}
+
+                        {{ if .HasChildren }}
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $name }}</a>
+                                <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
+                                    <div class="container ml-0 ml-md-0">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                {{- range .Children}}
+                                                {{- $childPageURL := .URL}}
+                                                {{- $childPageName := .Name}}
+                                                    <a class="dropdown-item" href="{{$childPageURL}}">{{$childPageName}}</a>
+                                                {{end}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        {{ else }}
+
+                            <li class="nav-item">
+                                <a
+                                    {{- range $k, $v := $anchorAttrs }}
+                                        {{- with $v }}
+                                            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                                        {{- end }}
+                                    {{- end -}}
+                                >{{ $name }}</a>
+                            </li>
+
+                        {{ end }}
+
+                        </li>
+                {{ end }}
+            </ul>
+
+            <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
+                {{- range $link := site.Params.links}}
+                    {{if eq $link.showInNavBar true}}
+                        <li class="list-inline-item"><a href="{{$link.url}}"><i class="mdi mdi-{{$link.icon}}"></i></a></li>
+                    {{end}}
+                {{- end}}
+            </ul>
+            
+        </div> 
+    </div>
+</nav>
