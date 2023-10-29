@@ -11,12 +11,15 @@
         <div class="collapse navbar-collapse navigation" id="navbarCollapse">
             <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
 
-                    {{- $page := page }}
+                    {{- $page := . }}
                     {{- range site.Menus.main }}
 
                         {{- $anchorAttrs := dict "href" .URL }}
+                        
+                        {{ $menu_item_url := .URL | relLangURL }}
+                        {{ $page_url:= $page.RelPermalink | relLangURL }}
 
-                        {{- if $page.IsMenuCurrent .Menu . }}
+                        {{- if eq $menu_item_url $page_url }}
                             {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link active") }}
                         {{- else }}
                             {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link") }}

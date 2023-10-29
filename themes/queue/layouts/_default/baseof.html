@@ -21,6 +21,6 @@
     {{if eq site.Params.featuresToggles.styleSwitcher true}}
       {{ partial "style-switcher.html" . }}
     {{ end }}
-
+    {{ partial "head/js.html" . }}
   </body>
 </html>
