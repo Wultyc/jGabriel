@@ -43,16 +43,16 @@ languageCode = 'en-us'
     "js/jquery.min.js", 
     "js/bootstrap.bundle.min.js", 
     "js/gumshoe.js", 
-    #"js/tiny-slider.js ", 
-    #"js/tiny-slider-init.js ", 
+    "js/tiny-slider.js ", 
+    "js/tiny-slider-init.js ", 
     "js/mklb.js", 
     "js/contact.js", 
     "js/counter.init.js", 
     "js/feather.min.js", 
     "js/jquery.ripples-min.js", 
     "js/ripple.init.js", 
-    #"js/typed.js", 
-    #"js/typed.init.js", 
+    "js/typed.js", 
+    "js/typed.init.js", 
     "js/switcher.js", 
     "js/app.js"
   ]
@@ -89,5 +89,5 @@ languageCode = 'en-us'
 
 [module]
   [module.hugoVersion]
-    extended = false
+    extended = true
     min = "0.116.0"
