@@ -8,5 +8,5 @@
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" site.Title .Title }}{{ end }}</title>
 
-{{ partialCached "head/css.html" . }}
+{{ partialCached "page-parts/head/css.html" . }}
 

@@ -20,7 +20,7 @@
                         {{ $page_url:= $page.RelPermalink | relLangURL }}
 
                         {{- if eq $menu_item_url $page_url }}
-                            {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link active") }}
+                            {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link active") }}                 
                         {{- else }}
                             {{- $anchorAttrs = merge $anchorAttrs (dict "class" "nav-link") }}
                         {{- end }}
