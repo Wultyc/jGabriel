@@ -1,6 +1,4 @@
 <!-- Hero Area -->
-{{printf "%#v" .profileImage}}
-
 <div class="hero-area position-relative bg-half-120" style="background-image:url('{{ .backgroundImage }}')" id="home">
     <div class="bg-overlay"></div>
     <div class="container">
@@ -12,7 +10,7 @@
                     <h6 class="designation mb-3 text-white">I'm a Passionate <span class="text-primary">Web Designer</span></h6>
                     <div class="hero-btn mt-4 pt-2">
                         {{ range .buttons}}
-                            <a href="javascript:void(0)" class="btn btn-primary rounded me-2 mb-2">{{ .text }}{{ if ne .icon "" }} <i data-feather="{{ .icon }}" class="fea icon-sm">{{ end }}</i></a>
+                            <a href="{{.link}}" class="btn btn-primary rounded me-2 mb-2">{{ .text }}{{ if ne .icon "" }} <i data-feather="{{ .icon }}" class="fea icon-sm">{{ end }}</i></a>
                         {{ end }}
                     </div>
                 </div>

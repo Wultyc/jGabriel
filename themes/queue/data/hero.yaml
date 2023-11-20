@@ -4,5 +4,7 @@ heading: "Here I'am Queue Downey"
 buttons:
   - text: "Hire me"
     icon: ""
+    link: "javascript:void(0)"
   - text: "Download CV"
     icon: "download"
+    link: "javascript:void(0)"
