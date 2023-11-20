@@ -1,33 +1,32 @@
-clientsFeedback:
-  - primaryText:
-      targetValue:
-        enableCounter: true
-        value: 97
-        valueIncrement: 1
-        valueUnit: "%"
-      alternativeText: "helllo"
-    secondaryText: "Happy Client"
-  - primaryText:
-      targetValue:
-        enableCounter: true
-        value: 3261
-        valueIncrement: 300
-        valueUnit: "+"
-      alternativeText: ""
-    secondaryText: "Download"
-  - primaryText:
-      targetValue:
-        enableCounter: true
-        value: 97
-        valueIncrement: 1
-        valueUnit: "%"
-      alternativeText: ""
-    secondaryText: "Happy Users"
-  - primaryText:
-      targetValue:
-        enableCounter: true
-        value: 39
-        valueIncrement: 1
-        valueUnit: "+"
-      alternativeText: ""
-    secondaryText: "Years of expe."
+- primaryText:
+    targetValue:
+      enableCounter: true
+      value: 97
+      valueIncrement: 1
+      valueUnit: "%"
+    alternativeText: "helllo"
+  secondaryText: "Happy Client"
+- primaryText:
+    targetValue:
+      enableCounter: true
+      value: 3261
+      valueIncrement: 300
+      valueUnit: "+"
+    alternativeText: ""
+  secondaryText: "Download"
+- primaryText:
+    targetValue:
+      enableCounter: true
+      value: 97
+      valueIncrement: 1
+      valueUnit: "%"
+    alternativeText: ""
+  secondaryText: "Happy Users"
+- primaryText:
+    targetValue:
+      enableCounter: true
+      value: 39
+      valueIncrement: 1
+      valueUnit: "+"
+    alternativeText: ""
+  secondaryText: "Years of expe."

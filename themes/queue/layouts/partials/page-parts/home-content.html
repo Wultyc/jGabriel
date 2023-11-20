@@ -6,7 +6,7 @@
 
 {{ partial "components/resume"}}
 
-{{ partial "components/clients-feedback" (dict "dataSource" .Site.Data.clientsFeedback.clientsFeedback)}}
+{{ partial "components/clients-feedback" .Site.Data.clientsFeedback}}
 
 {{ partial "components/skills"}}
 
