@@ -1,21 +1,21 @@
-{{ partial "ui-elements/hero" }}
+{{ partial "components/hero" }}
 
-{{ partial "ui-elements/presentation"}}
+{{ partial "components/presentation"}}
 
-{{ partial "ui-elements/service-list"}}
+{{ partial "components/service-list"}}
 
-{{ partial "ui-elements/resume"}}
+{{ partial "components/resume"}}
 
-{{ partial "ui-elements/clients-feedback"}}
+{{ partial "components/clients-feedback" (dict "dataSource" .Site.Data.clientsFeedback.clientsFeedback)}}
 
-{{ partial "ui-elements/skills"}}
+{{ partial "components/skills"}}
 
-{{ partial "ui-elements/projects/list"}}
+{{ partial "components/projects/list"}}
 
-{{ partial "ui-elements/testemonial"}}
+{{ partial "components/testemonial"}}
 
-{{ partial "ui-elements/blog/list"}}
+{{ partial "components/blog/list"}}
 
-{{ partial "ui-elements/contact-form"}}
+{{ partial "components/contact-form"}}
 
 
