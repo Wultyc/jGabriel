@@ -6,14 +6,13 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-lg-3 col-md-4 text-md-start">
-                                <!--<img src="images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">--> 
                                 <div class="about-details key-feature bg-light">
                                     <div class="media-body content">
-                                        <h6 class="title mb-2">Personal Details</h6>
+                                        <h6 class="title mb-2">{{ .personalDetails.title }}</h6>
                                         <div class="bor-bottom mt-2 mb-2"></div>
-                                        <p class="text-muted mb-2 mt-3 font-14"><a href="javascript:void(0)" class="text-black">Email: </a> queue@gmail.com</p>
-                                        <p class="text-muted mb-2 font-14"><a href="javascript:void(0)" class="text-black">Languages: </a> English</p>
-                                        <p class="text-muted mb-0 font-14"><a href="javascript:void(0)" class="text-black">Nationality: </a> Australian</p>  
+                                        {{ range .personalDetails.detailsLits }}
+                                            <p class="text-muted mb-2 mt-3 font-14"><a href="javascript:void(0)" class="text-black">{{ .label }}: </a> {{ .value }}</p> 
+                                        {{ end }}
                                     </div>
                                 </div>
                             </div>
@@ -21,13 +20,13 @@
                             <div class="col-lg-9 col-md-8">
                                 <div class="row align-items-end">
                                     <div class="col-md-12 text-md-start mt-4 mt-sm-0">
-                                        <h4 class="heading me-2">I Am <span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span>
+                                        <h4 class="heading me-2">I Am <span class="element text-primary" data-elements="{{ .presentation.professions }}"></span>
                                             <span id="typed" class="text-primary"></span>
                                         </h4>
-                                        <p class="text-light-muted mt-2">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. 
-                                            Experienced with all stages of the development cycle for dynamic web projects. 
-                                            The as opposed to using 'Content here, content here', making it look like readable English.</p>
-                                        <img src="images/signature.png" height="35" alt="">
+                                        <p class="text-light-muted mt-2">{{ .presentation.introduction }}</p>
+                                        {{ if ne .presentation.signature ""}}
+                                            <img src="images/signature.png" height="35" alt="">
+                                        {{ end }}
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </div><!--end col-->

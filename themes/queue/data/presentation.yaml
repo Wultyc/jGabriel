@@ -1,0 +1,15 @@
+personalDetails:
+  title: "Personal Details"
+  detailsLits:
+    - label: "Email"
+      value: "queue@gmail.com"
+    - label: "Languages"
+      value: "English"
+    - label: "Nationality"
+      value: "Australian"
+presentation:
+  professions: "Web Designer, Web Developer, Photographer"
+  introduction: "Obviously I'm a Web Designer. Web Developer with over 3 years of experience. 
+                 Experienced with all stages of the development cycle for dynamic web projects. 
+                 The as opposed to using 'Content here, content here', making it look like readable English."
+  signature: "images/signature.png"
