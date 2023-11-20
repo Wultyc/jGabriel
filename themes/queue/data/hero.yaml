@@ -1,0 +1,8 @@
+backgroundImage: "images/hero-bg.jpg"
+profileImage: "images/pal.png"
+heading: "Here I'am Queue Downey"
+buttons:
+  - text: "Hire me"
+    icon: ""
+  - text: "Download CV"
+    icon: "download"
