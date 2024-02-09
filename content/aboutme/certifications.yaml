@@ -2,14 +2,10 @@ info:
   title: My Certifications
   phrase: Those are the certifications I have.
 certs: 
-  - id: professional-scrum-master-i
-    label: "Professional Scrum Master I"
+  - id: mule4-integration-architect-1
+    label: MuleSoft Certified Integration Architect - Level 1
     Description: ""
-    img: /images/certificates/professional_scrum_master_i.png
-  - id: az-900
-    label: "Microsoft Certified: Azure Fundamentals"
-    Description: ""
-    img: /images/certificates/msft-azure-fundamentals.png
+    img: /images/certificates/mcia-l1-2024.png
   - id: mule4-platform-architect-1
     label: MuleSoft Certified Platform Architect - Level 1
     Description: ""
@@ -18,6 +14,14 @@ certs:
     label: Mulesoft Certified Developer - Level 1
     Description: ""
     img: /images/certificates/mcd-l1-2022.png
+  - id: az-900
+    label: "Microsoft Certified: Azure Fundamentals"
+    Description: ""
+    img: /images/certificates/msft-azure-fundamentals.png
+  - id: professional-scrum-master-i
+    label: "Professional Scrum Master I"
+    Description: ""
+    img: /images/certificates/professional_scrum_master_i.png
   - id: workato-automation-pro-i
     label: Workato Automation Pro I
     Description: ""
