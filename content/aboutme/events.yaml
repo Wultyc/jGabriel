@@ -18,16 +18,31 @@ experiences:
 #     - Organization of 3rd, 4th and 5th *Jornadas de Engenharia de Sistemas*.
 #     - Organization of some workshops.
 
+- id: 6
+  type: Job
+  title: Integration Engineer
+  start: April 2024
+  #end:
+  company: Philip Morris International
+  url: "https://www.pmi.com/"
+  role: "Integration Engineer"
+  description: Integration Engineer
+  responsibilities:
+  - Acting as a Solution Architect, designing integration projects to provide business stakeholders a platform thats helps overcome challanges faced daily.
+
 - id: 5
   type: Job
-  title: Experienced Programmer
+  title: Senior Specialist
   start: September 2019
-  #end:
+  end: March 2024
   company: Deloitte Portugal
   url: "https://www.deloitte.pt"
   role: "Integration Developer"
   description: Integration Services Team
   responsibilities:
+  - Manage a team of developers delivering integration applications to various kinds of business
+  - Solution Architect
+  - Acting a MuleSoft specialist, prviding assistance to various projects facing more complex challanges that required a more in depth knowledge of the platform
   - Development and maintenance of integration applications with Mulesoft.
   - DevOps Engineer.
   
@@ -35,7 +50,7 @@ experiences:
   type: Education
   title: Master
   start: September 2020
-  #end: July 2022
+  end: July 2022
   company: Instituto Superior de Engenharia do Porto (ISEP)
   url: "https://www.isep.ipp.pt"
   role: "Student"
